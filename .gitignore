@@ -1,4 +1,4 @@
 #Directories to ignore
 _site/**/*
-
+Gemfile.lock
 *.[a-zA-Z]~
