@@ -1,7 +1,19 @@
 @import "utilities";
 
 .journal {
+	display: inline-block;
+	float: left;
+	width: 74.95%;
+	max-width: 415px;
+	padding: 0 1rem;
 	overflow-x: hidden;
+
+	#utilities > .screenSmallerThan(50rem, {
+		float: none;
+		display: block;
+		margin: auto;
+		width: 100%;
+	});
 
 	.journal-nav {
 		display: block;
@@ -32,15 +44,31 @@
 		}
 	}
 
-	.snippet, .pinned {
+	.post-snippet, .pinned-snippet {
 		display: block;
 		width: 100%;
-		padding-bottom: 3rem;
 		text-align: left;
 
 		.title {
-			text-align: center;
+			font-size: 1.65rem;
+
+			a {
+				color: #444;
+
+				&:hover {
+					color: @compliment1;
+				}
+			}
+		}
+
+		.date {
+			font-family: "aleo", "Georgia", serif;
+			font-style: italic;
 			letter-spacing: 1px;
+			text-align: left;
+			color: hsl(0, 0%, 56%);
+			font-size: 0.9rem;
+			font-weight: 400;
 		}
 
 		.content {
@@ -54,33 +82,23 @@
 		}
 	}
 
-	.snippet {
-		.title {
-			padding-bottom: 1rem;
-	    }
-	    .date {
-			border-top: 1px solid black;
-			margin: 0.5rem 0;
-			height: 0;
-			letter-spacing: 1px;
+	.post-snippet {
+		border-bottom: 1px dashed @compliment1;
+		padding-bottom: 1rem;
+		margin-bottom: 1rem;
 
-		> span {
-		    position: relative;
-		    top: -0.75rem;
-		    background-color: #fff;
-		    padding: 0 1rem;
-		    font-weight: 200;
-		}
+		.title {
+			text-decoration: underline;
+	    }
+	    .content {
+	    	padding-top: 1rem;
 	    }
 	}
 
-	.pinned {
-		padding-bottom: 1rem;
-
-		.title {
-		    .date {
-			font-weight: 200;
-		    }
-		}
+	.pinned-snippet {
+		background-color: hsl(0, 0%, 30%);
+		color: white;
+		padding: 0 0 0.5rem 0.5rem;
+		margin-bottom: 2rem;
 	}
 }

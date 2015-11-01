@@ -8,7 +8,7 @@
 
 
 html {
-	font: 15px/24px "aleo", Georgia, serif; // "Open Sans", sans-serif;
+	font: 15px/24px "lato", Georgia, serif; // "Open Sans", sans-serif;
 	// line-height: 1.618;
 	// font-weight: 200;
 	text-rendering: optimizeLegibility;
@@ -68,7 +68,7 @@ body {
 	@height: @size * @golden;
 
 	h@{i} {
-	    font-family: "aleo", serif;
+	    font-family: "aleo", "Georgia", serif;
 		font-size: ~"@{size}rem";
 		line-height: ~"@{height}rem";
 
@@ -92,6 +92,10 @@ body {
 	margin: auto;
 	text-align: center;
 	padding-top: 2rem;
+
+	max-width: 40rem;
+	width: 100%;
+	overflow-x: hidden;
 }
 
 .container {

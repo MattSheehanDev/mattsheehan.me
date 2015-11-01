@@ -6,11 +6,6 @@
 	}
 }
 
-.grid {
-	max-width: 60rem;
-	overflow-x: hidden;
-}
-
 a {
 	color: @compliment1;
 	text-decoration: none;
@@ -47,10 +42,14 @@ sup {
 
 img {
     display: block;
-    margin: auto;
     width: 100%;
-    max-width: 30rem;
     padding: 1rem 0;
+}
+
+iframe {
+    display: block;
+    width: 100%;
+    margin: 1rem auto;
 }
 
 canvas {
@@ -58,17 +57,13 @@ canvas {
     margin: auto;
 }
 
-iframe {
-    display: block;
-    max-width: 30rem;
-    margin: 1rem auto;
-}
-
 
 blockquote 
 {
-	background: #f9f9f9;
-	border-left: 10px solid #ccc;
+	font-family: "aleo", "Georgia", serif;
+	background: hsl(0, 0%, 30%);
+	color: white;
+	border-left: 10px solid hsl(0, 0%, 56%);
 	font-style: italic;
 	// margin-bottom: 1.5rem;
 	padding: 1rem;
@@ -98,6 +93,10 @@ blockquote
 			content: none;
 		}
 	}
+}
+
+small {
+	font-size: 0.9rem;
 }
 
 pre {
@@ -131,7 +130,7 @@ code, .highlight {
 
 
 
-.goldenWidth {
+.golden-width {
 	max-width: 555px;
 	width: 100%;
 	display: inline-block;
@@ -139,8 +138,7 @@ code, .highlight {
 
 .soliloquy {
 	background: @compliment-light;
-	margin-left: 1rem;
-	padding: 0.25rem;
+	padding: 0.5rem 1rem;
 	font-size: 0.9rem;
 }
 
@@ -169,6 +167,7 @@ code, .highlight {
 
 	ol {
 		margin: 0;
+		padding-left: 1rem;
 
 		p {
 			padding: 0;

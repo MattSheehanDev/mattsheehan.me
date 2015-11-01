@@ -5,14 +5,14 @@ title: Matt Sheehan
 
 <div class="container journal">
      <div class="post-list">
-     	  {% if paginator.page == 1 %}
+        {% if paginator.page == 1 %}
 	     {% for pinned in site.pinned %}
-	     	{% include posts/pinned.html %}
+	     	{% include snippets/pinned_snippet.html %}
 	     {% endfor %}	  
 	  {% endif %}
 
 	  {% for post in paginator.posts %}
-	     {% include posts/snippet.html post=post %}
+	     {% include snippets/post_snippet.html post=post %}
 	  {% endfor %}
     </div>
     <div class="journal-nav">
@@ -33,12 +33,8 @@ title: Matt Sheehan
             </div>
         </div>
         <div class="archive-page">
-            <span>
-                Continue reading a complete list of posts in the
-            </span>
-            <a href="{{ site.url }}/archives">
-                archives
-            </a>
+            <span>Continue reading a complete list of posts in the</span>
+            <a href="{{ site.url }}/archives">archives</a>
         </div>
     </div>
 </div>

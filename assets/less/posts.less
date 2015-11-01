@@ -3,53 +3,63 @@
 
 .post
 {
-	.post-title {
-		display: inline-block;
+	display: inline-block;
+	float: left;
+	width: 74.95%;
+	max-width: 415px;
+	padding: 0 1rem;
+	text-align: left;
+	overflow-x: hidden;
+
+
+	#utilities > .screenSmallerThan(50rem, {
+		float: none;
+		display: block;
+		margin: auto;
 		width: 100%;
-		letter-spacing: 1px;
+	});
+
+	.title {
+		text-align: left;
+		font-size: 1.65rem;
+		text-decoration: underline;
 	}
 
-	.post-date {
-	    border-top: 1px solid black;
-	    height: 0;
-	    margin: 0.5rem 0;
-
-	    span {
-		position: relative;
-		top: -0.75rem;
-		background-color: #fff;
-		padding: 0 1rem;
+	.date {
+		font-family: "aleo", "Georgia", serif;
+		font-style: italic;
+		font-size: 0.9rem;
 		font-weight: 400;
 		letter-spacing: 1px;
-	    }
+		text-align: left;
+		color: hsl(0, 0%, 56%);
 	}
 
-	.post-content {
-		// padding: 1rem;
+	.content {
 		padding-top: 1rem;
-		text-align: left;
+		text-align: justify;
 
 		#utilities > .screenSmallerThan(50rem, {
 			padding: 0 1rem;
 		});
 	}
 
-	.post-author {
+
+	.author {
+		text-align: center;
 		padding: 0;
 		margin: 0;
-
-		.post-quip {
-			color: hsla(357, 30%, 56%, 1);
-			//font-size: 0.9rem;
-
-			span {
-				width: 100%;
-			}
-		}
 	}
+
+	.quip {
+		text-align: center;
+		color: hsla(357, 30%, 56%, 1);
+	}
+
 
 	.post-nav {
 		display: block;
+		text-align: center;
 		padding-top: 1rem 0;
 		width: 100%;
 

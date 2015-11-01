@@ -8,7 +8,7 @@
 # => css files will have the same root name as their less counterparts
 
 
-Jekyll::Hooks.register :site, :post_read do |site|
+Jekyll::Hooks.register :site, :post_write do |site|
   statics = site.static_files
   config = site.config
 
