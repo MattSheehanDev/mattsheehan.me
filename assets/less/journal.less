@@ -1,0 +1,86 @@
+@import "utilities";
+
+.journal {
+	overflow-x: hidden;
+
+	.journal-nav {
+		display: block;
+		width: 100%;
+		padding: 1rem 0;
+
+		.page-nav {
+			display: inline-table;
+			margin: auto;
+
+			.prev-page {
+				display: table-cell;
+				vertical-align: middle;
+				padding: 0 0.5rem;
+			}
+
+			.next-page {
+				display: table-cell;
+				vertical-align: middle;
+				padding: 0 0.5rem
+			}
+		}
+
+		.archive-page {
+			display: inline-block;
+			width: 100%;
+			padding: 1rem 0;
+		}
+	}
+
+	.snippet, .pinned {
+		display: block;
+		width: 100%;
+		padding-bottom: 3rem;
+		text-align: left;
+
+		.title {
+			text-align: center;
+			letter-spacing: 1px;
+		}
+
+		.content {
+		    display: inline-block;
+		    text-align: justify;
+		    width: 100%;
+
+		    #utilities > .screenSmallerThan(50rem, {
+		    	padding: 0 1rem;
+		    });
+		}
+	}
+
+	.snippet {
+		.title {
+			padding-bottom: 1rem;
+	    }
+	    .date {
+			border-top: 1px solid black;
+			margin: 0.5rem 0;
+			height: 0;
+			letter-spacing: 1px;
+
+		> span {
+		    position: relative;
+		    top: -0.75rem;
+		    background-color: #fff;
+		    padding: 0 1rem;
+		    font-weight: 200;
+		}
+	    }
+	}
+
+	.pinned {
+		padding-bottom: 1rem;
+
+		.title {
+		    .date {
+			font-weight: 200;
+		    }
+		}
+	}
+}

@@ -1,0 +1,108 @@
+---
+layout: default
+---
+
+<div class="resume container">
+     <div class="download row">
+     	  <a href="{{ site.url }}/resume/{{ site.name | replace: ' ', '-' }}.pdf" target="_blank">
+	  Download as PDF
+	  </a>
+     </div>
+
+     <div class="paper">
+     	  <div class="column full">
+	       <div class="header">
+	       	    <div class="row">
+		    	 <span>
+			 {{ site.mailing_address }}
+			 </span>
+			 <span class="detail telephone">
+			 {{ site.phone }}
+			 </span>
+			 <span>
+			 {{ site.email }}
+			 </span>
+	            </div>
+		    <div class="row">
+		    	 <h4>{{ site.name }}</h4>
+		    </div>
+	      </div>
+	      <div class="objectives section">
+	      	   <h5 class="section-title">Objective</h5>
+
+		   <span class="row">
+		   Fulfill a position where creative programming is inspired, learning and research is encouraged, and hard work is valued.
+		   </span>
+	      </div>
+	      <div class="education section">
+	      	   <h5 class="section-title">Education</h5>
+		   
+		   {% for post in site.resume %}
+		      {% if post.categories contains 'education' %}
+		      	 <div class="eddy">
+			      <div class="info">
+			      	   <div class="column two-thirds">
+				   	<h6>{{ post.school }}</h6>
+				   </div>
+				   <div class="column one-third">
+				   	<div class="right">
+					     <span class="location">
+					     {{ post.location }}
+					     </span>
+					     <span class="date">
+					     {{ post.end_date }}
+					     </span>
+					</div>
+				   </div>
+		 	      </div>
+			      <div class="column full">
+			      {{ post.content }}
+			      </div>
+			</div>
+		    {% endif %}
+		{% endfor %}
+	      </div>
+	      <div class="experience section">
+	      	   <h5 class="section-title">Experience</h5>
+
+		   {% for post in site.resume %}
+		      {% if post.categories contains 'job' %}
+		      	 <div class="exp">
+		      	   <div class="info">
+			   	<div class="column two-thirds">
+				     <h6 class="title">{{ post.title }}</h6>
+				     <span class="employer">
+				     {{ post.employer }}
+				     </span>
+				</div>
+				<div class="column one-third">
+				     <div class="right">
+				     	  <span class="location">
+					  {{ post.location }}
+					  </span>
+					  <span class="date">
+					  {{ post.start_date }} - {{ post.end_date }}
+					  </span>
+				     </div>
+				</div>
+			   </div>
+			   <div class="column full">
+			   {{ post.content }}
+			   </div>
+		      </div>
+		    {% endif %}
+		 {% endfor %}
+	     </div>
+
+	     <div class="skills section">
+	     {% for post in site.resume %}
+	     	{% if post.categories contains 'other' %}
+	     	   <div class="row">
+		   {{ post.content }}
+		   </div>
+		{% endif %}
+	     {% endfor %}
+	     </div>
+	</div>
+    </div>
+</div>

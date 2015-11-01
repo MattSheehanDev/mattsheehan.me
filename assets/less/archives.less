@@ -1,0 +1,56 @@
+@import "utilities";
+
+
+.archives {
+
+	.archive-count {
+		font-weight: bold;
+	}
+
+	.archive-posts {
+		display: inline-block;
+
+		.post {
+			display: inline-block;
+			width: 100%;
+
+			.archive-title {
+				display: inline-block;
+				text-align: right;
+				float: left;
+				width: 50%;
+				padding-right: 0.5rem;
+			}
+
+			.archive-date {
+				display: inline-block;
+				text-align: left;
+				float: right;
+				width: 50%;
+				padding-left: 0.5rem;
+			}
+		}
+	}
+}
+
+
+.megaman 
+{
+	margin: auto;
+	background: url(../images/megamanwalking.png) no-repeat;
+	width: 100px;
+	height: 205px;
+	text-indent: -9999px;
+
+	#utilities > .animation(walk, .8s, steps(4), infinite);
+}
+
+
+
+#utilities > .keyframes(walk, @from, @to);
+@from: {
+	background-position:  0px;
+};
+@to: {
+	background-position: -387px;
+};

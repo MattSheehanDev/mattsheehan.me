@@ -1,0 +1,4 @@
+#Directories to ignore
+_site/**/*
+
+*.[a-zA-Z]~

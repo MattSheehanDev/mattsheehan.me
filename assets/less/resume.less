@@ -1,0 +1,136 @@
+@import "utilities";
+
+.resume {
+
+	span {
+		display: block;
+	}
+
+	.download {
+		display: inline-block;
+		width: 100%;
+		padding-bottom: 1rem;
+
+		a {
+			text-align: center;
+		}
+	}
+
+	.paper {
+	    font-family: "Calibri", sans-serif;
+		display: inline-block;
+		text-align: left;
+		border: 1px solid #000;
+		#utilities > .box-shadow(10px, 10px, 15px, 10px, #ddd);
+
+		h4, h5, h6 {
+		    font-family: "Georgia", serif;
+		    font-variant: normal;
+		    text-transform: none;
+		}
+
+		.section {
+			display: inline-block;
+			padding-bottom: 2rem;
+
+			.section-title {
+				border-bottom: 1px solid black;
+				font-weight: 400;
+			}
+		}
+
+		.header {
+			text-align: center;
+			span {
+				width: 100%;
+			}
+		}
+
+		.education {
+			.eddy {
+				display: inline-block;
+				width: 100%;
+
+				.info {
+					display: inline-block;
+					width: 100%;
+					padding: 1rem 0;
+
+					.right {
+						display: inline-block;
+						float: right;
+						text-align: right;
+
+						@media screen and (max-width: 50rem) {
+							float: left;
+							text-align: left;
+						}
+
+						.location {
+							font-weight: bold;
+							width: 100%;
+						}
+						.date {
+							width: 100%;
+						}
+					}
+				}
+			}
+		}
+
+		.experience {
+			.exp {
+				display: inline-block;
+				width: 100%;
+
+				.info {
+					display: inline-block;
+					width: 100%;
+					padding: 1rem 0;
+
+					.title {
+						width: 100%;
+					}
+					.employer {
+						width: 100%;
+						font-weight: bold;
+					}
+
+					.right {
+						display: inline-block;
+						float: right;
+						text-align: right;
+
+						@media screen and (max-width: 50rem) {
+							float: left;
+							text-align: left;
+						}
+
+						.location {
+							font-weight: bold;
+							width: 100%;
+						}
+
+						.date {
+							width: 100%;
+						}
+					}
+				}
+			}
+		}
+
+		.skills {
+			h5 {
+				border-bottom: 1px solid black;
+				font-weight: 400;		
+			}
+
+			ul {
+				&.short {
+					float: left;
+					width: 10rem;
+				}
+			}
+		}
+	}
+}

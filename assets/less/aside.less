@@ -1,0 +1,134 @@
+@import "utilities";
+
+
+.aside
+{
+	display: inline-block;
+	//font-size: 0.9rem;
+
+	max-width: 20rem;
+
+	.portrait {
+		display: inline-block;
+
+		div {
+			background: @tertiary1 url(../images/self_art.jpg) no-repeat center center;
+			#utilities > .background-size(cover);
+
+			width: 10rem;
+			height: 10rem;
+			margin: auto;
+			text-indent: -9999px;
+			#utilities > .border-radius(50%);
+
+			-webkit-transition: -webkit-box-shadow ease 0.5s;
+			-moz-transition: -moz-box-shadow ease 0.5s;
+			-o-transition: -o-box-shadow ease 0.5s;
+			transition: box-shadow ease 0.5s;
+		}
+
+		&:hover {
+			div {
+				#utilities > .box-shadow(0,0,10px,5px,@tertiary1);
+			}
+		}
+	}
+
+	.info {
+		display: inline-block;
+
+		.aside-sig {
+			display: inline-block;
+			width: 100%;
+
+			img {
+				padding: 0;
+
+			}
+		}
+
+		.aside-name {
+			width: 100%;
+			font-weight: bold;
+		}
+
+		.aside-desc {
+			width: 100%;
+			color: #BBC7CC;
+		}
+
+		.rss-sub {
+			display: inline-block;
+			width: 100%;
+			font-weight: bold;
+			text-transform: lowercase;
+			//font-variant: small-caps;
+			//font-size: 1rem;
+			
+			& + a {
+			    text-transform: lowercase;
+			    //font-variant: small-caps;
+			    //font-size: 1rem;
+			}
+		}
+
+		hr {
+			margin: 1rem auto;
+		}
+
+		.aside-nav {
+			display: inline-block;
+			text-align: left;
+			text-transform: lowercase;
+			//font-variant: small-caps;
+			//font-size: 1rem;
+
+			#utilities > .screenLargerThan(50rem, {
+				width: 6rem;
+				});
+
+
+			.aside-link {
+				display: inline-block;
+
+				#utilities > .screenLargerThan(50rem, {
+					width: 100%;
+					});
+
+				.link {
+					display: inline-table;
+				// color: white;
+
+				// &:hover {
+				// 	color: white;
+				// }
+
+				.link-img {
+					display: table-cell;
+					vertical-align: middle;
+					width: 2rem;
+					height: 1rem;
+					background-size: contain;
+				}
+
+				.link-text {
+					display: table-cell;
+					vertical-align: middle;      
+				}
+			}
+
+			.journal {
+				background: url(../images/journal.svg) no-repeat center center;
+			}
+
+			.resume {
+				background: url(../images/resume.svg) no-repeat center center;
+			}
+
+			.about {
+				background: url(../images/about.svg) no-repeat center center; 
+			}
+		}
+	}
+}
+}

@@ -1,0 +1,91 @@
+name: Matthew Sheehan
+author: "Matt Sheehan"
+markdown: kramdown
+kramdown:
+ parse_span_html: true
+ coderay_line_numbers: inline
+ enable_coderay: true
+highlighter: rouge
+permalink: /archives/:title/
+
+# url: "mattsheehan.me"
+
+# pager: 5
+# pager_path: "journal/page"
+# pager_category: "journal"
+gems: [jekyll-paginate]
+paginate: 5
+paginate_path: "journal/page:num"
+
+# domain: mattsheehan.me
+# description: The web hub of all things Matt
+
+contact:
+mailing_address: 1620 Sturbridge Dr. Louisville OH 44641
+phone: 330-614-1599
+email: sheehamj@mountunion.edu
+
+ie_category: "journal"
+ie_frequency: 30
+ie_tile_color: "#497bad"
+ie_tile_small: "/assets/images/microsoft/ms-small-128x128.png"
+ie_tile_medium: "/assets/images/microsoft/ms-medium-270x270.png"
+ie_tile_wide: "/assets/images/microsoft/ms-wide-558x270.png"
+ie_tile_large: "/assets/images/microsoft/ms-large-558x558.png"
+
+rss_title: Matt Sheehan
+rss_author: Matt Sheehan
+rss_description: The spiritual home of Matt Sheehan
+rss_link: http://www.mattsheehan.me
+
+lessc: "nodejs /usr/local/bin/lessc"
+css_dest: assets/css
+
+tsc: "tsc"
+js_dest: assets/script
+
+
+exclude: [Gemfile, README.md, Typeset, typeset.rb, legacy]
+
+collections:
+ pinned:
+  output: false
+ resume:
+  output: false
+
+
+defaults:
+ - scope:
+    type: posts
+   values:
+    layout: post
+ - scope:
+    type: pinned
+    path: "journal"
+   values:
+    layout: post
+ - scope:
+    type: resume
+    path: "resume/education"
+   values:
+    categories: "education"
+ - scope:
+    type: resume
+    path: "resume/work"
+   values:
+    categories: "job"
+ - scope:
+    type: resume
+    path: "resume/other"
+   values:
+    categories: "other"
+ - scope:
+    path: "about"
+    type: pages
+   values:
+    layout: "default"
+ - scope:
+    path: "archives"
+    type: "pages"
+   values:
+    layout: "default"

@@ -1,0 +1,86 @@
+@import "utilities";
+
+
+.post
+{
+	.post-title {
+		display: inline-block;
+		width: 100%;
+		letter-spacing: 1px;
+	}
+
+	.post-date {
+	    border-top: 1px solid black;
+	    height: 0;
+	    margin: 0.5rem 0;
+
+	    span {
+		position: relative;
+		top: -0.75rem;
+		background-color: #fff;
+		padding: 0 1rem;
+		font-weight: 400;
+		letter-spacing: 1px;
+	    }
+	}
+
+	.post-content {
+		// padding: 1rem;
+		padding-top: 1rem;
+		text-align: left;
+
+		#utilities > .screenSmallerThan(50rem, {
+			padding: 0 1rem;
+		});
+	}
+
+	.post-author {
+		padding: 0;
+		margin: 0;
+
+		.post-quip {
+			color: hsla(357, 30%, 56%, 1);
+			//font-size: 0.9rem;
+
+			span {
+				width: 100%;
+			}
+		}
+	}
+
+	.post-nav {
+		display: block;
+		padding-top: 1rem 0;
+		width: 100%;
+
+		.page-nav {
+			display: inline-table;
+			margin: auto;
+
+			.prev-page {
+				display: table-cell;
+				vertical-align: middle;
+				padding: 0 0.5rem;
+			}
+
+			.next-page {
+				display: table-cell;
+				vertical-align: middle;
+				padding: 0 0.5rem;
+			}
+		}
+	}
+
+}
+
+
+.post-img {
+	display: inline-block;
+	width: 100%;
+	// border-top: 1px dotted black;
+	// border-bottom: 1px dotted black;
+
+	// img {
+	// 	padding: 0.25;
+	// }
+}

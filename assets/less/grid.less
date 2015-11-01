@@ -1,0 +1,207 @@
+@import "utilities";
+
+* {
+	&, &:before, &:after {
+		#utilities > .box-size(border-box);
+	}
+}
+
+
+html {
+	font: 15px/24px "aleo", Georgia, serif; // "Open Sans", sans-serif;
+	// line-height: 1.618;
+	// font-weight: 200;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	// font-size: 100%;
+
+	// #utilities > .screen
+	// @media screen and (max-width: 30rem)
+	// {
+	// 	font-size: 100%;
+	// }
+
+	// @media screen and (min-width: 45rem)
+	// {
+	// 	font-size: 112.5%;
+	// }
+
+	// @media screen and (min-width: 64rem)
+	// {
+	// 	font-size: 118.75%;
+	// }
+
+	// @media screen and (min-width: 85rem)
+	// {
+	// 	font-size: 125%;
+	// }
+
+	// @media screen and (min-width: 120rem)
+	// {
+	// 	font-size: 131.25%;
+	// }
+
+	// @media screen and (min-width: 160rem)
+	// {
+	// 	font-size: 137.5%;
+	// } 
+
+}
+
+
+body {
+	// display: inline-block;
+	background-color: #fff;
+	color: #444;
+	// color: #000;
+	// font-size: 1rem;
+	padding: 0;
+	margin: 0;
+}
+
+
+@quarter: 1.25;
+@golden: 1.6180339887;
+
+.generateHeaders(@n, @i: 6, @s: 0.8) when (@i >= @n) {
+	@size: @s * @golden;
+	@height: @size * @golden;
+
+	h@{i} {
+	    font-family: "aleo", serif;
+		font-size: ~"@{size}rem";
+		line-height: ~"@{height}rem";
+
+		font-weight: 400;
+		margin: 0;
+		padding: 0;
+
+		//text-transform: lowercase;
+		//font-variant: small-caps;
+	}
+
+	.generateHeaders(@n, @i - 1, @s + 0.25);
+}
+
+.generateHeaders(1);
+
+
+
+.grid {
+	display: block;
+	margin: auto;
+	text-align: center;
+	padding-top: 2rem;
+}
+
+.container {
+	display: inline-block;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.row 
+{
+	display: inline-block;
+	padding: .5rem 0;
+	width: 100%;
+}
+
+.column {
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	padding: 0 0.25rem;
+
+	@media screen and (min-width: 50rem) {
+		padding: 0 1rem;
+
+		&.full {
+			width: 100%;
+		}
+
+		&.three-fourths {
+			width: 74.95%;
+		}
+
+		&.two-thirds 
+		{
+			width: 66.7%;
+		}
+
+		&.half 
+		{
+			width: 50%;
+		}
+
+		&.one-third 
+		{
+			width: 33.3%;
+		}
+
+		&.one-fourth 
+		{
+			width: 24.95%;
+		}
+
+		&.opposite 
+		{
+			float: right;
+		}
+	}
+}
+
+
+.clearfix:before, .clearfix:after
+{
+	content: " ";
+	display: table;
+}
+
+.clearfix:after 
+{
+	clear: both;
+}
+
+.clearfix 
+{
+	*zoom: 1;
+}
+
+
+
+.box
+{
+	border: .1rem dashed #fff;
+}
+
+
+footer
+{
+	padding: 3rem;
+}
+
+.mobile 
+{
+	margin: 0 auto;
+	max-width: 150px;
+
+	@media (min-width: 50rem) 
+	{
+		max-width: 250px;
+	}
+}
+
+section 
+{
+	display: inline-block;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	width: 100%;
+
+	@media screen and (max-width: 50rem) 
+	{
+		padding: 0.5rem 0;
+	}
+}

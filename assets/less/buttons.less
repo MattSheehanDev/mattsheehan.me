@@ -1,0 +1,41 @@
+@import "utilities";
+
+.button 
+{
+    display: inline-block;
+    margin: auto;
+    white-space: nowrap;
+    text-decoration: none;
+
+
+    &.rectangle {
+        #utilities > .border-radius(3px);
+        background-color: @tertiary1;
+        padding: 0.7rem 1.5rem;
+        white-space: nowrap;
+        text-decoration: none;
+
+        #utilities > .transition(background, ease, 0.2s);
+
+        &:hover {
+            background: @tertiary2;
+        }
+    }
+
+
+    &.circle
+    {
+        #utilities > .border-radius(50%);
+        border: 3px solid @tertiary1;
+        height: 3.2rem;
+        width: 3.2rem;
+        line-height: 1.7rem;
+
+        #utilities > .transition(border-color, ease, 0.5s);
+
+        &:hover {
+            border-color: @tertiary2;
+        }
+    }
+
+}
