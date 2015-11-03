@@ -4,16 +4,16 @@
 .aside
 {
 	display: inline-block;
-	width: 100%;
-
+	width: 10rem;
 	float: right;
-	width: 24.95%;
 
 	#utilities > .screenSmallerThan(50rem, {
+		float: none;
 		width: 100%;
 		max-width: none;
 		padding: 0 1rem;
 	});
+
 
 	.header {
 		display: block;
@@ -33,15 +33,16 @@
 				text-indent: -9999px;
 				#utilities > .border-radius(50%);
 
-				-webkit-transition: -webkit-box-shadow ease 0.5s;
-				-moz-transition: -moz-box-shadow ease 0.5s;
-				-o-transition: -o-box-shadow ease 0.5s;
-				transition: box-shadow ease 0.5s;
+				-webkit-transition: -webkit-box-shadow ease 0.5s, -webkit-filter ease 0.5s;;
+				-moz-transition: -moz-box-shadow ease 0.5s, filter ease 0.5s;
+				-o-transition: -o-box-shadow ease 0.5s, filter ease 0.5s;;
+				transition: box-shadow ease 0.5s, filter ease 0.5s;;
 			}
 
 			&:hover {
 				div {
-					#utilities > .box-shadow(0,0,10px,5px,@tertiary1);
+					#utilities > .box-shadow(0, 0, 10px, 5px, @tertiary1);
+					filter: blur(2px);
 				}
 			}
 		}
@@ -51,6 +52,8 @@
 			width: 100%;
 
 			img {
+				width: 100%;
+				margin-left: 0;
 				padding: 0;
 				max-width: none;
 			}
@@ -77,18 +80,17 @@
 				img {
 					height: 100%;
 				}
-				// max-width: none;
 			}
 		})
 	}
 
 	.info {
 		display: block;
+		text-align: center;
 
 		.aside-nav {
 			display: block;
 			margin: auto;
-			text-align: left;
 
 			hr {
 				margin: 1rem auto;
@@ -102,11 +104,13 @@
 
 			#utilities > .screenLargerThan(50rem, {
 				width: 6rem;
-				});
+				text-align: center;
+			});
 
 
 			.aside-link {
 				display: inline-block;
+				padding: 0.25rem 0;
 
 				#utilities > .screenLargerThan(50rem, {
 					width: 100%;
@@ -114,12 +118,13 @@
 
 				.link {
 					display: inline-table;
+					width: 100%;
 
 					.link-img {
 						display: table-cell;
 						vertical-align: middle;
 						width: 2rem;
-						height: 1rem;
+						height: 1.5rem;
 						background-size: contain;
 						background-repeat: no-repeat;
 						background-position: center center;
@@ -138,8 +143,9 @@
 					}
 
 					.link-text {
-						display: table-cell;
-						vertical-align: middle;      
+						display: inline-block;
+						// display: table-cell;
+						// vertical-align: middle;
 					}
 				}
 			}

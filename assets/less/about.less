@@ -2,7 +2,20 @@
 
 
 .about {
+	display: inline-block;
+	float: left;
+	width: 30rem;
 	text-align: justify;
+	overflow-x: visible;
+
+	padding: 0 1rem 1rem;
+
+	#utilities > .screenSmallerThan(50rem, {
+		float: none;
+		display: block;
+		margin: auto;
+		width: 100%;
+	});
 
 	.coin {
 		span {

@@ -4,9 +4,7 @@ title: About
 
 {::options parse_block_html="true" /}
 
-<div class="about container">
-
-<div class="container">
+<div class="about">
 
 #### Hi ####
 
@@ -17,13 +15,10 @@ I started programming after first wanting to learn how to make a website (it was
 
 If you want to get involved in a project, send me a note at sheehamj@outlook.com.
 
-</div>
-<div class="container">
+
 
 ![image]({{ site.url }}/assets/images/hello.PNG)
 
-</div>
-<div class="container">
 
 #### Wallets ####
 
@@ -37,8 +32,6 @@ If you want to get involved in a project, send me a note at sheehamj@outlook.com
 <input value="1LiynWqcqscdr59zzpMiDDypjvoDWvuMwh" />
 </div>
 
-</div>
-<div class="container">
 
 #### Elsewhere ####
 
@@ -48,6 +41,5 @@ Here are the places I know for sure.
 * [Github](http://github.com/sheehamj13) - Developers! Developers! Developers!
 * [Facebook](http://www.facebook.com/matt.sheehan.31) - Virtual friends.
 
-</div>
 
 </div>

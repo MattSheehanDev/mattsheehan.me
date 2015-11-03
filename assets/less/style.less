@@ -6,6 +6,16 @@
 	}
 }
 
+.offset {
+	width: 10rem;
+	height: 5rem;
+	float: left;
+
+	#utilities > .screenSmallerThan(50rem, {
+		display: none;
+	})
+}
+
 a {
 	color: @compliment1;
 	text-decoration: none;
@@ -42,33 +52,50 @@ sup {
 
 img {
     display: block;
-    width: 100%;
+    width: 120%;
+    margin-left: -10%;
     padding: 1rem 0;
-}
 
+    #utilities > .screenSmallerThan(50rem, {
+    	width: 100%;
+    	margin-left: 0;
+    });
+}
 iframe {
     display: block;
-    width: 100%;
-    margin: 1rem auto;
-}
+    width: 120%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+	margin-left: -10%;
+	padding: 0 5%;
 
+    #utilities > .screenSmallerThan(50rem, {
+    	width: 100%;
+    	margin-left: 0;
+    	padding: 0;
+    });
+}
 canvas {
     display: block;
-    margin: auto;
+    width: 120%;
+    margin-left: -10%;
+
+    #utilities > .screenSmallerThan(50rem, {
+    	width: 100%;
+    	margin-left: 0;
+    });
 }
-
-
 blockquote 
 {
 	font-family: "aleo", "Georgia", serif;
-	background: hsl(0, 0%, 30%);
+	background: @tertiary-dark;
 	color: white;
-	border-left: 10px solid hsl(0, 0%, 56%);
+	border-left: 10px solid @tertiary-grey;
 	font-style: italic;
-	// margin-bottom: 1.5rem;
 	padding: 1rem;
 	margin: 0;
 	margin-bottom: 0.5rem;
+	margin-left: -10px;
 	quotes: "\201C""\201D""\2018""\2019";
 
 	&:before {
@@ -94,15 +121,14 @@ blockquote
 		}
 	}
 }
-
-small {
-	font-size: 0.9rem;
-}
-
 pre {
-	background-color: @tertiary-light;
+	background-color: @tertiary-dark;
+	color: white;
 	overflow-x: auto;
 	overflow-y: hidden;
+	padding: 1rem 0.5rem;
+	width: 120%;
+	margin-left: -10%;
 
 	code {
 		padding: 0;
@@ -111,30 +137,42 @@ pre {
 		font-size: 0.9rem;
 		text-transform: none;
 		font-variant: normal;
+		background: none;
 	}
-}
-
-ul
-{
-	margin: 0;
-	text-align: left;
 }
 
 code, .highlight {
 	background: @tertiary-light;
-	// font-weight: bold;
 	padding: 0 0.25rem;
 	text-transform: lowercase;
 	font-variant: small-caps;
 }
 
 
-
-.golden-width {
-	max-width: 555px;
-	width: 100%;
-	display: inline-block;
+ul
+{
+	list-style-type: square;
+	list-style-position: outside;
+	margin: 0;
+	padding: 0;
 }
+ol {
+	margin: 0;
+	padding: 0;
+	// text-align: left;
+}
+
+
+small {
+	font-size: 0.9rem;
+}
+
+
+// .golden-width {
+// 	max-width: 555px;
+// 	width: 100%;
+// 	display: inline-block;
+// }
 
 .soliloquy {
 	background: @compliment-light;

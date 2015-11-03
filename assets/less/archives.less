@@ -2,47 +2,44 @@
 
 
 .archives {
+	display: inline-block;
+	float: left;
+	width: 30rem;
+	padding: 0 1rem;
+	text-align: left;
+	overflow-x: visible;
 
-	.archive-count {
-		font-weight: bold;
+	hr {
+		margin-top: 1rem;
+		margin-bottom: 1rem;
 	}
 
-	.archive-posts {
-		display: inline-block;
+	ul {
+		li {
+			padding-bottom: 0.5rem;
 
-		.post {
-			display: inline-block;
-			width: 100%;
-
-			.archive-title {
-				display: inline-block;
-				text-align: right;
-				float: left;
-				width: 50%;
-				padding-right: 0.5rem;
-			}
-
-			.archive-date {
-				display: inline-block;
+			div {
+				font-family: "aleo", "Georgia", serif;
+				font-style: italic;
+				font-size: 0.9rem;
+				font-weight: 400;
+				letter-spacing: 1px;
 				text-align: left;
-				float: right;
-				width: 50%;
-				padding-left: 0.5rem;
+				color: hsl(0, 0%, 56%);
 			}
 		}
 	}
-}
 
+	.megaman 
+	{
+		margin: auto;
+		background: url(../images/megamanwalking.png) no-repeat;
+		width: 100px;
+		height: 205px;
+		text-indent: -9999px;
 
-.megaman 
-{
-	margin: auto;
-	background: url(../images/megamanwalking.png) no-repeat;
-	width: 100px;
-	height: 205px;
-	text-indent: -9999px;
-
-	#utilities > .animation(walk, .8s, steps(4), infinite);
+		#utilities > .animation(walk, .8s, steps(4), infinite);
+	}
 }
 
 

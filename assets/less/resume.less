@@ -1,27 +1,33 @@
 @import "utilities";
 
 .resume {
-
-	span {
-		display: block;
-	}
+	width: 100%;
 
 	.download {
-		display: inline-block;
-		width: 100%;
+		display: block;
 		padding-bottom: 1rem;
-
-		a {
-			text-align: center;
-		}
 	}
 
+	// span {
+	// 	display: block;
+	// }
+
+	// .download {
+	// 	display: inline-block;
+	// 	width: 100%;
+	// 	padding-bottom: 1rem;
+
+	// 	a {
+	// 		text-align: center;
+	// 	}
+	// }
+
 	.paper {
-	    font-family: "Calibri", sans-serif;
+	    font-family: "Calibri", "Georgia";
 		display: inline-block;
 		text-align: left;
 		border: 1px solid #000;
-		#utilities > .box-shadow(10px, 10px, 15px, 10px, #ddd);
+		#utilities > .box-shadow(-15px, 15px, 15px, 10px, #ddd);
 
 		h4, h5, h6 {
 		    font-family: "Georgia", serif;
@@ -29,106 +35,120 @@
 		    text-transform: none;
 		}
 
+		ul {
+			list-style-type: square;
+			list-style-position: inside;
+		}
+
 		.section {
 			display: inline-block;
 			padding-bottom: 2rem;
 
-			.section-title {
+			.title {
 				border-bottom: 1px solid black;
 				font-weight: 400;
 			}
 		}
 
 		.header {
+			margin-top: 0.5rem;
 			text-align: center;
-			span {
-				width: 100%;
+
+			.info {
+				font-size: 0.9rem;
 			}
 		}
 
 		.education {
-			.eddy {
+			display: inline-block;
+			width: 100%;
+
+			.info {
 				display: inline-block;
 				width: 100%;
+				padding-top: 1rem;
 
-				.info {
+				h6 {
 					display: inline-block;
+					float: left;
+				}
+			}
+
+			.right {
+				display: inline-block;
+				float: right;
+				text-align: right;
+
+				@media screen and (max-width: 50rem) {
+					float: left;
+					text-align: left;
 					width: 100%;
-					padding: 1rem 0;
+				}
 
-					.right {
-						display: inline-block;
-						float: right;
-						text-align: right;
-
-						@media screen and (max-width: 50rem) {
-							float: left;
-							text-align: left;
-						}
-
-						.location {
-							font-weight: bold;
-							width: 100%;
-						}
-						.date {
-							width: 100%;
-						}
-					}
+				.location {
+					font-weight: bold;
+				}
+				.date {
+					font-size: 0.9rem;
 				}
 			}
 		}
 
 		.experience {
-			.exp {
+			display: inline-block;
+			width: 100%;
+
+			.info {
 				display: inline-block;
 				width: 100%;
+				padding-top: 1rem;
 
-				.info {
+				.left {
 					display: inline-block;
-					width: 100%;
-					padding: 1rem 0;
+					float: left;
 
-					.title {
-						width: 100%;
-					}
-					.employer {
-						width: 100%;
+					h6 {
+						display: inline-block;
 						font-weight: bold;
 					}
+				}
+				.right {
+					display: inline-block;
+					float: right;
+					text-align: right;
 
-					.right {
-						display: inline-block;
-						float: right;
-						text-align: right;
+					@media screen and (max-width: 50rem) {
+						float: left;
+						text-align: left;
+						width: 100%;
+					}
 
-						@media screen and (max-width: 50rem) {
-							float: left;
-							text-align: left;
-						}
-
-						.location {
-							font-weight: bold;
-							width: 100%;
-						}
-
-						.date {
-							width: 100%;
-						}
+					.location {
+						font-weight: bold;
+					}
+					.date {
+						font-size: 0.9rem;
 					}
 				}
+			}
+			.content {
+				padding-top: 1rem;
 			}
 		}
 
 		.skills {
-			h5 {
-				border-bottom: 1px solid black;
-				font-weight: 400;		
-			}
+			.content {
+				padding-top: 2rem;
 
-			ul {
-				&.short {
-					float: left;
-					width: 10rem;
+				h5 {
+					border-bottom: 1px solid black;
+					font-weight: 400;		
+				}
+				ul {
+					&.short {
+						float: left;
+						width: 10rem;
+					}
 				}
 			}
 		}

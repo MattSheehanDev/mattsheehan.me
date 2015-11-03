@@ -93,9 +93,13 @@ body {
 	text-align: center;
 	padding-top: 2rem;
 
-	max-width: 40rem;
+	max-width: 50rem;
 	width: 100%;
-	overflow-x: hidden;
+	overflow-x: visible;
+
+	#utilities > .screenSmallerThan(50rem, {
+		padding-top: 0.5rem;
+	});
 }
 
 .container {
