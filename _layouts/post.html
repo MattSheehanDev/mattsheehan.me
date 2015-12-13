@@ -7,37 +7,36 @@ layout: default
 {% endif  %}
 
 <div class="post">
-    <h3 class="title">{{ page.title }}</h3>
+    <h2 class="title">{{ page.title }}</h2>
     <span class="date">{{ page.date | date: "%A, %B %-d, %Y" }}</span>
 
     <div class="content">
         {{ content }}
     </div>
 
-    <div class="row">
-        <hr />
+    <div class="post-nav">
+      {% if page.previous %}
+        <div class="post-nav__previous">
+          <div>Previous</div>
+          <a href="{{ page.previous.url }}">{{ page.previous.title }}</a>
+        </div>
+      {% endif %}
+      {% if page.next %}
+        <div class="post-nav__next">
+          <div>Next</div>
+          <a href="{{ page.next.url }}">{{ page.next.title }}</a>
+        </div>
+      {% endif %}
     </div>
+</div>
 
-    <div class="author row">
-        <span>Written and Published by {{ site.author }}</span>
-    </div>
+
+<footer class="post-footer">
+  <div class="post-footer__content">
+    <h6 class="author">Written and Published by {{ site.author }}</h6>
     <div class="quip row">
         <div>Capitalist, amateur coffee drinker, and tasteless programmer.</div>
         <div>Warning: I'm clueless about what I talk about.</div>
     </div>
-
-    <div class="post-nav row">
-        <div class="page-nav">
-            <div class="prev-page">
-                {% if page.previous %}
-                    <a href="{{ page.previous.url }}" class="button circle left-arrow"></a>
-                {% endif %}
-            </div>
-            <div class="next-page">
-                {% if page.next %}
-                    <a href="{{ page.next.url }}" class="button circle right-arrow"></a>
-                {% endif %}
-            </div>
-        </div>
-    </div>
-</div>
+  </div>
+</footer>

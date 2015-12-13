@@ -1,5 +1,5 @@
 ---
-title:  "'Quod Scripsi, Scripsi'"
+title:  "Quod Scripsi, Scripsi"
 date:   0001-01-01 0:00:00
 author: Matt Sheehan
 ---

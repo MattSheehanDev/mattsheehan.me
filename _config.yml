@@ -14,7 +14,7 @@ permalink: /archives/:title/
 # pager_path: "journal/page"
 # pager_category: "journal"
 gems: [jekyll-paginate]
-paginate: 5
+paginate: 10
 paginate_path: "journal/page:num"
 
 # domain: mattsheehan.me

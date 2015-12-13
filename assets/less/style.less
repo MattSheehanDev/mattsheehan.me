@@ -33,14 +33,14 @@ p {
 	margin: 0;
 }
 
-hr 
+hr
 {
 	border: 0;
 	border-top: 1px solid #ccc;
 	margin: auto;
 	width: 3rem;
 
-	@media sreen and (min-width: 50rem) 
+	@media sreen and (min-width: 50rem)
 	{
 		margin: 0.5rem auto;
 	}
@@ -52,29 +52,45 @@ sup {
 
 img {
     display: block;
-    width: 120%;
-    margin-left: -10%;
+		width: 100%;
+    // width: 120%;
+    // margin-left: -10%;
     padding: 1rem 0;
 
-    #utilities > .screenSmallerThan(50rem, {
-    	width: 100%;
-    	margin-left: 0;
-    });
+    // #utilities > .screenSmallerThan(50rem, {
+    // 	// width: 100%;
+    // 	// margin-left: 0;
+    // });
+}
+
+.video-wrapper {
+	position: relative;
+	margin: 1.5em 0;
+	width: 100%;
+	padding-top: 56%;
 }
 iframe {
-    display: block;
-    width: 120%;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-	margin-left: -10%;
-	padding: 0 5%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+
+    // display: block;
+		// width: 100%;
+    // // width: 120%;
+    // // margin-top: 1rem;
+    // // margin-bottom: 1rem;
+		// // margin-left: -10%;
+		// padding: 0 5%;
 
     #utilities > .screenSmallerThan(50rem, {
-    	width: 100%;
-    	margin-left: 0;
+    	// width: 100%;
+    	// margin-left: 0;
     	padding: 0;
     });
 }
+
 canvas {
     display: block;
     width: 120%;
@@ -85,7 +101,7 @@ canvas {
     	margin-left: 0;
     });
 }
-blockquote 
+blockquote
 {
 	font-family: "aleo", "Georgia", serif;
 	background: @tertiary-dark;
@@ -104,7 +120,7 @@ blockquote
 		font-size: 250%;
 		line-height: 0.1rem;
 		margin-right:  0.25rem;
-		vertical-align: -0.4rem;    	
+		vertical-align: -0.4rem;
 	}
 
 	p {

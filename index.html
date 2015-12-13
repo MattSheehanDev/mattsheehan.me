@@ -3,38 +3,42 @@ layout: default
 title: Matt Sheehan
 ---
 
-<div class="container journal">
-     <div class="post-list">
-        {% if paginator.page == 1 %}
-	     {% for pinned in site.pinned %}
-	     	{% include snippets/pinned_snippet.html %}
-	     {% endfor %}	  
-	  {% endif %}
+<div class="journal">
+  <h6 class="journal__recent">Recent Articles</h6>
 
-	  {% for post in paginator.posts %}
-	     {% include snippets/post_snippet.html post=post %}
-	  {% endfor %}
+  <ul class="journal__post-list">
+    {% if paginator.page == 1 %}
+    <ul>
+      {% for pinned in site.pinned %}
+        {% include snippets/pinned_snippet.html %}
+        {% endfor %}
+    </ul>
+    {% endif %}
+    
+    {% for post in paginator.posts %}
+      {% include snippets/post_snippet.html post=post %}
+    {% endfor %}
+  </ul>
+
+  <div class="page-nav">
+    <div class="prev-page">
+      {% if paginator.previous_page %}
+
+      <a href="{{ paginator.previous_page_path }}" class="button circle left-arrow"></a>
+
+      {% endif %}
     </div>
-    <div class="journal-nav">
-        <div class="page-nav">
-            <div class="prev-page">
-                {% if paginator.previous_page %}
+    <div class="next-page">
+      {% if paginator.next_page %}
 
-                   <a href="{{ paginator.previous_page_path }}" class="button circle left-arrow"></a>
+      <a href="{{ paginator.next_page_path }}" class="button circle right-arrow"></a>
 
-                {% endif %}
-            </div>
-            <div class="next-page">
-                {% if paginator.next_page %}
-
-                   <a href="{{ paginator.next_page_path }}" class="button circle right-arrow"></a>
-
-                {% endif %}
-            </div>
-        </div>
-        <div class="archive-page">
-            <span>Continue reading a complete list of posts in the</span>
-            <a href="{{ site.url }}/archives">archives</a>
-        </div>
+      {% endif %}
     </div>
+  </div>
+
+  <div class="archive-page">
+    <span>Continue reading a complete list of posts in the</span>
+    <a href="{{ site.url }}/archives">archives</a>
+  </div>
 </div>

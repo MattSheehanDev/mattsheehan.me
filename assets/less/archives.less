@@ -2,12 +2,14 @@
 
 
 .archives {
-	display: inline-block;
-	float: left;
-	width: 30rem;
-	padding: 0 1rem;
+	margin: 0 auto;
+	max-width: 42rem;
 	text-align: left;
 	overflow-x: visible;
+
+	h1 {
+		font-weight: 600;
+	}
 
 	hr {
 		margin-top: 1rem;
@@ -18,21 +20,21 @@
 		li {
 			padding-bottom: 0.5rem;
 
+			a {
+					font-family: "Noto Serif", "Georgia", serif;
+			}
 			div {
-				font-family: "aleo", "Georgia", serif;
-				font-style: italic;
+				font-family: "Noto Serif", "Georgia", serif;
+				color: hsl(0, 0%, 56%);
 				font-size: 0.9rem;
 				font-weight: 400;
-				letter-spacing: 1px;
-				text-align: left;
-				color: hsl(0, 0%, 56%);
 			}
 		}
 	}
 
-	.megaman 
+	.megaman
 	{
-		margin: auto;
+		margin: 1rem auto;
 		background: url(../images/megamanwalking.png) no-repeat;
 		width: 100px;
 		height: 205px;

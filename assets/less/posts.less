@@ -3,12 +3,10 @@
 
 .post
 {
-	display: inline-block;
-	float: left;
-	width: 30rem;
-	padding: 0 1rem;
-	text-align: justify;
-	overflow-x: visible;
+	display: block;
+	margin: 0 auto;
+	max-width: 42em;
+	width: 100%;
 
 
 	#utilities > .screenSmallerThan(50rem, {
@@ -20,76 +18,83 @@
 
 	.title {
 		text-align: left;
-		font-size: 1.65rem;
-		text-decoration: underline;
 	}
 
 	.date {
-		font-family: "aleo", "Georgia", serif;
-		font-style: italic;
+		color: hsl(0, 0%, 56%);
 		font-size: 0.9rem;
 		font-weight: 400;
-		letter-spacing: 1px;
 		text-align: left;
-		color: hsl(0, 0%, 56%);
 	}
 
 	.content {
 		padding-top: 1rem;
 		text-align: justify;
-
-		#utilities > .screenSmallerThan(50rem, {
-			padding: 0 1rem;
-		});
 	}
-
-
-	.author {
-		text-align: center;
-		padding: 0;
-		margin: 0;
-	}
-
-	.quip {
-		text-align: center;
-		color: hsla(357, 30%, 56%, 1);
-	}
-
+	
 
 	.post-nav {
-		display: block;
-		text-align: center;
-		padding-top: 1rem 0;
+		display: flex;
+		align-items: stretch;
 		width: 100%;
+		margin-top: 3em;
+		font-size: 0.8em;
 
-		.page-nav {
-			display: inline-table;
-			margin: auto;
+		#utilities > .screenSmallerThan(30rem, {
+			flex-direction: column;
+		});
 
-			.prev-page {
-				display: table-cell;
-				vertical-align: middle;
-				padding: 0 0.5rem;
+		.post-nav__previous {
+			min-width: 50%;
+			margin-bottom: 0.5em;
+
+			> div {
+				color: #AAA;
 			}
+			a {
+				font-weight: 600;
+				font-size: 1rem;
+				letter-spacing: -0.04em;
+			}
+		}
+		.post-nav__next {
+			min-width: 50%;
+			margin-bottom: 0.5em;
 
-			.next-page {
-				display: table-cell;
-				vertical-align: middle;
-				padding: 0 0.5rem;
+			> div {
+				color: #AAA;
+			}
+			a {
+				font-weight: 600;
+				font-size: 1rem;
+				letter-spacing: -0.04em;
 			}
 		}
 	}
 
 }
 
+.post-footer {
+	border-top: 1px solid #EEE;
+	margin: auto;
+	margin-top: 1rem;
+	max-width: 42em;
+	width: 100%;
 
-// .post-img {
-// 	display: inline-block;
-// 	width: 100%;
-// 	// border-top: 1px dotted black;
-// 	// border-bottom: 1px dotted black;
+	.post-footer__content {
+		display: inline-block;
+		margin: 1.5em 0;
+		width: 100%;
 
-// 	// img {
-// 	// 	padding: 0.25;
-// 	// }
-// }
+		.author {
+			text-align: center;
+			padding: 0;
+			margin: 0;
+		}
+
+		.quip {
+			text-align: center;
+			color: #AAA;
+		}
+	}
+}

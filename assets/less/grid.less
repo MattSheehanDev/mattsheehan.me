@@ -8,7 +8,9 @@
 
 
 html {
-	font: 15px/24px "lato", Georgia, serif; // "Open Sans", sans-serif;
+	// font: 15px/24px "lato", Georgia, serif; // "Open Sans", sans-serif;
+	// font: 1.0625em/1.47 "Georgia",serif;
+	font-family: sans-serif;
 	// line-height: 1.618;
 	// font-weight: 200;
 	text-rendering: optimizeLegibility;
@@ -44,15 +46,16 @@ html {
 	// @media screen and (min-width: 160rem)
 	// {
 	// 	font-size: 137.5%;
-	// } 
+	// }
 
 }
 
 
 body {
 	// display: inline-block;
+	font: 1.0625em/1.47 "Georgia",serif;
 	background-color: #fff;
-	color: #444;
+	// color: #444;
 	// color: #000;
 	// font-size: 1rem;
 	padding: 0;
@@ -68,11 +71,12 @@ body {
 	@height: @size * @golden;
 
 	h@{i} {
-	    font-family: "aleo", "Georgia", serif;
+		font-family: "Open Sans","Helvetica Neue",sans-serif;
 		font-size: ~"@{size}rem";
 		line-height: ~"@{height}rem";
+		letter-spacing: -0.04em;
 
-		font-weight: 400;
+		font-weight: 600;
 		margin: 0;
 		padding: 0;
 
@@ -99,117 +103,117 @@ body {
 
 	#utilities > .screenSmallerThan(50rem, {
 		padding-top: 0.5rem;
-	});
-}
-
-.container {
-	display: inline-block;
-	margin: 0 auto;
-	width: 100%;
-}
-
-.row 
-{
-	display: inline-block;
-	padding: .5rem 0;
-	width: 100%;
-}
-
-.column {
-	float: left;
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	padding: 0 0.25rem;
-
-	@media screen and (min-width: 50rem) {
-		padding: 0 1rem;
-
-		&.full {
-			width: 100%;
-		}
-
-		&.three-fourths {
-			width: 74.95%;
-		}
-
-		&.two-thirds 
-		{
-			width: 66.7%;
-		}
-
-		&.half 
-		{
-			width: 50%;
-		}
-
-		&.one-third 
-		{
-			width: 33.3%;
-		}
-
-		&.one-fourth 
-		{
-			width: 24.95%;
-		}
-
-		&.opposite 
-		{
-			float: right;
-		}
+		});
 	}
-}
 
+	.container {
+		display: inline-block;
+		margin: 0 auto;
+		width: 100%;
+	}
 
-.clearfix:before, .clearfix:after
-{
-	content: " ";
-	display: table;
-}
-
-.clearfix:after 
-{
-	clear: both;
-}
-
-.clearfix 
-{
-	*zoom: 1;
-}
-
-
-
-.box
-{
-	border: .1rem dashed #fff;
-}
-
-
-footer
-{
-	padding: 3rem;
-}
-
-.mobile 
-{
-	margin: 0 auto;
-	max-width: 150px;
-
-	@media (min-width: 50rem) 
+	.row
 	{
-		max-width: 250px;
+		display: inline-block;
+		padding: .5rem 0;
+		width: 100%;
 	}
-}
 
-section 
-{
-	display: inline-block;
-	padding-top: 1rem;
-	padding-bottom: 1rem;
-	width: 100%;
+	.column {
+		float: left;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		padding: 0 0.25rem;
 
-	@media screen and (max-width: 50rem) 
+		@media screen and (min-width: 50rem) {
+			padding: 0 1rem;
+
+			&.full {
+				width: 100%;
+			}
+
+			&.three-fourths {
+				width: 74.95%;
+			}
+
+			&.two-thirds
+			{
+				width: 66.7%;
+			}
+
+			&.half
+			{
+				width: 50%;
+			}
+
+			&.one-third
+			{
+				width: 33.3%;
+			}
+
+			&.one-fourth
+			{
+				width: 24.95%;
+			}
+
+			&.opposite
+			{
+				float: right;
+			}
+		}
+	}
+
+
+	.clearfix:before, .clearfix:after
 	{
-		padding: 0.5rem 0;
+		content: " ";
+		display: table;
 	}
-}
+
+	.clearfix:after
+	{
+		clear: both;
+	}
+
+	.clearfix
+	{
+		*zoom: 1;
+	}
+
+
+
+	.box
+	{
+		border: .1rem dashed #fff;
+	}
+
+	// 
+	// footer
+	// {
+	// 	padding: 3rem;
+	// }
+
+	.mobile
+	{
+		margin: 0 auto;
+		max-width: 150px;
+
+		@media (min-width: 50rem)
+		{
+			max-width: 250px;
+		}
+	}
+
+	section
+	{
+		display: inline-block;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		width: 100%;
+
+		@media screen and (max-width: 50rem)
+		{
+			padding: 0.5rem 0;
+		}
+	}

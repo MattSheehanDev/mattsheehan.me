@@ -4,11 +4,13 @@ title: Archives
 
 
 <div class="archives">
-    <span class="count">The archive currently has <b>{{ site.posts | size }}</b> items</span>
+    <!-- <span class="count">The archive currently has <b>{{ site.posts | size }}</b> items</span> -->
+    <h1>Archive</h1>
     <hr />
     <ul>
         {% for post in site.posts %}
             <li>
+              {{ post.date.year }}
                 <a href="{{ post.url }}">{{ post.title }}</a>
                 <div>{{ post.date | date: "%A, %B %-d, %Y" }}</div>
             </li>

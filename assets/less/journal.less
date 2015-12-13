@@ -1,99 +1,131 @@
 @import "utilities";
 
-.journal {
-	display: inline-block;
-	float: left;
-	width: 30rem;
-	padding: 0 1rem;
-	overflow-x: visible;
+.site-content {
+	display: flex;
+	flex-direction: column;
+	font-family: "Noto Serif", "Georgia", serif;
 
-	#utilities > .screenSmallerThan(50rem, {
-		float: none;
-		display: block;
-		margin: auto;
-		width: 100%;
+	margin-left: 16em;
+	padding: 6em 5em 4em;
+
+	#utilities > .screenSmallerThan(85rem, {
+		margin-left: 12em;
+		padding: 5em 3em 3em;
 	});
 
-	.journal-nav {
-		display: block;
-		width: 100%;
-		padding: 1rem 0;
+	#utilities > .screenSmallerThan(50rem, {
+		margin-left: 0;
+		padding: 2em;
+	});
+
+	#utilities > .screenSmallerThan(30rem, {
+		margin-left: 0;
+		padding: 1.5em 1em 1em;
+	});
+}
+
+.journal {
+	display: block;
+	overflow-x: visible;
+	max-width: 42em;
+	margin: 0 auto;
+
+		.journal__recent {
+			color: #AAA;
+			font-size: 0.8em;
+			font-weight: 600;
+			letter-spacing: 0.15em;
+			margin: 0px;
+			text-transform: uppercase;
+			word-spacing: 0.5em;
+			line-height: 1em;
+		}
+
+		#utilities > .screenSmallerThan(50rem, {
+			max-width: none;
+			width: 100%;
+
+			.journal__recent {
+				text-align: center;
+			}
+		});
+
+		.journal__post-list {
+			margin-top: 1.5em;
+		}
+
 
 		.page-nav {
-			display: inline-table;
-			margin: auto;
+			display: flex;
+			justify-content: center;
+			margin-top: 1rem;
 
-			.prev-page {
-				display: table-cell;
-				vertical-align: middle;
+			.prev-page, .next-page {
 				padding: 0 0.5rem;
-			}
-
-			.next-page {
-				display: table-cell;
-				vertical-align: middle;
-				padding: 0 0.5rem
 			}
 		}
 
 		.archive-page {
-			display: inline-block;
+			font-family: "Open Sans","Helvetica Neue",sans-serif;
+			text-align: center;
+			font-size: 0.9rem;
 			width: 100%;
 			padding: 1rem 0;
+
+			a {
+				font-weight: bold;
+			}
 		}
 	}
 
-	.post-snippet, .pinned-snippet {
+
+	.pinned-snippet {
 		display: block;
-		width: 100%;
-		text-align: left;
+		border-top: 1px solid #EEE;
 
-		.title {
-			font-size: 1.65rem;
+		.pinned__content {
+			padding: 1.5rem 0;
 
-			a {
-				color: #444;
+			.title {
+				font-weight: 600;
+			}
+			.content {
+				font-size: 0.9rem;
+			}
+		}
+	}
 
-				&:hover {
-					color: @compliment1;
-				}
+
+	.post-snippet {
+		display: block;
+		border-top: 1px solid #EEE;
+
+		&:hover {
+			.title {
+				color: green;
 			}
 		}
 
-		.date {
-			font-family: "aleo", "Georgia", serif;
-			font-style: italic;
-			letter-spacing: 1px;
-			text-align: left;
-			color: hsl(0, 0%, 56%);
-			font-size: 0.9rem;
-			font-weight: 400;
+		a {
+			display: inline-block;
+			padding: 1.5rem 0;
+			color: @tertiary-dark;
+
+			.title {
+				font-weight: 600;
+			}
+
+			.date {
+				color: hsl(0, 0%, 56%);
+				font-size: 0.9rem;
+				font-weight: 400;
+			}
+
+			.content {
+				font-family: "Open Sans","Helvetica Neue",sans-serif;
+				font-size: 0.9rem;
+				color: #AAA;
+				width: 100%;
+			}
 		}
-
-		.content {
-		    display: inline-block;
-		    text-align: justify;
-		    width: 100%;
-		}
 	}
-
-	.post-snippet {
-		border-bottom: 1px dashed @compliment1;
-		padding-bottom: 1rem;
-		margin-bottom: 1rem;
-
-		.title {
-			text-decoration: underline;
-	    }
-	    .content {
-	    	padding-top: 1rem;
-	    }
-	}
-
-	.pinned-snippet {
-		background-color: @tertiary-dark; // hsl(0, 0%, 30%);
-		color: white;
-		padding: 0 0 0.5rem 0.5rem;
-		margin-bottom: 2rem;
-	}
-}
