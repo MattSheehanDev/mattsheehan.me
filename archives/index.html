@@ -3,7 +3,7 @@ title: Archives
 ---
 
 
-<div class="archives">
+<main class="archives" role="main">
     <!-- <span class="count">The archive currently has <b>{{ site.posts | size }}</b> items</span> -->
     <h1>Archive</h1>
     <hr />
@@ -11,10 +11,12 @@ title: Archives
         {% for post in site.posts %}
             <li>
               {{ post.date.year }}
-                <a href="{{ post.url }}">{{ post.title }}</a>
-                <div>{{ post.date | date: "%A, %B %-d, %Y" }}</div>
+                <a href="{{ post.url }}">
+                  <h6>{{ post.title }}</h6>
+                  <div>{{ post.date | date: "%A, %B %-d, %Y" }}</div>
+                </a>
             </li>
         {% endfor %}
     </ul>
     <div class="megaman animated"></div>
-</div>
+</main>

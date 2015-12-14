@@ -8,33 +8,55 @@
     text-decoration: none;
 
     &.rectangle {
-        #utilities > .border-radius(3px);
-        background-color: @tertiary1;
+        background-color: @primary2;
         padding: 0.7rem 1.5rem;
         white-space: nowrap;
         text-decoration: none;
 
+        #utilities > .border-radius(3px);
         #utilities > .transition(background, ease, 0.2s);
 
         &:hover {
-            background: @tertiary2;
+            background: @primary1;
         }
     }
 
 
     &.circle
     {
-        #utilities > .border-radius(50%);
-        border: 3px solid @tertiary1;
+        border: 3px solid @primary2;
         height: 3rem;
         width: 3rem;
         line-height: 1.5rem;
 
-        #utilities > .transition(border-color, ease, 0.5s);
+        #utilities > .border-radius(50%);
+        #utilities > .transition(border-color, cubic-bezier(0.4, 0, 0.2, 1), 0.2s);
 
         &:hover {
-            border-color: @tertiary2;
+            border-color: @primary1;
         }
     }
 
+}
+
+
+
+.right-arrow
+{
+    background: url(../images/arrow-green.svg) no-repeat center center;
+    background-size: contain;
+    width: 2.5rem;
+    height: 2.5rem;
+    text-indent: -9999px;
+    #utilities > .transform(scale(-1, 1));
+}
+
+
+.left-arrow
+{
+    background: url(../images/arrow-green.svg) no-repeat center center;
+    background-size: contain;
+    width: 2.5rem;
+    height: 2.5rem;
+    text-indent: -9999px;
 }

@@ -1,14 +1,9 @@
-@primary1: #229088;
-@primary2: #63BFB8;
-@compliment1: hsla(40, 81%, 57%, 1);
-@compliment2: #FFD584;
-@compliment-light: hsl(40, 81%, 95%);
-
-@tertiary1: hsla(357, 78%, 56%, 1);
-@tertiary2: #FB5C64;
-@tertiary-light: hsl(357, 78%, 95%);
-@tertiary-dark: hsl(357, 10%, 20%);
-@tertiary-grey: hsl(357, 10%, 40%);
+@primary1: hsl(145, 63%, 42%);
+@primary2: hsl(145, 63%, 62%); //#5AD790;
+@primary-light: hsl(145, 5%, 95%);
+@grey: #999;
+@grey-light: #EEE;
+@grey-off: #F4F2F0;
 
 
 #utilities {
@@ -29,7 +24,7 @@
 		-webkit-border-radius: @arguments;
 		-moz-border-radius: @arguments;
 		-o-border-radius: @arguments;
-		border-radius: @arguments;		
+		border-radius: @arguments;
 	}
 	.border-radius(@tl, @tr, @br, @bl) {
 		-webkit-border-radius: @arguments;
@@ -50,7 +45,7 @@
 		-webkit-box-shadow: @arguments;
 		-moz-box-shadow: @arguments;
 		-o-box-shadow: @arguments;
-		box-shadow: @arguments;		
+		box-shadow: @arguments;
 	}
 
 	.box-shadow(@x, @y, @blur, @spread, @color) {
@@ -105,7 +100,7 @@
 }
 
 
-// width: screen width 
+// width: screen width
 // rules: anon ruleset, ex: { color: red; }
 .screenSmallerThan(@width, @rules) {
 	@media screen and (max-width: @width) {

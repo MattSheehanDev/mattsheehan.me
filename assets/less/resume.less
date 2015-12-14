@@ -6,61 +6,50 @@
 	.download {
 		display: block;
 		padding-bottom: 1rem;
+		text-align: center;
+
+		font-family: "Open Sans","Helvetica Neue",sans-serif;
+		font-size: 0.8em;
+		font-weight: 600;
+		letter-spacing: 0.15em;
+		margin: 0px;
+		text-transform: uppercase;
+		word-spacing: 0.5em;
+		line-height: 1em;
 	}
 
-	// span {
-	// 	display: block;
-	// }
-
-	// .download {
-	// 	display: inline-block;
-	// 	width: 100%;
-	// 	padding-bottom: 1rem;
-
-	// 	a {
-	// 		text-align: center;
-	// 	}
-	// }
-
 	.paper {
-	    font-family: "Calibri", "Georgia";
+		font-family: "Noto Serif", "Georgia", serif;
 		display: inline-block;
 		text-align: left;
 		border: 1px solid #000;
-		#utilities > .box-shadow(-15px, 15px, 15px, 10px, #ddd);
-
-		h4, h5, h6 {
-		    font-family: "Georgia", serif;
-		    font-variant: normal;
-		    text-transform: none;
-		}
+		padding: 0 1em;
+		#utilities > .box-shadow(10px, 10px, 15px, 5px, #EEE);
 
 		ul {
-			list-style-type: square;
 			list-style-position: inside;
 		}
 
 		.section {
 			display: inline-block;
-			padding-bottom: 2rem;
 
 			.title {
 				border-bottom: 1px solid black;
-				font-weight: 400;
 			}
 		}
 
 		.header {
 			margin-top: 0.5rem;
 			text-align: center;
+			font-size: 0.9em;
+		}
 
-			.info {
-				font-size: 0.9rem;
-			}
+		.name {
+			text-align: center;
 		}
 
 		.education {
-			display: inline-block;
+			display: block;
 			width: 100%;
 
 			.info {
@@ -79,11 +68,11 @@
 				float: right;
 				text-align: right;
 
-				@media screen and (max-width: 50rem) {
+				#utilities > .screenSmallerThan(50rem, {
 					float: left;
 					text-align: left;
 					width: 100%;
-				}
+				});
 
 				.location {
 					font-weight: bold;
@@ -92,10 +81,14 @@
 					font-size: 0.9rem;
 				}
 			}
+
+			ul {
+				margin-bottom: 1em;
+			}
 		}
 
 		.experience {
-			display: inline-block;
+			display: block;
 			width: 100%;
 
 			.info {
@@ -137,12 +130,16 @@
 		}
 
 		.skills {
+			display: block;
+			width: 100%;
+
 			.content {
-				padding-top: 2rem;
+				display: inline-block;
+				width: 100%;
+				padding-top: 1em;
 
 				h5 {
 					border-bottom: 1px solid black;
-					font-weight: 400;		
 				}
 				ul {
 					&.short {

@@ -4,7 +4,7 @@ title: About
 
 {::options parse_block_html="true" /}
 
-<div class="about">
+<div class="about" role="main">
 
 #### Hi ####
 

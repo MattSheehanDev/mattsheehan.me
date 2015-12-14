@@ -1,10 +1,10 @@
 @import "utilities";
 
-* {
-	&::selection {
-		background-color: @compliment2;
-	}
-}
+// * {
+// 	&::selection {
+// 		background-color: @compliment2;
+// 	}
+// }
 
 .offset {
 	width: 10rem;
@@ -16,14 +16,23 @@
 	})
 }
 
-a {
-	color: @compliment1;
-	text-decoration: none;
+section
+{
+	display: inline-block;
+	padding: 1em 0;
+	width: 100%;
 
-	#utilities > .transition(color, ease, 0.2s);
+	#utilities > .screenSmallerThan(50rem, {
+		padding: 0.5em 0;
+	});
+}
+
+
+a {
+	text-decoration: none;
+	color:black;
 
 	&:hover, &::selection {
-		color: @tertiary1;
 		text-shadow: none;
 	}
 }
@@ -53,14 +62,7 @@ sup {
 img {
     display: block;
 		width: 100%;
-    // width: 120%;
-    // margin-left: -10%;
     padding: 1rem 0;
-
-    // #utilities > .screenSmallerThan(50rem, {
-    // 	// width: 100%;
-    // 	// margin-left: 0;
-    // });
 }
 
 .video-wrapper {
@@ -68,27 +70,18 @@ img {
 	margin: 1.5em 0;
 	width: 100%;
 	padding-top: 56%;
-}
-iframe {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
 
-    // display: block;
-		// width: 100%;
-    // // width: 120%;
-    // // margin-top: 1rem;
-    // // margin-bottom: 1rem;
-		// // margin-left: -10%;
-		// padding: 0 5%;
+	iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
 
-    #utilities > .screenSmallerThan(50rem, {
-    	// width: 100%;
-    	// margin-left: 0;
-    	padding: 0;
-    });
+	    #utilities > .screenSmallerThan(50rem, {
+	    	padding: 0;
+	    });
+	}
 }
 
 canvas {
@@ -103,15 +96,13 @@ canvas {
 }
 blockquote
 {
-	font-family: "aleo", "Georgia", serif;
-	background: @tertiary-dark;
-	color: white;
-	border-left: 10px solid @tertiary-grey;
+	background-color: #FFF;
+	color: #000;
+	border-left: 5px solid @grey-light;
 	font-style: italic;
 	padding: 1rem;
 	margin: 0;
 	margin-bottom: 0.5rem;
-	margin-left: -10px;
 	quotes: "\201C""\201D""\2018""\2019";
 
 	&:before {
@@ -138,13 +129,12 @@ blockquote
 	}
 }
 pre {
-	background-color: @tertiary-dark;
-	color: white;
+	background-color: @grey-off;
+	color: #000;
 	overflow-x: auto;
 	overflow-y: hidden;
 	padding: 1rem 0.5rem;
-	width: 120%;
-	margin-left: -10%;
+	width: 100%;
 
 	code {
 		padding: 0;
@@ -158,10 +148,12 @@ pre {
 }
 
 code, .highlight {
-	background: @tertiary-light;
-	padding: 0 0.25rem;
-	text-transform: lowercase;
-	font-variant: small-caps;
+	background: @grey-light;
+	font-family: monospace;
+	font-weight: 600;
+	// padding: 0 0.25rem;
+	// text-transform: lowercase;
+	// font-variant: small-caps;
 }
 
 
@@ -175,7 +167,6 @@ ul
 ol {
 	margin: 0;
 	padding: 0;
-	// text-align: left;
 }
 
 
@@ -184,14 +175,8 @@ small {
 }
 
 
-// .golden-width {
-// 	max-width: 555px;
-// 	width: 100%;
-// 	display: inline-block;
-// }
-
 .soliloquy {
-	background: @compliment-light;
+	background: @primary-light;
 	padding: 0.5rem 1rem;
 	font-size: 0.9rem;
 }
@@ -214,7 +199,7 @@ small {
 }
 
 .footnotes {
-	border-top: 1px dashed @compliment1;
+	border-top: 1px dashed @grey;
 	padding-top: 1rem;
 	font-size: 0.9rem;
 	margin-top: 1rem;

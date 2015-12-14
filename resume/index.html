@@ -1,76 +1,74 @@
 ---
-layout: resume
+layout: default
 ---
 
-<div class="resume">
+<main class="resume" role="main">
 	<a class="download" href="/resume/Matthew-Sheehan.pdf" target="_blank">Download as PDF</a>
 
-    <div class="paper">
-    	<div class="column full">
-	    	<div class="header">
-	    		<div class="info">
-		    		<div>{{ site.mailing_address }}</div>
-			 		<div class="detail telephone">{{ site.phone }}</div>
-			 		<div>{{ site.email }}</div>
-		 		</div>
-	    		<h4><a href="/">{{ site.name }}</a></h4>
-	    	</div>
+  <div class="paper">
+    	<section class="header">
+				<div>{{ site.mailing_address }}</div>
+				<div>{{ site.phone }}</div>
+				<div>{{ site.email }}</div>
+    	</section>
 
-	      	<div class="objectives section">
-	      		<h5 class="title">Objective</h5>
-	      		<span class="row">
-		   			Fulfill a position where creative programming is inspired, learning and research is encouraged, and hard work is valued.
-		   		</span>
-	      	</div>
+  		<h4 class="name"><a href="/">{{ site.name }}</a></h4>
 
-	      	<div class="education section">
-	      		<h5 class="title">Education</h5>
-		   		{% for post in site.resume %}
-		      		{% if post.categories contains 'education' %}
-		      			<div class="info">
-		   					<h6>{{ post.school }}</h6>
-		   					<div class="right">
-			     				<div class="location">{{ post.location }}</div>
-			     				<div class="date">{{ post.end_date }}</div>
-							</div>
+    	<section class="section">
+    		<h5 class="title">Objective</h5>
+    		<span class="row">
+   				Fulfill a position where creative programming is inspired, learning and research is encouraged, and hard work is valued.
+   			</span>
+    	</section>
+
+    	<section class="education section">
+    		<h5 class="title">Education</h5>
+ 				{% for post in site.resume %}
+    			{% if post.categories contains 'education' %}
+    			<div class="info">
+ 						<h6>{{ post.school }}</h6>
+ 						<div class="right">
+     					<div class="location">{{ post.location }}</div>
+     					<div class="date">{{ post.end_date }}</div>
 						</div>
-		      			<div class="column full">
-		      				{{ post.content }}
-		      			</div>
-		    		{% endif %}
+					</div>
+    			<div>
+    				{{ post.content }}
+    			</div>
+  				{% endif %}
 				{% endfor %}
-	      	</div>
+    	</section>
 
-	      	<div class="experience section">
-	      		<h5 class="title">Experience</h5>
-		   		{% for post in site.resume %}
-		      		{% if post.categories contains 'job' %}
-		      			<div class="info">
-			      			<div class="left">
-			     				<h6>{{ post.title }}</h6>
-		     					<div>{{ post.employer }}</div>
-	     					</div>
-		     				<div class="right">
-		     	  				<div class="location">{{ post.location }}</div>
-			  					<div class="date">{{ post.start_date }} - {{ post.end_date }}</div>
-		     				</div>
-	     				</div>
-		   				<div class="content column full">
-		   					{{ post.content }}
-		   				</div>
-		    		{% endif %}
-		 		{% endfor %}
-	     	</div>
+    	<section class="experience section">
+    		<h5 class="title">Experience</h5>
+   			{% for post in site.resume %}
+      		{% if post.categories contains 'job' %}
+      			<div class="info">
+	      			<div class="left">
+	     					<h6>{{ post.title }}</h6>
+     						<div>{{ post.employer }}</div>
+   						</div>
+     					<div class="right">
+     	  				<div class="location">{{ post.location }}</div>
+	  						<div class="date">{{ post.start_date }} - {{ post.end_date }}</div>
+     					</div>
+   					</div>
+   					<div class="content">
+   						{{ post.content }}
+   					</div>
+    			{% endif %}
+ 				{% endfor %}
+   		</section>
 
-	     	<div class="skills section">
-	     		{% for post in site.resume %}
-	     			{% if post.categories contains 'other' %}
-	     	   			<div class="content column full">
-		   					{{ post.content }}
-		   				</div>
+     	<section class="skills section">
+     		{% for post in site.resume %}
+     			{% if post.categories contains 'other' %}
+     	   		<div class="content">
+	   					{{ post.content }}
+	   				</div>
 					{% endif %}
-	     		{% endfor %}
-	     	</div>
-		</div>
-    </div>
-</div>
+     		{% endfor %}
+     	</section>
+  </div>
+
+</main>
