@@ -28,6 +28,11 @@
   font-size: 0.9rem;
   font-weight: 400;
 }
+@media screen and (max-width: 30rem) {
+  .archives ul {
+    list-style-type: none;
+  }
+}
 .archives .megaman {
   margin: 1rem auto;
   background: url(../images/megamanwalking.png) no-repeat;
