@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Note on Jekyll Plugins</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
+    <meta name="description" content="The spiritual home of Matt Sheehan" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+
+    <!-- ms tags -->
+    <meta name="application-name" content="Matt Sheehan" />
+    <meta name="msapplication-config" content="/ietemplates/ieconfig.xml" />
+    <meta name="msapplication-tooltip" content="Matt Sheehan" />
+    <meta name="msapplication-navbutton-color" content="#497bad" />
+
+    <!--ms jump list -->
+    <meta name="msapplication-task" content="name=Home; action-uri=http://www.mattsheehan.me/; icon-uri=http://www.mattsheehan.me/assets/images/favicon.ico" />
+    <meta name="msapplication-task" content="name=Resume; action-uri=http://www.mattsheehan.me/resume/; icon-uri=http://www.mattsheehan.me/assets/images/favicon.ico" />
+    <meta name="msapplication-task" content="name=About; action-uri=http://www.mattsheehan.me/about/; icon-uri=http://www.mattsheehan.me/assets/images/favicon.ico" />
+
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/favicon.ico" />
+
+    <!-- apple tags -->
+    <link rel="apple-touch-icon" href="/assets/images/apple/apple-touch-57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/images/apple/apple-touch-72.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/images/apple/apple-touch-114.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/images/apple/apple-touch-144.png" />
+
+    <!-- site links -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/sheehan.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/fonts.css" />
+</head>
+
+
+<body>
+
+
+	<header class="site-header">
+  <div class="site-header__content">
+    <div class="site-header__signature">
+      <a href="/">
+        <img type="image/svg+xml" src="/assets/images/signature-green.svg" />
+      </a>
+      <span>Software Developer</span>
+    </div>
+    <a class="site-header__portrait" href="/">
+      <div>Hmmm...This image didn't show up?</div>
+    </a>
+
+    <div class="site-header__links">
+      <a href="/" class="link">Journal</a>
+      <a href="/archives/" class="link">Archive</a>
+      <a href="/resume" class="link">Resume</a>
+      <a href="/about" class="link">About</a>
+      <a href="/feeds/rss.xml" class="link">RSS</a>
+    </div>
+  </div>
+</header>
+
+	<div class="site-content">
+		
+
+<main class="post" role="main">
+    <h2 class="title">Note on Jekyll Plugins</h2>
+    <span class="date">Tuesday, April 21, 2015</span>
+
+    <div class="content">
+        <p>There’s not a lot of really good documentation on how to roll your own <a href="http://jekyllrb.com">Jekyll</a> plugins, and most of the plugins that currently exist aren’t very good. That includes a few of my first attempts. Through some trial and error, <a href="http://stackoverflow.com">Stackoverflow</a> searching, and <a href="https://github.com/jekyll/jekyll">source code</a> browsing, I’ve managed to gather a few ‘best practices’. Especially for writing Generators, the most popular and used type.</p>
+
+<p class="soliloquy">There are four types of <a href="http://jekyllrb.com/docs/plugins/">plugins</a>, Generators, Converters, Commands and Tags. This post is about generators<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>.</p>
+
+<p>There are four important things you should know about generators first.</p>
+
+<ul>
+  <li>They are invoked before the site is built, but after it is initialized, and usually directly copied to the _site folder.</li>
+  <li>They must inherit from Jekyll’s base Generator class.</li>
+  <li>Like all other plugins, they belong in your _plugins folder.</li>
+  <li>They’re often written wrong, or at least not optimal, and most of the generators you steal will clutter up your directory.</li>
+</ul>
+
+<p>Generator’s only have one important function to know which is <code class="highlight">generate</code>, and is passed one argument <code>site</code>.</p>
+
+<pre><code>module Jekyll
+    class MyGenerator &lt; Generator
+        def generate(site)
+            # do stuff here
+        end
+    end
+end
+</code></pre>
+
+<p>There’s two important properties of <code>site</code> that you should learn first, those being the array <code>static_files</code> and the hash map <code>pages</code>. If you want your generator to create files that need to be converted, therefore have YAML front matter, you should add your page to <code>site.pages</code>.</p>
+
+<pre><code>module Jekyll
+    class MyGenerator &lt; Generator
+        def generate(site)
+            site.pages &lt;&lt; MyPage.new(site, site.source, 'some/directory', 'file.html')
+        end
+    end
+
+    class MyPage &lt; Page
+        def initialize(site, base, dir, name)
+            super(site, base, dir, name)
+        end
+    end
+end
+</code></pre>
+
+<p>I created a custom page class that inherits from Jekyll’s base <code>Page</code> class. That’s not necessary in this example if you’re not doing any custom page work, but that will be important later.</p>
+
+<p>What I’m more concerned about is <code>static_files</code>. These do not have YAML front matter and do no post-processing. But the problem with static files you see, is if you create static files in your generator and add them to the sites static_files array, those files would first get created in your project directory and then copied into your site’s root folder, which is usually _site.</p>
+
+<p>Do you see the problem? There are duplicate files being created then immediately copied and cluttering up your source directory. Since files created at build shouldn’t be added to source control you then end up ignoring those created directories and files in your .gitignore file. I know this isn’t super performant code, so it’s not really a big deal. But sometimes it’s fun to just be clever and see how much better you can do.</p>
+
+<p>There’s actually another secret that Jekyll hides that let us take advantage of waiting to write our static files until after the site is build and therefore only write it once into your site root folder. The base <code>Page</code> class used above actually has an important method called ‘write’, which is passed a `dest’ string.</p>
+
+<p>When write is invoked is when we should actually be writing all of our static files. So our end code would look something like below.</p>
+
+<pre><code>    class MyGenerator &lt; Generator
+        def generate(site)
+            # add our pages here to static files array
+            site.static_files &lt;&lt; MyPage.new(site, site.source, 'some/directory', 'file.html')
+        end
+    end
+
+    class MyPage &lt; StaticFile
+        def initialize(site, base, dir, name)
+            super(site, base, dir, name)
+        end
+
+        def write(dest)
+            # write is called after _site directory is built
+            # lets write our static files once here
+            path = File.join(dest, base, @dir)
+            FileUtils.mkdir_p(path)
+
+            # build up your file...
+            ...
+
+            # write file
+            File.open(File.join(path, @name), 'w') { |f| f.write(file) }
+        end
+    end
+</code></pre>
+
+<p>The secret is overloading the pages write method, which is usually invoked to just copy static files<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup>.</p>
+
+<p class="soliloquy">You should also notice that MyPage is inheriting from StaticFile this time instead of Page. And remember to put your class’s under the Jekyll namespace.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>This is probably the first post I’ve written in two years with any meat on it. Not good meat mind you, think more pink slime. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p><del>I should link these notes in the post.</del> Done. <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+    </div>
+
+    <div class="post-nav">
+      
+        <div class="post-nav__previous">
+          <div>Previous</div>
+          <a href="/archives/site-updates-again/">Site Updates (again)</a>
+        </div>
+      
+      
+        <div class="post-nav__next">
+          <div>Next</div>
+          <a href="/archives/billy-joel/">Leave a Tender Moment Alone</a>
+        </div>
+      
+    </div>
+</main>
+
+
+<footer class="post-footer">
+  <div class="post-footer__content">
+    <h6 class="author">Written and Published by Matt Sheehan</h6>
+    <div class="quip row">
+        <div>Capitalist, amateur coffee drinker, and tasteless programmer.</div>
+        <div>Warning: I'm clueless about what I talk about.</div>
+    </div>
+  </div>
+</footer>
+
+	</div>
+
+</body>
+
+</html>

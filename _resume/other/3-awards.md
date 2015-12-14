@@ -1,6 +1,0 @@
----
----
-
-##### Notable Awards #####
-
-* Eagle Scout

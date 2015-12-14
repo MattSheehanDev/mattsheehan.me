@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Working with Emacs</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
+    <meta name="description" content="The spiritual home of Matt Sheehan" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+
+    <!-- ms tags -->
+    <meta name="application-name" content="Matt Sheehan" />
+    <meta name="msapplication-config" content="/ietemplates/ieconfig.xml" />
+    <meta name="msapplication-tooltip" content="Matt Sheehan" />
+    <meta name="msapplication-navbutton-color" content="#497bad" />
+
+    <!--ms jump list -->
+    <meta name="msapplication-task" content="name=Home; action-uri=http://www.mattsheehan.me/; icon-uri=http://www.mattsheehan.me/assets/images/favicon.ico" />
+    <meta name="msapplication-task" content="name=Resume; action-uri=http://www.mattsheehan.me/resume/; icon-uri=http://www.mattsheehan.me/assets/images/favicon.ico" />
+    <meta name="msapplication-task" content="name=About; action-uri=http://www.mattsheehan.me/about/; icon-uri=http://www.mattsheehan.me/assets/images/favicon.ico" />
+
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/favicon.ico" />
+
+    <!-- apple tags -->
+    <link rel="apple-touch-icon" href="/assets/images/apple/apple-touch-57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/images/apple/apple-touch-72.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/images/apple/apple-touch-114.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/images/apple/apple-touch-144.png" />
+
+    <!-- site links -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/sheehan.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/fonts.css" />
+</head>
+
+
+<body>
+
+
+	<header class="site-header">
+  <div class="site-header__content">
+    <div class="site-header__signature">
+      <a href="/">
+        <img type="image/svg+xml" src="/assets/images/signature-green.svg" />
+      </a>
+      <span>Software Developer</span>
+    </div>
+    <a class="site-header__portrait" href="/">
+      <div>Hmmm...This image didn't show up?</div>
+    </a>
+
+    <div class="site-header__links">
+      <a href="/" class="link">Journal</a>
+      <a href="/archives/" class="link">Archive</a>
+      <a href="/resume" class="link">Resume</a>
+      <a href="/about" class="link">About</a>
+      <a href="/feeds/rss.xml" class="link">RSS</a>
+    </div>
+  </div>
+</header>
+
+	<div class="site-content">
+		
+
+<main class="post" role="main">
+    <h2 class="title">Working with Emacs</h2>
+    <span class="date">Tuesday, June 30, 2015</span>
+
+    <div class="content">
+        <p>This is mostly for me (as is mostly everything here), but I’ve been working with Emacs for the past couple of weeks and it’s become my primary text-editor for any long, multi-documented, want to move quick task. Actually honestly for the first week I worked really slow within emacs, so slow I closed it down and opened up Notepad. But after a while I figured out some of the keyboard shortcuts, which at first are very unintuitive since I’m use to working within Visual Studio and have a lot of those keyboard shortcuts already memorized and are in my muscle memory. So it was hard to work against my memory and have to exert my mind to remember ‘Wait, how do I copy again? How do I paste?’.</p>
+
+<p>After lots of time with that, I’ve managed to learn some of the really essential shortcuts. I know that there many more useful ones out there, but at least having these few keyboard commands at your fingertips won’t make you want to shout followed by crying.</p>
+
+<p>A few notes first. The <code>Alt-key</code> is abbreviated as <code>M</code><sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup> and the <code>Ctrl-key</code> is abbreviated as <code>C</code>. So C-x C-f means Hold Ctrl then press ‘x’ followed by Holding Ctrl again (or keep holding it from before) and press ‘f’. Dashes ‘-‘ connect key pairs.</p>
+
+<pre><code>[M-w] copy
+[C-y] paste
+[C-n] next line (like the DOWN arrow, think of 'n' as 'next')
+[C-p] previous line (like the UP arrow, think of 'p' as 'previous')
+[C-f] next character (like the right arrow, think of 'f' as 'forward')
+[C-b] previous character (like the left arrow, think of 'b' as 'back')
+[M-x] enter command, such as M-x 'cd' to change directory
+[C-2] open a window at the bottom
+[C-3] open a window to the right
+[C-1] close all windows except your current window
+[C-x C-f] find and open (or create if non-existing) file
+[C-s] search
+[C-x b] change to another open buffer
+[C-x C-b] list all open buffers
+[C-x C-s] save
+[C-x h] select all
+[C-x C-c] quit
+</code></pre>
+
+<p>And those are the main shortcuts that you <strong>need</strong> to know to at least survive.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>I think it has something to do with old keyboard having a ‘meta’ key instead of an ‘alt’ key and the abbreviation has just kind of stuck. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+    </div>
+
+    <div class="post-nav">
+      
+        <div class="post-nav__previous">
+          <div>Previous</div>
+          <a href="/archives/mslisp/">(LOAD 'MSLisp)</a>
+        </div>
+      
+      
+        <div class="post-nav__next">
+          <div>Next</div>
+          <a href="/archives/processing/">Processing and parabola's</a>
+        </div>
+      
+    </div>
+</main>
+
+
+<footer class="post-footer">
+  <div class="post-footer__content">
+    <h6 class="author">Written and Published by Matt Sheehan</h6>
+    <div class="quip row">
+        <div>Capitalist, amateur coffee drinker, and tasteless programmer.</div>
+        <div>Warning: I'm clueless about what I talk about.</div>
+    </div>
+  </div>
+</footer>
+
+	</div>
+
+</body>
+
+</html>

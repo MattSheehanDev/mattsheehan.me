@@ -1,0 +1,140 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  font-family: sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+body {
+  font: 1.0625em/1.47 "Georgia", serif;
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+}
+h6 {
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.29442719096rem;
+  line-height: 2.0944271908707455rem;
+  letter-spacing: -0.04em;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+h5 {
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.698935688135rem;
+  line-height: 2.7489356880178533rem;
+  letter-spacing: -0.04em;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+h4 {
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 2.10344418531rem;
+  line-height: 3.403444185164961rem;
+  letter-spacing: -0.04em;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+h3 {
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 2.507952682485rem;
+  line-height: 4.057952682312069rem;
+  letter-spacing: -0.04em;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+h2 {
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 2.9124611796599997rem;
+  line-height: 4.712461179459177rem;
+  letter-spacing: -0.04em;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 3.3169696768349994rem;
+  line-height: 5.366969676606284rem;
+  letter-spacing: -0.04em;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+.grid {
+  display: block;
+  margin: auto;
+  text-align: center;
+  padding-top: 2rem;
+  max-width: 50rem;
+  width: 100%;
+  overflow-x: visible;
+}
+@media screen and (max-width: 50rem) {
+  .grid {
+    padding-top: 0.5rem;
+  }
+}
+.container {
+  display: inline-block;
+  margin: 0 auto;
+  width: 100%;
+}
+.row {
+  display: inline-block;
+  padding: .5rem 0;
+  width: 100%;
+}
+.column {
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  padding: 0 0.25rem;
+}
+@media screen and (min-width: 50rem) {
+  .column {
+    padding: 0 1rem;
+  }
+  .column.full {
+    width: 100%;
+  }
+  .column.three-fourths {
+    width: 74.95%;
+  }
+  .column.two-thirds {
+    width: 66.7%;
+  }
+  .column.half {
+    width: 50%;
+  }
+  .column.one-third {
+    width: 33.3%;
+  }
+  .column.one-fourth {
+    width: 24.95%;
+  }
+  .column.opposite {
+    float: right;
+  }
+}
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}

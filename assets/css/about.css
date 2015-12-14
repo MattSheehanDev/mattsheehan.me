@@ -1,0 +1,13 @@
+.about {
+  display: block;
+  margin: 0 auto;
+  max-width: 42em;
+  width: 100%;
+}
+.about .coin span {
+  display: inline-block;
+  width: 5rem;
+}
+.about .elsewhere {
+  padding-top: 1rem;
+}

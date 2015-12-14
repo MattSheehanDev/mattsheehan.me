@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Ruby is Object-Oriented Lisp</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
+    <meta name="description" content="The spiritual home of Matt Sheehan" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+
+    <!-- ms tags -->
+    <meta name="application-name" content="Matt Sheehan" />
+    <meta name="msapplication-config" content="/ietemplates/ieconfig.xml" />
+    <meta name="msapplication-tooltip" content="Matt Sheehan" />
+    <meta name="msapplication-navbutton-color" content="#497bad" />
+
+    <!--ms jump list -->
+    <meta name="msapplication-task" content="name=Home; action-uri=http://www.mattsheehan.me/; icon-uri=http://www.mattsheehan.me/assets/images/favicon.ico" />
+    <meta name="msapplication-task" content="name=Resume; action-uri=http://www.mattsheehan.me/resume/; icon-uri=http://www.mattsheehan.me/assets/images/favicon.ico" />
+    <meta name="msapplication-task" content="name=About; action-uri=http://www.mattsheehan.me/about/; icon-uri=http://www.mattsheehan.me/assets/images/favicon.ico" />
+
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/favicon.ico" />
+
+    <!-- apple tags -->
+    <link rel="apple-touch-icon" href="/assets/images/apple/apple-touch-57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/images/apple/apple-touch-72.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/images/apple/apple-touch-114.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/images/apple/apple-touch-144.png" />
+
+    <!-- site links -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/sheehan.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/fonts.css" />
+</head>
+
+
+<body>
+
+
+	<header class="site-header">
+  <div class="site-header__content">
+    <div class="site-header__signature">
+      <a href="/">
+        <img type="image/svg+xml" src="/assets/images/signature-green.svg" />
+      </a>
+      <span>Software Developer</span>
+    </div>
+    <a class="site-header__portrait" href="/">
+      <div>Hmmm...This image didn't show up?</div>
+    </a>
+
+    <div class="site-header__links">
+      <a href="/" class="link">Journal</a>
+      <a href="/archives/" class="link">Archive</a>
+      <a href="/resume" class="link">Resume</a>
+      <a href="/about" class="link">About</a>
+      <a href="/feeds/rss.xml" class="link">RSS</a>
+    </div>
+  </div>
+</header>
+
+	<div class="site-content">
+		
+
+<main class="post" role="main">
+    <h2 class="title">Ruby is Object-Oriented Lisp</h2>
+    <span class="date">Tuesday, September 22, 2015</span>
+
+    <div class="content">
+        <p>I’ve fooled around and hankey-pankeyed with lisps for years. I’ve even wrote a toy <a href="https://github.com/sheehamj13/mslisp">lisp dialect</a>. I’ve also gotten dirty with Ruby. This site itself is build using Jekyll<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>, a static site generator written with Ruby, and I’ve wrote a few custom plugins to help my development along.</p>
+
+<p>But I had a shower thought after using the two. Ruby is really just an object-oriented (OO) dialect of lisp<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup>. Sure there are libraries that add OO design principles to lisp, but Ruby takes all of the best parts of lisp and bakes OO constructs directly into it.</p>
+
+<p class="soliloquy">I would lump Ruby, lisp, and Javascript into one language family. They’re the languages I consider the <em>fun</em> programming languages. Sure they’re not taken seriously by any of the ‘real’ developers, but how many times do you get to use the word ‘fun’ and programming in the same sentence. You might here ‘oh, that’s interesting’ or ‘very clever’<sup id="fnref:3"><a href="#fn:3" class="footnote">3</a></sup> said by the real devs, but rarely ‘this is fun’, and I think that deserves remark.</p>
+
+<p class="primtitle">The value of everything</p>
+
+<p>Both Ruby and most lisp dialects attribute a value to everything (even if that value is NIL, a keyword that is shared). Undefined does not exist and something never goes uninitialized with some randomness.</p>
+
+<p class="primtitle">The truth of everything</p>
+
+<p>Everything is true, except NIL and FALSE. In boolean conversions, “x” is true, “nil” is true, and NIL is false. If you ever find yourself asking, ‘is 0 equivalent to true or false?’, the answer is ‘is 0 the equivalent of NIL or FALSE? No.’, so theres your answer. This makes using boolean logic less painful, you never have to type <strong>if x == nil</strong> or any equivalent.</p>
+
+<p><strong>if x <em>body</em></strong> or the lispy <strong>(if x <em>body</em>)</strong> is good enough.</p>
+
+<p class="primtitle">Operators are functions</p>
+
+<p>Ok, alright already. Operators are basically always functions in every language. But I promise it’s different here, they really feel like functions. In lisp you have <strong>(+ 2 2)</strong>, which at any point you can <strong>(set! + (lambda (x y) (- x y)))</strong>, and now addition is subtraction. Since Ruby is just an OO dialect of lisp, this function-ness goes a step further, <strong>2.+(2)</strong>, is the equivalent of 2 + 2, except in the former the +-operator appears as a method on the <em>Integer Class</em><sup id="fnref:4"><a href="#fn:4" class="footnote">4</a></sup>.</p>
+
+<p class="soliloquy">Everybody should still write 2 + 2 for clarity, but the fact that you can write it alternatively relays my point across.</p>
+
+<p class="primtitle">Everything is a Function-Object</p>
+
+<p>In lisp everything is a function since there is no OO classes and in Ruby, everything is technically an object, but can be thought of as a function (in the same way as Javascript). Just like in lisp where in the line of code <strong>(defun <em>name</em> <em>body</em>)</strong>, which defines a new function, <strong>defun</strong> is really just another function that takes a <em>name</em> parameter and a <em>body</em> parameter. The same can be said of Ruby. In the line of code <strong>def <em>name</em> <em>body block</em></strong>, which defines a new class method, <strong>def</strong> is really just a function that takes two parameters.</p>
+
+<p class="soliloquy">In ruby this also extends to the class access modifiers (public, private, and protected). In the line <strong>private def <em>method name</em> <em>body block</em></strong>, <strong>private</strong> is just a function that takes the return of the function <strong>def</strong>.</p>
+
+<p class="primtitle">Conventions</p>
+
+<p>And finally the naming conventions, which Ruby has taken from lisp. Functions with question marks at the end usually answer boolean questions about something, while functions with exclamation marks the end usually denote that the function modifies its input.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>Btw, Jekyll v3.0 is leaps and bounds better than v2.x. Unfortunately, v3.0 is still in beta. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p>I know Ruby looks a lot like Python, I too thought they would be about the same, because of the similar importance attributed to vertical white-space and their bracketless syntax. But those are just syntactical details, and the similarities between the <em>design</em> of the language ends there. <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:3">
+      <p>Other things developers might say are ‘Neat!’, ‘Cool!’, and ‘Awesome!’, as well as any conjugations such as ‘Neato!’ and ‘Coolio!’. <a href="#fnref:3" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:4">
+      <p>Yeah. Even numbers are objects. <a href="#fnref:4" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+    </div>
+
+    <div class="post-nav">
+      
+        <div class="post-nav__previous">
+          <div>Previous</div>
+          <a href="/archives/ios9-review/">iOS 9 Review</a>
+        </div>
+      
+      
+        <div class="post-nav__next">
+          <div>Next</div>
+          <a href="/archives/bernie-sanders/">Ellsworth Toohey</a>
+        </div>
+      
+    </div>
+</main>
+
+
+<footer class="post-footer">
+  <div class="post-footer__content">
+    <h6 class="author">Written and Published by Matt Sheehan</h6>
+    <div class="quip row">
+        <div>Capitalist, amateur coffee drinker, and tasteless programmer.</div>
+        <div>Warning: I'm clueless about what I talk about.</div>
+    </div>
+  </div>
+</footer>
+
+	</div>
+
+</body>
+
+</html>

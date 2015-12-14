@@ -1,22 +1,261 @@
----
-title: Archives
----
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Archives</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
+    <meta name="description" content="The spiritual home of Matt Sheehan" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+
+    <!-- ms tags -->
+    <meta name="application-name" content="Matt Sheehan" />
+    <meta name="msapplication-config" content="/ietemplates/ieconfig.xml" />
+    <meta name="msapplication-tooltip" content="Matt Sheehan" />
+    <meta name="msapplication-navbutton-color" content="#497bad" />
+
+    <!--ms jump list -->
+    <meta name="msapplication-task" content="name=Home; action-uri=http://www.mattsheehan.me/; icon-uri=http://www.mattsheehan.me/assets/images/favicon.ico" />
+    <meta name="msapplication-task" content="name=Resume; action-uri=http://www.mattsheehan.me/resume/; icon-uri=http://www.mattsheehan.me/assets/images/favicon.ico" />
+    <meta name="msapplication-task" content="name=About; action-uri=http://www.mattsheehan.me/about/; icon-uri=http://www.mattsheehan.me/assets/images/favicon.ico" />
+
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/favicon.ico" />
+
+    <!-- apple tags -->
+    <link rel="apple-touch-icon" href="/assets/images/apple/apple-touch-57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/images/apple/apple-touch-72.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/images/apple/apple-touch-114.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/images/apple/apple-touch-144.png" />
+
+    <!-- site links -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/sheehan.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/fonts.css" />
+</head>
 
 
-<main class="archives" role="main">
-    <!-- <span class="count">The archive currently has <b>{{ site.posts | size }}</b> items</span> -->
+<body>
+
+
+	<header class="site-header">
+  <div class="site-header__content">
+    <div class="site-header__signature">
+      <a href="/">
+        <img type="image/svg+xml" src="/assets/images/signature-green.svg" />
+      </a>
+      <span>Software Developer</span>
+    </div>
+    <a class="site-header__portrait" href="/">
+      <div>Hmmm...This image didn't show up?</div>
+    </a>
+
+    <div class="site-header__links">
+      <a href="/" class="link">Journal</a>
+      <a href="/archives/" class="link">Archive</a>
+      <a href="/resume" class="link">Resume</a>
+      <a href="/about" class="link">About</a>
+      <a href="/feeds/rss.xml" class="link">RSS</a>
+    </div>
+  </div>
+</header>
+
+	<div class="site-content">
+		<main class="archives" role="main">
+    <!-- <span class="count">The archive currently has <b>23</b> items</span> -->
     <h1>Archive</h1>
     <hr />
     <ul>
-        {% for post in site.posts %}
+        
             <li>
-              {{ post.date.year }}
-                <a href="{{ post.url }}">
-                  <h6>{{ post.title }}</h6>
-                  <div>{{ post.date | date: "%A, %B %-d, %Y" }}</div>
+              
+                <a href="/archives/bruce-springsteen-66/">
+                  <h6>Roy Orbison singing for the lonely</h6>
+                  <div>Wednesday, September 23, 2015</div>
                 </a>
             </li>
-        {% endfor %}
+        
+            <li>
+              
+                <a href="/archives/bernie-sanders/">
+                  <h6>Ellsworth Toohey</h6>
+                  <div>Wednesday, September 23, 2015</div>
+                </a>
+            </li>
+        
+            <li>
+              
+                <a href="/archives/ruby-is-oo-lisp/">
+                  <h6>Ruby is Object-Oriented Lisp</h6>
+                  <div>Tuesday, September 22, 2015</div>
+                </a>
+            </li>
+        
+            <li>
+              
+                <a href="/archives/ios9-review/">
+                  <h6>iOS 9 Review</h6>
+                  <div>Thursday, September 17, 2015</div>
+                </a>
+            </li>
+        
+            <li>
+              
+                <a href="/archives/better-writing/">
+                  <h6>Writing</h6>
+                  <div>Thursday, September 17, 2015</div>
+                </a>
+            </li>
+        
+            <li>
+              
+                <a href="/archives/signals/">
+                  <h6>Signals</h6>
+                  <div>Wednesday, September 16, 2015</div>
+                </a>
+            </li>
+        
+            <li>
+              
+                <a href="/archives/startup-economics/">
+                  <h6>The Economics of Information Technology</h6>
+                  <div>Tuesday, September 15, 2015</div>
+                </a>
+            </li>
+        
+            <li>
+              
+                <a href="/archives/apple-wwdc/">
+                  <h6>Apple WWDC</h6>
+                  <div>Monday, September 14, 2015</div>
+                </a>
+            </li>
+        
+            <li>
+              
+                <a href="/archives/processing/">
+                  <h6>Processing and parabola's</h6>
+                  <div>Sunday, August 30, 2015</div>
+                </a>
+            </li>
+        
+            <li>
+              
+                <a href="/archives/emacs/">
+                  <h6>Working with Emacs</h6>
+                  <div>Tuesday, June 30, 2015</div>
+                </a>
+            </li>
+        
+            <li>
+              
+                <a href="/archives/mslisp/">
+                  <h6>(LOAD 'MSLisp)</h6>
+                  <div>Monday, June 29, 2015</div>
+                </a>
+            </li>
+        
+            <li>
+              
+                <a href="/archives/billy-joel/">
+                  <h6>Leave a Tender Moment Alone</h6>
+                  <div>Friday, April 24, 2015</div>
+                </a>
+            </li>
+        
+            <li>
+              
+                <a href="/archives/jekyll-plugins/">
+                  <h6>Note on Jekyll Plugins</h6>
+                  <div>Tuesday, April 21, 2015</div>
+                </a>
+            </li>
+        
+            <li>
+              
+                <a href="/archives/site-updates-again/">
+                  <h6>Site Updates (again)</h6>
+                  <div>Tuesday, April 14, 2015</div>
+                </a>
+            </li>
+        
+            <li>
+              
+                <a href="/archives/cryptocurrency/">
+                  <h6>Cryptocurrency</h6>
+                  <div>Friday, May 9, 2014</div>
+                </a>
+            </li>
+        
+            <li>
+              
+                <a href="/archives/featured-site/">
+                  <h6>Featured Site</h6>
+                  <div>Monday, April 21, 2014</div>
+                </a>
+            </li>
+        
+            <li>
+              
+                <a href="/archives/site-updates/">
+                  <h6>Site Updates</h6>
+                  <div>Friday, April 18, 2014</div>
+                </a>
+            </li>
+        
+            <li>
+              
+                <a href="/archives/setup/">
+                  <h6>Battle Stations</h6>
+                  <div>Friday, March 21, 2014</div>
+                </a>
+            </li>
+        
+            <li>
+              
+                <a href="/archives/drunken-ironman/">
+                  <h6>Drunken Ironman</h6>
+                  <div>Friday, March 21, 2014</div>
+                </a>
+            </li>
+        
+            <li>
+              
+                <a href="/archives/checkout-the-sprite/">
+                  <h6>Checkout The Sprite</h6>
+                  <div>Saturday, March 15, 2014</div>
+                </a>
+            </li>
+        
+            <li>
+              
+                <a href="/archives/what-i-ve-learned-so-far/">
+                  <h6>What I've Learned So Far</h6>
+                  <div>Friday, May 24, 2013</div>
+                </a>
+            </li>
+        
+            <li>
+              
+                <a href="/archives/the-git-the-hub-and-the-ugly/">
+                  <h6>The Git, The Hub, And The Ugly</h6>
+                  <div>Friday, May 17, 2013</div>
+                </a>
+            </li>
+        
+            <li>
+              
+                <a href="/archives/graduation/">
+                  <h6>Graduation</h6>
+                  <div>Wednesday, May 15, 2013</div>
+                </a>
+            </li>
+        
     </ul>
     <div class="megaman animated"></div>
 </main>
+
+	</div>
+
+</body>
+
+</html>

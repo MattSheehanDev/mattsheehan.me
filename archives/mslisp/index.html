@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>(LOAD 'MSLisp)</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" >
+    <meta name="description" content="The spiritual home of Matt Sheehan" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+
+    <!-- ms tags -->
+    <meta name="application-name" content="Matt Sheehan" />
+    <meta name="msapplication-config" content="/ietemplates/ieconfig.xml" />
+    <meta name="msapplication-tooltip" content="Matt Sheehan" />
+    <meta name="msapplication-navbutton-color" content="#497bad" />
+
+    <!--ms jump list -->
+    <meta name="msapplication-task" content="name=Home; action-uri=http://www.mattsheehan.me/; icon-uri=http://www.mattsheehan.me/assets/images/favicon.ico" />
+    <meta name="msapplication-task" content="name=Resume; action-uri=http://www.mattsheehan.me/resume/; icon-uri=http://www.mattsheehan.me/assets/images/favicon.ico" />
+    <meta name="msapplication-task" content="name=About; action-uri=http://www.mattsheehan.me/about/; icon-uri=http://www.mattsheehan.me/assets/images/favicon.ico" />
+
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/favicon.ico" />
+
+    <!-- apple tags -->
+    <link rel="apple-touch-icon" href="/assets/images/apple/apple-touch-57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/images/apple/apple-touch-72.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/images/apple/apple-touch-114.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/images/apple/apple-touch-144.png" />
+
+    <!-- site links -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/sheehan.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/fonts.css" />
+</head>
+
+
+<body>
+
+
+	<header class="site-header">
+  <div class="site-header__content">
+    <div class="site-header__signature">
+      <a href="/">
+        <img type="image/svg+xml" src="/assets/images/signature-green.svg" />
+      </a>
+      <span>Software Developer</span>
+    </div>
+    <a class="site-header__portrait" href="/">
+      <div>Hmmm...This image didn't show up?</div>
+    </a>
+
+    <div class="site-header__links">
+      <a href="/" class="link">Journal</a>
+      <a href="/archives/" class="link">Archive</a>
+      <a href="/resume" class="link">Resume</a>
+      <a href="/about" class="link">About</a>
+      <a href="/feeds/rss.xml" class="link">RSS</a>
+    </div>
+  </div>
+</header>
+
+	<div class="site-content">
+		
+
+<main class="post" role="main">
+    <h2 class="title">(LOAD 'MSLisp)</h2>
+    <span class="date">Monday, June 29, 2015</span>
+
+    <div class="content">
+        <p>I’ve been working fervently the past <strong>15 days</strong><sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup> on my first language and interpreter, a dialect of lisp I’ve come to refer to as <em>MsLisp</em>. I had a few goals starting, some of which are still in progress.</p>
+
+<h6 id="what-i-wanted">What I wanted</h6>
+
+<ul>
+  <li>I wanted an embeddable lisp that could run on tiny specialized hardware.</li>
+  <li>A minimal interpreter with most implementation written in lisp itself (for portability).</li>
+  <li>Written in portable C++.</li>
+</ul>
+
+<h6 id="what-i-have">What I have</h6>
+
+<ul>
+  <li>A working dialect of lisp with a minimal interpreter.</li>
+  <li>A small standard library with basic functionality.</li>
+  <li>Written in C#.</li>
+</ul>
+
+<p>I plan on reading up some more on some lisp functionality and fixing up some design changes before porting the code to C++ or start working on any other versions of it. Most of MsLisp is inspired by <a href="http://www.gnu.org/software/mit-scheme/">Scheme</a> with some of parts stolen from the <a href="http://www.clisp.org/">CLisp</a> implementation of Common Lisp. I’ve started working through <a href="https://mitpress.mit.edu/index.php?q=books/little-schemer"><em>The Little Schemer</em></a> for some less dry insights into Scheme.</p>
+
+<h6 id="features2">Features<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup></h6>
+
+<p><strong>First Class Macros.</strong></p>
+
+<p>Lisp macros are unlike macros in other languages. I can best describe macros as functions that return code as data (which I understand still isn’t clear).</p>
+
+<p>In order to really understand macros (and the implications of macros, without which you don’t really actually understand macros), you need to understand how lisp code is interpreted. The process can be broken down into three parts.</p>
+
+<ol>
+  <li><strong>Parsing</strong>. Which can be broken down into two sub-steps,
+    <ol>
+      <li>Lexing (tokenizing).</li>
+      <li>Parsing the tokens into lisp values (numbers, strings, expressions, symbols…).</li>
+    </ol>
+  </li>
+  <li><strong>Expanding</strong>. This is the step where macros are evaluated and <em>expand</em> into the code they return.</li>
+  <li><strong>Evaluating</strong>. This is your normal evaluation step where function and variable execution and manipulation happen.</li>
+</ol>
+
+<p>Let me give some code examples.</p>
+
+<pre><code>(define pair
+  (lambda (x y)
+    (cons x (cons y '()))))
+</code></pre>
+
+<p>That’s a completely valid function in lisp that takes two arguments and adds them into an empty list, which is then returned.</p>
+
+<p class="soliloquy">Protip: Whatever statement is last <em>evaluated</em> is what is returned. Every function at least returns <code>NIL</code>.</p>
+
+<p>Now lets define a macro.</p>
+
+<pre><code>(define let
+  (macro
+    (lambda (var-value body)
+      `((lambda (,(car var-value))
+         ,body) ,(cadr var-value)))))
+</code></pre>
+
+<p>Wait a second. That looks a lot like a function. Yep, macros are alot like functions, except for when they are evaluated.</p>
+
+<p class="soliloquy">Protip: Noticed in the first example how the lambda function was just set to the variable pair? That makes it a <code>First class function</code>, which can be passed to other functions just like any other variable. In MsLisp, macros just wrap a lambda function (see the <code>macro</code> keyword before the <code>lambda</code> keyword?) to let the interpreter know that this particular function is special. Therefore, macros are <code>First class macros</code> and can be passed to other functions just like their function counterparts. Most lisp macro implementations are not implemented this way, although I find understanding and mostly implementing macros in the interpreter easier this way compared to the standard implemenations.</p>
+
+<p>Now we can implement a macro to make it less verbose to write normal lambda functions</p>
+
+<pre><code>(define defun
+  (macro
+    (lambda (name params body)
+      `(define ,name
+         (lambda ,params
+            ,body)))))
+
+(defun pair (x y)
+  (cons x (cons y '())))
+</code></pre>
+
+<p>See what we did there? We wrote the macro <code>defun</code> which we use to rewrite our pair function with. When the interpreter see’s this, it’ll replace (defun pair …) with all the code returned from the <code>defun</code> macro. After expansion, both pair functions, old and new, result in the same code. Pretty cool huh?!</p>
+
+<p>The implication of macros really clicked for me when write the <code>+</code> macro. MsLisp has a builtin function called <code>add</code>, which adds exactly two arguments. Not one, not three, but exactly two like so <code>(add 1 2)</code>. But what if we wanted to do this <code>(add 1 2 3 4)</code>? Well we can! But we’ll have to write a macro.</p>
+
+<p>Note: I’ve gone ahead and replaced <code>define **name** (macro (lambda (args)))</code> with <code>(defmacro **name** (args))</code>.</p>
+
+<pre><code>(defmacro + (&amp;rest x)
+  ((Y
+    (lambda (f)
+      (lambda (x)
+        (if (= (length x) 1)
+           (car x)
+           (f (cons `(add ,@(first-pair x)) (cddr x)))))))
+   x))
+</code></pre>
+
+<p>There are a few functions we haven’t defined yet in that function such as <code>Y</code>, the recursive y-combinator, <code>first-pair</code>, which returns the first two elements of a list, and <code>cddr</code>, which skips the first two elements of a list and returns the remainder.</p>
+
+<p>Our new <code>+</code> macro expands <code>(+ 1 2 3 4)</code> into <code>(add (add (add 1 2) 3) 4)</code>.</p>
+
+<p><strong>C# Reflection in lisp.</strong></p>
+
+<p>This isn’t so much of a feature that I wanted, but just something that I though was neat and gives MsLisp a lot more functionality. Since C# can reflect on itself and know what methods it has, when can dynamically invoke these methods and create new instances of objects by calling methods like the following.</p>
+
+<pre><code>(new "Mslisp.Lexical.Parser" *args-if-we-need-any*)
+
+(invoke-static (get-type "System" "Console") "Write" "string arg to print to console")
+</code></pre>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>Actually 19 days counting breaks and days I didn’t commit any work. 15 is the number of work days. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p>As MsLisp gets updated, redesigned, ported, these <em>features</em> are sure to be added/removed and strengthened/weakened in functionality. <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+    </div>
+
+    <div class="post-nav">
+      
+        <div class="post-nav__previous">
+          <div>Previous</div>
+          <a href="/archives/billy-joel/">Leave a Tender Moment Alone</a>
+        </div>
+      
+      
+        <div class="post-nav__next">
+          <div>Next</div>
+          <a href="/archives/emacs/">Working with Emacs</a>
+        </div>
+      
+    </div>
+</main>
+
+
+<footer class="post-footer">
+  <div class="post-footer__content">
+    <h6 class="author">Written and Published by Matt Sheehan</h6>
+    <div class="quip row">
+        <div>Capitalist, amateur coffee drinker, and tasteless programmer.</div>
+        <div>Warning: I'm clueless about what I talk about.</div>
+    </div>
+  </div>
+</footer>
+
+	</div>
+
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+.archives {
+  margin: 0 auto;
+  max-width: 42rem;
+  text-align: left;
+  overflow-x: visible;
+}
+.archives h1 {
+  font-weight: 600;
+}
+.archives hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.archives ul li {
+  padding-bottom: 0.5rem;
+}
+.archives ul li a {
+  font-family: "Noto Serif", "Georgia", serif;
+  display: block;
+  color: black;
+}
+.archives ul li a:hover h6 {
+  color: #28af60;
+}
+.archives ul li a div {
+  font-family: "Noto Serif", "Georgia", serif;
+  color: #8f8f8f;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+.archives .megaman {
+  margin: 1rem auto;
+  background: url(../images/megamanwalking.png) no-repeat;
+  width: 100px;
+  height: 205px;
+  text-indent: -9999px;
+  -webkit-animation: walk 0.8s steps(4) infinite;
+  -moz-animation: walk 0.8s steps(4) infinite;
+  -ms-animation: walk 0.8s steps(4) infinite;
+  -o-animation: walk 0.8s steps(4) infinite;
+  animation: walk 0.8s steps(4) infinite;
+}
+@-webkit-keyframes walk {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -387px;
+  }
+}
+@-moz-keyframes walk {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -387px;
+  }
+}
+@-o-keyframes walk {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -387px;
+  }
+}
+@keyframes walk {
+  from {
+    background-position: 0px;
+  }
+  to {
+    background-position: -387px;
+  }
+}
