@@ -33,6 +33,7 @@
   display: block;
   overflow-x: visible;
   max-width: 42em;
+  width: 100%;
   margin: 0 auto;
 }
 .journal .journal__recent {

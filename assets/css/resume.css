@@ -1,5 +1,7 @@
 .resume {
+  max-width: 42em;
   width: 100%;
+  margin: 0 auto;
 }
 .resume .download {
   display: block;
@@ -13,6 +15,13 @@
   text-transform: uppercase;
   word-spacing: 0.5em;
   line-height: 1em;
+  -webkit-transition: color cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+  -moz-transition: color cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+  -o-transition: color cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+  transition: color cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+}
+.resume .download:hover {
+  color: #28af60;
 }
 .resume .paper {
   font-family: "Noto Serif", "Georgia", serif;

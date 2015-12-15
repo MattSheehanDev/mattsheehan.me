@@ -1,6 +1,7 @@
 .archives {
   margin: 0 auto;
   max-width: 42rem;
+  width: 100%;
   text-align: left;
   overflow-x: visible;
 }
