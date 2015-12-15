@@ -1,7 +1,9 @@
 @import "utilities";
 
 .resume {
+	max-width: 42em;
 	width: 100%;
+	margin: 0 auto;
 
 	.download {
 		display: block;
@@ -16,6 +18,11 @@
 		text-transform: uppercase;
 		word-spacing: 0.5em;
 		line-height: 1em;
+		#utilities > .transition(color, cubic-bezier(0.4, 0, 0.2, 1), 0.2s);
+
+		&:hover {
+			color: @primary1;
+		}
 	}
 
 	.paper {
