@@ -731,6 +731,7 @@ small {
 .archives hr {
   margin-top: 1rem;
   margin-bottom: 1rem;
+  width: 100%;
 }
 .archives ul li {
   padding-bottom: 0.5rem;
