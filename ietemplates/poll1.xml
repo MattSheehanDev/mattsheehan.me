@@ -2,17 +2,15 @@
 <tile>
   <visual lang="en-US" version="2">
     <binding template="TileSquare150x150Text04" branding="logo" fallback="TileSquareImage">
-      <text id="1">Why would anyone use Verizon?</text>
+      <text id="1">Design pt. 1</text>
     </binding>
     <binding template="TileWide310x150Text03" branding="logo" fallback="TileWideImage">
-      <text id="1">Why would anyone use Verizon?</text>
+      <text id="1">Design pt. 1</text>
     </binding>
     <binding template="TileSquare310x310TextList02" branding="logo" fallback="TileWideText09">
-      <text id="1">Why would anyone use Verizon?</text>
-      <text id="2">TL;DR: Don’t use Verizon.
-
-I s...</text>
-      <text id="3">12-21-2015</text>
+      <text id="1">Design pt. 1</text>
+      <text id="2">TL;DR: start from the beginnin...</text>
+      <text id="3">12-23-2015</text>
     </binding>
   </visual>
 </tile>

@@ -9,7 +9,21 @@
     <link>http://www.mattsheehan.me</link>
     <description>The spiritual home of Matt Sheehan</description>
     <copyright>2015</copyright>
-    <pubDate>Mon, 21 Dec 2015 00:00:00 -0500</pubDate>
+    <pubDate>Wed, 23 Dec 2015 00:00:00 -0500</pubDate>
+    <item>
+      <link>http://www.mattsheehan.me/archives/design-part-1/</link>
+      <description>&lt;p&gt;&lt;strong&gt;TL;DR&lt;/strong&gt;: start from the beginning, then, start from the beginning again.&lt;/p&gt;
+
+&lt;p&gt;After hours of thinking about design, I made my mind up that design has to be &lt;strong&gt;holistic&lt;/strong&gt;. If I was designing a system with some 5 features, I should start from the beginning and incorporate how each one of those features fits into and interacts with the program, then if another feature was added I should start from the beginning again because now each piece of the system has 5 other interactions instead of 6. And although it’s common to just hammer the 6th feature in there, that’s impossible to do without compromising the entire integrity of the program and leaving the feeling that the entire program isn’t as solid as it should be (even though only a few people would be able to put their finger on exactly what was wrong with it).&lt;/p&gt;
+
+&lt;p&gt;One of the most difficult aspects of any design is the giving the final impression that the entire system was created by the hand of one person. Very rarely does one person get the chance (if they even have the desire, or the ability) for end to end control, from the initial feature requests, to the first draft of the design, to the final implementation. It wouldn’t be unusual for a few people to pull the feature requests together, then have a few people architect the design, and then leave the implementation of the program to any number of people who had no hand in what the design should be or if a feature is even worth implementing.&lt;/p&gt;
+
+&lt;p&gt;The end result becomes a compromised program. Too many people had an input and the design wasn’t done &lt;strong&gt;holistically&lt;/strong&gt;. Everything feels disjointed. I think this is the biggest hurdle for most projects and I’m not sure if there is one cure all. Each new project needs to be designed from the beginning (and be wary of letting a program grow &lt;em&gt;organically&lt;/em&gt;, love should grow organically, systems should be by design), and when the requirements change and now there are 6 features instead of 5, don’t be afraid to design &lt;strong&gt;from the beginning&lt;/strong&gt;.&lt;/p&gt;
+</description>
+      <pubDate>Wed, 23 Dec 2015 00:00:00 -0500</pubDate>
+      <guid>http://www.mattsheehan.me/archives/design-part-1/</guid>
+      <dc:date>2015-12-23T00:00:00-05:00</dc:date>
+    </item>
     <item>
       <link>http://www.mattsheehan.me/archives/verizon/</link>
       <description>&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Don’t use Verizon.&lt;/p&gt;
@@ -782,20 +796,6 @@ end
       <guid>http://www.mattsheehan.me/archives/drunken-ironman/</guid>
       <dc:date>2014-03-21T20:04:28-04:00</dc:date>
     </item>
-    <item>
-      <link>http://www.mattsheehan.me/archives/checkout-the-sprite/</link>
-      <description>&lt;p&gt;Checkout the new sprite add to the bottom of every page.&lt;/p&gt;
-
-&lt;p&gt;It was fun.&lt;/p&gt;
-
-&lt;p&gt;If you want to try yourself there’s a nice tutorial at this site. Just find a cool sprite sheet to play with.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://bryanbraun.com/2014/03/15/how-i-rebuilt-flying-toasters-using-only-css-animations&quot;&gt;bryanbaun.com&lt;/a&gt;&lt;/p&gt;
-</description>
-      <pubDate>Sat, 15 Mar 2014 20:04:28 -0400</pubDate>
-      <guid>http://www.mattsheehan.me/archives/checkout-the-sprite/</guid>
-      <dc:date>2014-03-15T20:04:28-04:00</dc:date>
-    </item>
-    <dc:date>2015-12-21T00:00:00-05:00</dc:date>
+    <dc:date>2015-12-23T00:00:00-05:00</dc:date>
   </channel>
 </rss>
