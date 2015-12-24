@@ -9,15 +9,22 @@ For notalgia here's some snippets of the two previous major changes.
 
 The last update (from one year ago):
 
-[![oldsite]][oldsite]{: .post-img }
+[![oldsite2]][oldsite2]{: .post-img }
 
 And the initial site (from two years ago):
 
-[![oldoldsite]][oldoldsite]{: .post-img }
+[![oldsite1]][oldsite1]{: .post-img }
 
 I'll Probably continue tweaking things for a while still, and updating a few inconsistencies I've noticed, but I think this is how the site's going to change. Until next year that is.
 
+###### Site Updates 2015/12/23 ######
+{: .primtitle}
+
+Here's an image of the site before recent changes.
+
+[![oldsite3]][oldsite3]{: .post-img }
 
 
-[oldsite]: {{ site.url }}/assets/images/oldsite.PNG
-[oldoldsite]: {{ site.url }}/assets/images/oldoldsite.PNG
+[oldsite3]: {{ site.url }}/assets/images/posts/2015-04-15-Site-Updates/oldsite3.png
+[oldsite2]: {{ site.url }}/assets/images/posts/2015-04-15-Site-Updates/oldsite2.PNG
+[oldsite1]: {{ site.url }}/assets/images/posts/2015-04-15-Site-Updates/oldsite1.PNG

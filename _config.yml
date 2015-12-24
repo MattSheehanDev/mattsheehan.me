@@ -1,5 +1,6 @@
 name: Matthew Sheehan
 author: "Matt Sheehan"
+# markdown: redcarpet
 markdown: kramdown
 kramdown:
  parse_span_html: true

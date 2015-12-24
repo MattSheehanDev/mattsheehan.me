@@ -20,10 +20,9 @@ Both Ruby and most lisp dialects attribute a value to everything (even if that v
 The truth of everything
 {: .primtitle}
 
-Everything is true, except NIL and FALSE. In boolean conversions, "x" is true, "nil" is true, and NIL is false. If you ever find yourself asking, 'is 0 equivalent to true or false?', the answer is 'is 0 the equivalent of NIL or FALSE? No.', so theres your answer. This makes using boolean logic less painful, you never have to type __if x == nil__ or any equivalent. 
+Everything is true, except NIL and FALSE. In boolean conversions, "x" is true, "nil" is true, and NIL is false. If you ever find yourself asking, 'is 0 equivalent to true or false?', the answer is 'is 0 the equivalent of NIL or FALSE? No.', so theres your answer. This makes using boolean logic less painful, you never have to type __if x == nil__ or any equivalent.
 
 __if x *body*__ or the lispy __(if x *body*)__ is good enough.
-
 
 Operators are functions
 {: .primtitle}
