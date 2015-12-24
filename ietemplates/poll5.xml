@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tile>
+  <visual lang="en-US" version="2">
+    <binding template="TileSquare150x150Text04" branding="logo" fallback="TileSquareImage">
+      <text id="1">iOS 9 Review</text>
+    </binding>
+    <binding template="TileWide310x150Text03" branding="logo" fallback="TileWideImage">
+      <text id="1">iOS 9 Review</text>
+    </binding>
+    <binding template="TileSquare310x310TextList02" branding="logo" fallback="TileWideText09">
+      <text id="1">iOS 9 Review</text>
+      <text id="2">TL;DR: If you’re running an ol...</text>
+      <text id="3">9-17-2015</text>
+    </binding>
+  </visual>
+</tile>

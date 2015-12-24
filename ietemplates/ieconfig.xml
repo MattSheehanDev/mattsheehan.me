@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<browserconfig>
+  <msapplication>
+    <tile>
+      <square70x70logo src="/assets/images/microsoft/ms-small-128x128.png"/>
+      <square150x150logo src="/assets/images/microsoft/ms-medium-270x270.png"/>
+      <wide310x150logo src="/assets/images/microsoft/ms-wide-558x270.png"/>
+      <square310x310logo src="/assets/images/microsoft/ms-large-558x558.png"/>
+      <TileColor>#497bad</TileColor>
+    </tile>
+    <notification>
+      <polling-uri src="/ietemplates/poll1.xml"/>
+      <polling-uri2 src="/ietemplates/poll2.xml"/>
+      <polling-uri3 src="/ietemplates/poll3.xml"/>
+      <polling-uri4 src="/ietemplates/poll4.xml"/>
+      <polling-uri5 src="/ietemplates/poll5.xml"/>
+      <frequency>30</frequency>
+      <cycle>1</cycle>
+    </notification>
+  </msapplication>
+</browserconfig>

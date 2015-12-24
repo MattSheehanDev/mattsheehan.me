@@ -9,7 +9,30 @@
     <link>http://www.mattsheehan.me</link>
     <description>The spiritual home of Matt Sheehan</description>
     <copyright>2015</copyright>
-    <pubDate>Wed, 23 Sep 2015 00:00:00 -0400</pubDate>
+    <pubDate>Mon, 21 Dec 2015 00:00:00 -0500</pubDate>
+    <item>
+      <link>http://www.mattsheehan.me/archives/verizon/</link>
+      <description>&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Don’t use Verizon.&lt;/p&gt;
+
+&lt;p&gt;I seriously don’t understand this. Whenever anyone compares the big carriers (Sprint, Verizon, AT&amp;amp;T), most people would say that Verizon has the best service without argument. But here’s the thing &lt;strong&gt;they’re fucking wrong&lt;/strong&gt;&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. How can someone fool themselves into thinking they’re getting some deal with Verizon? Verizon does everything wrong. Does Verizon have the most expensive service plans? Check. Does Verizon have a carrier lock in that makes it impossible to transfer carriers with your same phone or roam globally? Check again. But you know what the real kicker is? Verizon is one of the most trusted telecommunications company, ahead of AT&amp;amp;T or Sprint. Apparently, Verizon customers are stupidly loyal.&lt;/p&gt;
+
+&lt;p&gt;What keeps them coming back every two years to renew their contract, or now-a-days every single year (and yes if you are on one of ‘edge’ or whatever they’re called plans, you are still on a contract of sorts because you’re are in &lt;strong&gt;debt&lt;/strong&gt; and can’t really do anything until you pay off your phone and even if you did do that you would still have one of those stupid Verizon only phones that don’t work on any other carrier&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;)? The best I can come up with is they’re either A) complacent or B) don’t want to deal with the hassle of transferring carriers, and trust me it is a hassle. If you’re one of the complacent ones, well there’s nothing anyone can do for you, you’re just going to float through your complacent life with your complacent phone. But if you’re one of the ones that just don’t want to deal with the hassle, well then let me confirm that the freedom to do what you want is always worth the hassle. Sure are there some glitches that make you want to throw your phone off the roof? Yeah those will happen, but here’s the thing, once you switch carriers that’s it, everything will slide along as smoothly as it ever has but you’ll have the ability to jump your’ carriers ship (to another GSM carrier) whenever you want.&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;I’m a little upset. I originally wrote this as &lt;em&gt;Why the fuck would anyone use Verizon?&lt;/em&gt;. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot;&gt;
+      &lt;p&gt;In fact I would argue that this is worse than a contract because if you pay just the required monthly payment, your phone won’t be paid off for 24 months or more depending on if you trade in and upgrade mid-through. Sure you could just finish paying it off all at once, but I doubt someone who buys electronics through a payment plan, which is literally the worst investment you could make with your money (it’s right up there with just lighting your money on fire and burning it), has the cash to pay it off. &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+      <pubDate>Mon, 21 Dec 2015 00:00:00 -0500</pubDate>
+      <guid>http://www.mattsheehan.me/archives/verizon/</guid>
+      <dc:date>2015-12-21T00:00:00-05:00</dc:date>
+    </item>
     <item>
       <link>http://www.mattsheehan.me/archives/bruce-springsteen-66/</link>
       <description>&lt;p&gt;I’ve been following Bruce Springsteen since I can remember and seen him on tour a couple times, which is amazing considering today he’s 66 years old. The most surprising part is I’m always discovering songs or different live versions of songs that I’ve never heard before.&lt;/p&gt;
@@ -138,14 +161,14 @@ Such is the nature of sums and quests for the lowest comon denominator. What, th
 
 &lt;p&gt;As far as the feature list goes in iOS 9, well, neither of my devices are seeing a lot of the new features. The first thing I did notice was the new app switcher screen that appears when you double tap the home screen or swipe up on the iPad with four fingers. That’s probably the screen I visit the most since I make sure to always close my last app since the device’s memory is small and the battery has been degrading for awhile now. Your ‘most recent’ contacts aren’t shown there anymore. I guess Apple noticed that the last person who called me (thanks mom), isn’t who I’m trying to find when I’m switching between Flipboard and Safari. The new layout works way better on the larger iPad screen than the tiny iPhone 4s screen, but I’m assuming on the newer iPhone’s it would be less squished.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/ipad_app_switching.PNG&quot; alt=&quot;iPad app switching&quot; /&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/2015-09-17-iOS9-review/ipad_app_switching.PNG&quot; alt=&quot;iPad app switching&quot; /&gt;
 &lt;small&gt;The app switching screen on the iPad. BTW, this is 2 too many apps open for an iPad 2. Woah, alliteration.&lt;/small&gt;&lt;/p&gt;
 
 &lt;p class=&quot;primtitle&quot;&gt;News&lt;/p&gt;
 
 &lt;p&gt;First I used Pulse, then there was the reign of Flipboard, now iOS 9 has it’s own news app. The news app functions a lot like Flipboard in it’s style but it’s style reminds me A LOT of Windows 8/10’s news app. The only difference is iOS 9 news might be a little cleaner. The best feature for me about Flipboard is the Pocket integration, which iOS 9 news also has (the Windows 8/10 news app was missing this, but you could save articles to the inferior reading list app).&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/ipad_screen_capture.PNG&quot; alt=&quot;iPad screen capture&quot; /&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/posts/2015-09-17-iOS9-review/ipad_screen_capture.PNG&quot; alt=&quot;iPad screen capture&quot; /&gt;
 &lt;small&gt;This is what my one and only app screen. Watching videos and reading web articles are what the iPad 2 is best at…still.&lt;/small&gt;&lt;/p&gt;
 
 &lt;p class=&quot;primtitle&quot;&gt;Notes&lt;/p&gt;
@@ -648,13 +671,19 @@ end
 
 &lt;p&gt;The last update (from one year ago):&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/assets/images/oldsite.PNG&quot; class=&quot;post-img&quot;&gt;&lt;img src=&quot;/assets/images/oldsite.PNG&quot; alt=&quot;oldsite&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/assets/images/posts/2015-04-15-Site-Updates/oldsite2.PNG&quot; class=&quot;post-img&quot;&gt;&lt;img src=&quot;/assets/images/posts/2015-04-15-Site-Updates/oldsite2.PNG&quot; alt=&quot;oldsite2&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;And the initial site (from two years ago):&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/assets/images/oldoldsite.PNG&quot; class=&quot;post-img&quot;&gt;&lt;img src=&quot;/assets/images/oldoldsite.PNG&quot; alt=&quot;oldoldsite&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/assets/images/posts/2015-04-15-Site-Updates/oldsite1.PNG&quot; class=&quot;post-img&quot;&gt;&lt;img src=&quot;/assets/images/posts/2015-04-15-Site-Updates/oldsite1.PNG&quot; alt=&quot;oldsite1&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;I’ll Probably continue tweaking things for a while still, and updating a few inconsistencies I’ve noticed, but I think this is how the site’s going to change. Until next year that is.&lt;/p&gt;
+
+&lt;h6 class=&quot;primtitle&quot; id=&quot;site-updates-20151223&quot;&gt;Site Updates 2015/12/23&lt;/h6&gt;
+
+&lt;p&gt;Here’s an image of the site before recent changes.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/assets/images/posts/2015-04-15-Site-Updates/oldsite3.png&quot; class=&quot;post-img&quot;&gt;&lt;img src=&quot;/assets/images/posts/2015-04-15-Site-Updates/oldsite3.png&quot; alt=&quot;oldsite3&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 </description>
       <pubDate>Tue, 14 Apr 2015 20:00:00 -0400</pubDate>
@@ -767,39 +796,6 @@ end
       <guid>http://www.mattsheehan.me/archives/checkout-the-sprite/</guid>
       <dc:date>2014-03-15T20:04:28-04:00</dc:date>
     </item>
-    <item>
-      <link>http://www.mattsheehan.me/archives/what-i-ve-learned-so-far/</link>
-      <description>&lt;p&gt;After my first week of having a &lt;em&gt;real&lt;/em&gt; job, this is what I’ve learned.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;I am not the great programmer I thought I was.&lt;/strong&gt; This isn’t at all a bad thing though. As it turns, I have a lot to learn. Getting an education is a nice touch and something to put on resumes, but it does little in the way of actually preparing you for work life. I have personally learned that there is a large chasm between developing small programs working with one algorithm at a time and being able to develop something that is marketable and an actual product. Even my own side projects that I’ve taken on over the years are small and simple in comparison to developing an actual product. &lt;em&gt;I think it’s also important to note here that in a real production environmdent you’re working with more than one language at a time.&lt;/em&gt; So it might be nice to know the depth of Java, it’s also important to be able to pick up other languages quickly and be able to see how they integrate with what your working with.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Microsoft is a lot cooler than I’ve been told to believe.&lt;/strong&gt; Yes, Windows 8 still sucks. Yes, Microsoft as a company doesn’t seem to have a real clear direction. But behind all of those things that Microsoft does wrong that you hear about most frequently, they do a lot of things right. Microsoft Visual Studio is cool, plain and simple. Sure it’s just an IDE but it’s literally one of the best for developing Microsoft programs, and a lot of companies, believe it or not, are developing Microsoft programs. ( &lt;em&gt;On a side note, the other IDE that I really like is NetBeans which is great for developing almost anything with and Sublime Text, which sure is technically just a text editor, but it’s so damn slick looking&lt;/em&gt; ). C# is also a really nice language and easy to pick up if you already know a little Java or some other Class Object language.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;The company you work for is important.&lt;/strong&gt; It’s a rare environment where people can have fun &lt;em&gt;and&lt;/em&gt; get work done at the same time, which I think is one of the biggest differences between working with a small company or a large corporation. Small companies are lean, which as a software developer is important, and can get away from all the corporate bullshit. Now I don’t know what being a software developer for a large corporation is like, but I know one thing and it’s that I am for sure not working for the man.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h5 id=&quot;word-of-the-day&quot;&gt;Word of the day:&lt;/h5&gt;
-&lt;p&gt;&lt;strong&gt;effete&lt;/strong&gt;&lt;/p&gt;
-
-&lt;h5 id=&quot;quote-of-the-day&quot;&gt;Quote of the day:&lt;/h5&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;If I had asked my customers what they wanted they would have said a faster horse&lt;/p&gt;
-
-  &lt;blockquote&gt;
-    &lt;p&gt;-credited to Henry Ford (on the usefulness of R&amp;amp;D)&lt;/p&gt;
-  &lt;/blockquote&gt;
-&lt;/blockquote&gt;
-</description>
-      <pubDate>Fri, 24 May 2013 20:18:15 -0400</pubDate>
-      <guid>http://www.mattsheehan.me/archives/what-i-ve-learned-so-far/</guid>
-      <dc:date>2013-05-24T20:18:15-04:00</dc:date>
-    </item>
-    <dc:date>2015-09-23T00:00:00-04:00</dc:date>
+    <dc:date>2015-12-21T00:00:00-05:00</dc:date>
   </channel>
 </rss>

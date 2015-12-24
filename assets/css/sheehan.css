@@ -16,7 +16,7 @@ body {
   padding: 0;
   margin: 0;
 }
-h6 {
+body h6 {
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 1.29442719096rem;
   line-height: 2.0944271908707455rem;
@@ -25,7 +25,7 @@ h6 {
   margin: 0;
   padding: 0;
 }
-h5 {
+body h5 {
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 1.698935688135rem;
   line-height: 2.7489356880178533rem;
@@ -34,7 +34,7 @@ h5 {
   margin: 0;
   padding: 0;
 }
-h4 {
+body h4 {
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 2.10344418531rem;
   line-height: 3.403444185164961rem;
@@ -43,7 +43,7 @@ h4 {
   margin: 0;
   padding: 0;
 }
-h3 {
+body h3 {
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 2.507952682485rem;
   line-height: 4.057952682312069rem;
@@ -52,7 +52,7 @@ h3 {
   margin: 0;
   padding: 0;
 }
-h2 {
+body h2 {
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 2.9124611796599997rem;
   line-height: 4.712461179459177rem;
@@ -61,7 +61,7 @@ h2 {
   margin: 0;
   padding: 0;
 }
-h1 {
+body h1 {
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 3.3169696768349994rem;
   line-height: 5.366969676606284rem;
@@ -69,74 +69,6 @@ h1 {
   font-weight: 600;
   margin: 0;
   padding: 0;
-}
-.grid {
-  display: block;
-  margin: auto;
-  text-align: center;
-  padding-top: 2rem;
-  max-width: 50rem;
-  width: 100%;
-  overflow-x: visible;
-}
-@media screen and (max-width: 50rem) {
-  .grid {
-    padding-top: 0.5rem;
-  }
-}
-.container {
-  display: inline-block;
-  margin: 0 auto;
-  width: 100%;
-}
-.row {
-  display: inline-block;
-  padding: .5rem 0;
-  width: 100%;
-}
-.column {
-  float: left;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  padding: 0 0.25rem;
-}
-@media screen and (min-width: 50rem) {
-  .column {
-    padding: 0 1rem;
-  }
-  .column.full {
-    width: 100%;
-  }
-  .column.three-fourths {
-    width: 74.95%;
-  }
-  .column.two-thirds {
-    width: 66.7%;
-  }
-  .column.half {
-    width: 50%;
-  }
-  .column.one-third {
-    width: 33.3%;
-  }
-  .column.one-fourth {
-    width: 24.95%;
-  }
-  .column.opposite {
-    float: right;
-  }
-}
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  display: table;
-}
-.clearfix:after {
-  clear: both;
-}
-.clearfix {
-  *zoom: 1;
 }
 .offset {
   width: 10rem;
@@ -316,6 +248,17 @@ small {
 .footnotes ol p {
   padding: 0;
 }
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
 .site-header {
   position: fixed;
   height: 100%;
@@ -445,9 +388,13 @@ small {
   }
 }
 .post .title {
+  line-height: 1;
+  font-size: 3em;
   text-align: left;
 }
 .post .date {
+  display: block;
+  margin-top: 1rem;
   color: #8f8f8f;
   font-size: 0.9rem;
   font-weight: 400;
@@ -456,6 +403,12 @@ small {
 .post .content {
   padding-top: 1rem;
   text-align: justify;
+}
+.post .content sup a {
+  color: #28af60;
+}
+.post .content .reversefootnote {
+  color: #28af60;
 }
 .post .post-nav {
   display: flex;

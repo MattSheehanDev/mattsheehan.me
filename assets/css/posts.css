@@ -13,9 +13,13 @@
   }
 }
 .post .title {
+  line-height: 1;
+  font-size: 3em;
   text-align: left;
 }
 .post .date {
+  display: block;
+  margin-top: 1rem;
   color: #8f8f8f;
   font-size: 0.9rem;
   font-weight: 400;
@@ -24,6 +28,12 @@
 .post .content {
   padding-top: 1rem;
   text-align: justify;
+}
+.post .content sup a {
+  color: #28af60;
+}
+.post .content .reversefootnote {
+  color: #28af60;
 }
 .post .post-nav {
   display: flex;

@@ -17,10 +17,14 @@
 	});
 
 	.title {
+		line-height: 1;
+		font-size: 3em;
 		text-align: left;
 	}
 
 	.date {
+		display: block;
+		margin-top: 1rem;
 		color: hsl(0, 0%, 56%);
 		font-size: 0.9rem;
 		font-weight: 400;
@@ -30,6 +34,13 @@
 	.content {
 		padding-top: 1rem;
 		text-align: justify;
+
+		sup a {
+			color: @primary1;
+		}
+		.reversefootnote {
+			color: @primary1;
+		}
 	}
 
 
