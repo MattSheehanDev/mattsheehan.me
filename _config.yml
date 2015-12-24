@@ -28,7 +28,7 @@ email: sheehamj@mountunion.edu
 
 ie_category: "journal"
 ie_frequency: 30
-ie_tile_color: "#497bad"
+ie_tile_color: "#FFFFFF"
 ie_tile_small: "/assets/images/microsoft/ms-small-128x128.png"
 ie_tile_medium: "/assets/images/microsoft/ms-medium-270x270.png"
 ie_tile_wide: "/assets/images/microsoft/ms-wide-558x270.png"
