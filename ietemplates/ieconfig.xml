@@ -6,7 +6,7 @@
       <square150x150logo src="/assets/images/microsoft/ms-medium-270x270.png"/>
       <wide310x150logo src="/assets/images/microsoft/ms-wide-558x270.png"/>
       <square310x310logo src="/assets/images/microsoft/ms-large-558x558.png"/>
-      <TileColor>#497bad</TileColor>
+      <TileColor>#FFFFFF</TileColor>
     </tile>
     <notification>
       <polling-uri src="/ietemplates/poll1.xml"/>
