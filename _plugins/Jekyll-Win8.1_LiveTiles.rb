@@ -5,7 +5,7 @@
 #
 # Uses the following attributes in _config.yml:
 #   ie_category:   - (optional) poll only a specific category of posts
-#   ie_frequency:  - (optional) the frequency of site polling. Options are {30,60,360,720,1440}. Default is 1440 (1 day) 
+#   ie_frequency:  - (optional) the frequency of site polling. Options are {30,60,360,720,1440}. Default is 1440 (1 day)
 #   ie_tile_color: - (optional) the color of the windows 8 pinned background tile
 #   ie_tile_small: - location of small tile image (For more information of tile sizes visit http://msdn.microsoft.com/en-us/library/dn455106(v=vs.85).aspx)
 #   ie_tile_medium - location of medium tile image
@@ -37,7 +37,7 @@ module Jekyll
       # # create at most 4
       category = site.config["ie_category"]
       posts = !category ? site.posts : site.categories.has_key?(category) ? site.categories[category] : site.posts
-      
+
       count = [posts.length, 4].min
 
       posts.reverse[0..count].each_with_index do |post, index|
@@ -109,7 +109,7 @@ module Jekyll
 
 
   # sets ie 11 configs
-  class TileConfig < StaticFile; 
+  class TileConfig < StaticFile;
     def initialize(site, base, dir, name)
       super(site, base, dir, name)
     end
