@@ -5,6 +5,15 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+@-ms-viewport {
+  width: device-width;
+}
+@-o-viewport {
+  width: device-width;
+}
+@viewport {
+  width: device-width;
+}
 html {
   font-family: sans-serif;
   text-rendering: optimizeLegibility;
@@ -262,7 +271,7 @@ small {
 .site-header {
   position: fixed;
   height: 100%;
-  width: 16em;
+  width: 12em;
   -webkit-box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.2);
   -o-box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.2);
@@ -338,12 +347,12 @@ small {
 .site-header .site-header__content .site-header__links .link:hover {
   color: #28af60;
 }
-@media screen and (max-width: 85rem) {
+@media screen and (min-width: 1000px) {
   .site-header {
-    width: 12em;
+    width: 16em;
   }
 }
-@media screen and (max-width: 50rem) {
+@media screen and (max-width: 800px) {
   .site-header {
     position: relative;
     width: 100%;
@@ -539,25 +548,25 @@ small {
   display: flex;
   flex-direction: column;
   font-family: "Noto Serif", "Georgia", serif;
-  margin-left: 16em;
-  padding: 6em 5em 4em;
+  margin-left: 0;
+  padding: 1.5em 1em 1em;
 }
-@media screen and (max-width: 85rem) {
-  .site-content {
-    margin-left: 12em;
-    padding: 5em 3em 3em;
-  }
-}
-@media screen and (max-width: 50rem) {
+@media screen and (min-width: 570px) {
   .site-content {
     margin-left: 0;
     padding: 2em;
   }
 }
-@media screen and (max-width: 30rem) {
+@media screen and (min-width: 800px) {
   .site-content {
-    margin-left: 0;
-    padding: 1.5em 1em 1em;
+    margin-left: 12em;
+    padding: 5em 3em 3em;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .site-content {
+    margin-left: 16em;
+    padding: 6em 5em 4em;
   }
 }
 /*

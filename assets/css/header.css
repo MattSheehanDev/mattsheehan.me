@@ -1,7 +1,7 @@
 .site-header {
   position: fixed;
   height: 100%;
-  width: 16em;
+  width: 12em;
   -webkit-box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.2);
   -o-box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.2);
@@ -77,12 +77,12 @@
 .site-header .site-header__content .site-header__links .link:hover {
   color: #28af60;
 }
-@media screen and (max-width: 85rem) {
+@media screen and (min-width: 1000px) {
   .site-header {
-    width: 12em;
+    width: 16em;
   }
 }
-@media screen and (max-width: 50rem) {
+@media screen and (max-width: 800px) {
   .site-header {
     position: relative;
     width: 100%;

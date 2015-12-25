@@ -3,7 +3,7 @@
 .site-header {
 	position: fixed;
 	height: 100%;
-	width: 16em;
+	width: 12em;
 	#utilities > .box-shadow(0, 0, 0.5em, rgba(0, 0, 0, 0.2));
 
 	.site-header__content {
@@ -37,32 +37,9 @@
 
 				background: url(../images/self_art-circle.png) no-repeat center center;
 				background-size: 5pc auto;
-				// #utilities > .background-size(cover);
 
 				text-indent: -9999px;
 			}
-
-			// &:hover {
-			// 	div {
-			// 		#utilities > .box-shadow(0, 0, 10px, 5px, @tertiary1);
-			// 	}
-			// }
-
-			// div {
-			// 	background: @tertiary1 url(../images/self_art.jpg) no-repeat center center;
-			// 	#utilities > .background-size(cover);
-			//
-			// 	width: 100%;
-			// 	height: 100%;
-			// 	margin: auto;
-			// 	text-indent: -9999px;
-			// 	#utilities > .border-radius(50%);
-			//
-			// 	-webkit-transition: -webkit-box-shadow ease 0.5s, -webkit-filter ease 0.5s;
-			// 	-moz-transition: -moz-box-shadow ease 0.5s, filter ease 0.5s;
-			// 	-o-transition: -o-box-shadow ease 0.5s, filter ease 0.5s;
-			// 	transition: box-shadow ease 0.5s, filter ease 0.5s;
-			// }
 		}
 
 		.site-header__signature {
@@ -95,7 +72,7 @@
 				padding: 0.2em 0;
 				color: @grey;
 				#utilities > .transition(color, cubic-bezier(0.4, 0, 0.2, 1), 0.2s);
-				
+
 				&:hover {
 					color: @primary1;
 				}
@@ -105,11 +82,11 @@
 
 
 
-	#utilities > .screenSmallerThan(85rem, {
-		width: 12em;
+	#utilities > .screenLargerThan(1000px, {
+		width: 16em;
 	});
 
-	#utilities > .screenSmallerThan(50rem, {
+	#utilities > .screenSmallerThan(800px, {
 		position: relative;
 		width: 100%;
 		height: auto;
