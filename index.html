@@ -21,24 +21,28 @@ title: Matt Sheehan
   </ul>
 
   <div class="page-nav">
+    {% if paginator.previous_page %}
     <div class="prev-page">
-      {% if paginator.previous_page %}
-
       <a href="{{ paginator.previous_page_path }}" class="button circle left-arrow"></a>
-
-      {% endif %}
     </div>
+    {% endif %}
+    {% if paginator.next_page %}
     <div class="next-page">
-      {% if paginator.next_page %}
-
       <a href="{{ paginator.next_page_path }}" class="button circle right-arrow"></a>
-
-      {% endif %}
     </div>
+    {% endif %}
   </div>
 
-  <div class="archive-page">
+  <!-- <div class="archive-page">
     <span>Continue reading a complete list of posts in the</span>
     <a href="{{ site.url }}/archives">archives</a>
+  </div> -->
+
+  <div class="journal__links">
+    <a href="/" class="link">Journal</a>
+    <a href="/archives/" class="link">Archive</a>
+    <a href="{{ site.url }}/resume" class="link">Resume</a>
+    <a href="{{ site.url }}/about" class="link">About</a>
+    <a href="{{ site.url }}/feeds/rss.xml" class="link">RSS</a>
   </div>
 </main>

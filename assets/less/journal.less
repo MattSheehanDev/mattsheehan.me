@@ -83,12 +83,39 @@
 		}
 	}
 
-	#utilities > .screenSmallerThan(50rem, {
+	.journal__links{
+		display: none;
+		width: 100%;
+		font-size: 0.8em;
+		text-align: center;
+		margin-top: 1em;
+
+		.link {
+			display: block;
+			text-decoration: none;
+			padding: 0.2em 0;
+			color: @grey;
+			#utilities > .transition(color, cubic-bezier(0.4, 0, 0.2, 1), 0.2s);
+
+			&:hover {
+				color: @primary1;
+			}
+		}
+	}
+
+	#utilities > .screenSmallerThan(800px, {
 		max-width: none;
 		width: 100%;
 
 		.journal__recent {
 			text-align: center;
+		}
+		.journal__links {
+			// display: block;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			flex-direction: row;
 		}
 	});
 }
