@@ -48,6 +48,59 @@ module Jekyll
   end
 
 
+  # sets ie 11 configs
+  class TileConfig < StaticFile;
+    def initialize(site, base, dir, name)
+      super(site, base, dir, name)
+    end
+
+    def write(dest)
+      # configs
+      tile_color = @site.config["ie_tile_color"] || "#000000"
+      tile_small = @site.config["ie_tile_small"]
+      tile_medium = @site.config["ie_tile_medium"]
+      tile_wide = @site.config["ie_tile_wide"]
+      tile_large = @site.config["ie_tile_large"]
+
+      frequency = @site.config["ie_frequency"] || 1440
+      raise "frequency must be either 30, 60, 360, 720, 1440" unless [30,60,360,720,1440].include?(frequency)
+
+      # create dir for tile config
+      config_dir = File.join(dest, @dir)
+      FileUtils.mkdir_p(config_dir)
+
+
+      # build xml config
+      xml = Builder::XmlMarkup.new( :indent=>2)
+      xml.instruct! :xml, :encoding=>"utf-8"
+
+      xml.browserconfig do |config|
+        config.msapplication do |app|
+          app.tile do |tile|
+            tile.tag!("square70x70logo", "src"=>"#{tile_small}")
+            tile.tag!("square150x150logo", "src"=>"#{tile_medium}")
+            tile.tag!("wide310x150logo", "src"=>"#{tile_wide}")
+            tile.tag!("square310x310logo", "src"=>"#{tile_large}")
+            tile.tag!("TileColor", "#{tile_color}")
+          end
+          app.notification do |n|
+            n.tag!("polling-uri", "src"=>"/ietemplates/poll1.xml")
+            n.tag!("polling-uri2", "src"=>"/ietemplates/poll2.xml")
+            n.tag!("polling-uri3", "src"=>"/ietemplates/poll3.xml")
+            n.tag!("polling-uri4", "src"=>"/ietemplates/poll4.xml")
+            n.tag!("polling-uri5", "src"=>"/ietemplates/poll5.xml")
+            n.tag!("frequency", "#{frequency}")
+            n.tag!("cycle", "1")
+          end
+        end
+      end
+
+      # write file
+      config_path = File.join(config_dir, @name)
+      File.open(config_path, "w") { |f| f.write(xml.target!) }
+    end
+   end
+
 
   # polling xml
   class TilePoll < StaticFile
@@ -107,57 +160,4 @@ module Jekyll
 
   end
 
-
-  # sets ie 11 configs
-  class TileConfig < StaticFile;
-    def initialize(site, base, dir, name)
-      super(site, base, dir, name)
-    end
-
-    def write(dest)
-      # configs
-      tile_color = @site.config["ie_tile_color"] || "#000000"
-      tile_small = @site.config["ie_tile_small"]
-      tile_medium = @site.config["ie_tile_medium"]
-      tile_wide = @site.config["ie_tile_wide"]
-      tile_large = @site.config["ie_tile_large"]
-
-      frequency = @site.config["ie_frequency"] || 1440
-      raise "frequency must be either 30, 60, 360, 720, 1440" unless [30,60,360,720,1440].include?(frequency)
-
-      # create dir for tile config
-      config_dir = File.join(dest, @dir)
-      FileUtils.mkdir_p(config_dir)
-
-
-      # build xml config
-      xml = Builder::XmlMarkup.new( :indent=>2)
-      xml.instruct! :xml, :encoding=>"utf-8"
-
-      xml.browserconfig do |config|
-        config.msapplication do |app|
-          app.tile do |tile|
-            tile.tag!("square70x70logo", "src"=>"#{tile_small}")
-            tile.tag!("square150x150logo", "src"=>"#{tile_medium}")
-            tile.tag!("wide310x150logo", "src"=>"#{tile_wide}")
-            tile.tag!("square310x310logo", "src"=>"#{tile_large}")
-            tile.tag!("TileColor", "#{tile_color}")
-          end
-          app.notification do |n|
-            n.tag!("polling-uri", "src"=>"/ietemplates/poll1.xml")
-            n.tag!("polling-uri2", "src"=>"/ietemplates/poll2.xml")
-            n.tag!("polling-uri3", "src"=>"/ietemplates/poll3.xml")
-            n.tag!("polling-uri4", "src"=>"/ietemplates/poll4.xml")
-            n.tag!("polling-uri5", "src"=>"/ietemplates/poll5.xml")
-            n.tag!("frequency", "#{frequency}")
-            n.tag!("cycle", "1")
-          end
-        end
-      end
-
-      # write file
-      config_path = File.join(config_dir, @name)
-      File.open(config_path, "w") { |f| f.write(xml.target!) }
-    end
-   end
 end

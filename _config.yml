@@ -26,7 +26,6 @@ mailing_address: 1620 Sturbridge Dr. Louisville OH 44641
 phone: 330-614-1599
 email: sheehamj@mountunion.edu
 
-ie_category: "journal"
 ie_frequency: 30
 ie_tile_color: "#27E60"
 ie_tile_small: "/assets/images/microsoft/ms-small-128x128.png"
@@ -46,7 +45,7 @@ tsc: "tsc"
 js_dest: assets/script
 
 
-exclude: [Gemfile, README.md, Typeset, typeset.rb, legacy]
+exclude: [Gemfile, README.md, legacy]
 
 collections:
  pinned:
