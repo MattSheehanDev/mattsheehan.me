@@ -257,6 +257,10 @@ small {
 .footnotes ol p {
   padding: 0;
 }
+ul.checklist {
+  list-style: none;
+  font-family: monospace;
+}
 .clearfix:before,
 .clearfix:after {
   content: " ";

@@ -2,15 +2,15 @@
 <tile>
   <visual lang="en-US" version="2">
     <binding template="TileSquare150x150Text04" branding="logo" fallback="TileSquareImage">
-      <text id="1">Ruby is Object-Oriented Lisp</text>
+      <text id="1">Ellsworth Toohey</text>
     </binding>
     <binding template="TileWide310x150Text03" branding="logo" fallback="TileWideImage">
-      <text id="1">Ruby is Object-Oriented Lisp</text>
+      <text id="1">Ellsworth Toohey</text>
     </binding>
     <binding template="TileSquare310x310TextList02" branding="logo" fallback="TileWideText09">
-      <text id="1">Ruby is Object-Oriented Lisp</text>
-      <text id="2">I’ve fooled around and hankey-...</text>
-      <text id="3">9-22-2015</text>
+      <text id="1">Ellsworth Toohey</text>
+      <text id="2">Bernie Sanders reminds be of E...</text>
+      <text id="3">9-23-2015</text>
     </binding>
   </visual>
 </tile>
