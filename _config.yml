@@ -27,7 +27,7 @@ phone: 330-614-1599
 email: sheehamj@mountunion.edu
 
 ie_frequency: 30
-ie_tile_color: "#27E60"
+ie_tile_color: "#27AE60"
 ie_tile_small: "/assets/images/microsoft/ms-small-128x128.png"
 ie_tile_medium: "/assets/images/microsoft/ms-medium-270x270.png"
 ie_tile_wide: "/assets/images/microsoft/ms-wide-558x270.png"
@@ -65,21 +65,6 @@ defaults:
    values:
     layout: post
  - scope:
-    type: resume
-    path: "resume/education"
-   values:
-    categories: "education"
- - scope:
-    type: resume
-    path: "resume/work"
-   values:
-    categories: "job"
- - scope:
-    type: resume
-    path: "resume/other"
-   values:
-    categories: "other"
- - scope:
     path: "about"
     type: pages
    values:
@@ -89,3 +74,18 @@ defaults:
     type: "pages"
    values:
     layout: "default"
+ # - scope:
+ #    type: resume
+ #    path: "resume/education"
+ #   values:
+ #    categories: "education"
+ # - scope:
+ #    type: resume
+ #    path: "resume/work"
+ #   values:
+ #    categories: "job"
+ # - scope:
+ #    type: resume
+ #    path: "resume/other"
+ #   values:
+ #    categories: "other"
