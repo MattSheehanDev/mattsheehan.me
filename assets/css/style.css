@@ -244,6 +244,9 @@ small {
   width: 100%;
   display: inline-block;
 }
+.paragraph {
+  margin-top: 2rem;
+}
 .footnotes {
   border-top: 1px dashed #999;
   padding-top: 1rem;

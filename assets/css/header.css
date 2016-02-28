@@ -55,7 +55,7 @@
 .site-header .site-header__content .site-header__portrait div {
   width: 100%;
   height: 100%;
-  background: url(../images/self_art-circle.png) no-repeat center center;
+  background: url(../images/self_art-circle-compressed.png) no-repeat center center;
   background-size: 5pc auto;
   text-indent: -9999px;
 }
