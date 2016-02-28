@@ -1,4 +1,4 @@
-## Building mattsheehan.me ##
+## Setting up mattsheehan.me ##
 
 #### NodeJS ####
 
@@ -32,4 +32,15 @@ $> gem install jekyll
 ###### Install jekyll-paginate ######
 ```
 $> gem install jekyll-paginate
+```
+
+
+## Building mattsheehan.me ##
+To serve the webpage use jekyll's `serve` command
+```
+$> jekyll serve
+```
+To only build the webpage use jekyll's `build` command
+```
+$> jekyll build
 ```
