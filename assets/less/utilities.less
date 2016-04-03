@@ -15,6 +15,24 @@
 
 #utilities {
 
+	.flexbox() {
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+	}
+	.flex-direction(@dir) {
+		-ms-flex-direction: @dir;
+		-webkit-flex-direction: @dir;
+		flex-direction: @dir;
+	}
+	.flex-justify(@pos) {
+		-webkit-justify-content: @pos;
+		justify-content: @pos;
+	}
+
+
 	.border-radius(@tlbrtrbl) {
 		-webkit-border-radius: @arguments;
 		-moz-border-radius: @arguments;

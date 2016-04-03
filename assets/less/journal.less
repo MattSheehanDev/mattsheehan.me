@@ -4,8 +4,9 @@
  * wrapper around 'main' content
  */
 .site-content {
-	display: flex;
-	flex-direction: column;
+	#utilities > .flexbox();
+	#utilities > .flex-direction(column);
+
 	font-family: @serif-fonts;// "Noto Serif", "Georgia", serif;
 
 
@@ -19,7 +20,6 @@
 
 	#utilities > .screenLargerThan(800px, {
 		margin-left: 12em;
-		// padding: 6em 5em 4em;
 		padding: 5em 3em 3em;
 	});
 
@@ -56,8 +56,8 @@
 
 
 	.page-nav {
-		display: flex;
-		justify-content: center;
+		#utilities > .flexbox();
+		#utilities > .flex-justify(center);
 		margin-top: 1rem;
 
 		.prev-page, .next-page {
