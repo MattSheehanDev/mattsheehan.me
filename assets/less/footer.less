@@ -1,0 +1,43 @@
+@import "utilities";
+
+.journal-nav__links{
+  display: none;
+  width: 100%;
+  font-size: 0.8em;
+  text-align: center;
+  // margin: 1em 0;
+  padding: 1.5rem 0;
+  background-color: @grey-off;
+
+  font-family: @sans-fonts;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.025rem;
+  text-transform: uppercase;
+  color: @grey-dark;
+
+  #utilities > .box-shadow(0, 0, 0.5rem, rgba(0, 0, 0, 0.2));
+
+  .link {
+    display: block;
+    text-decoration: none;
+    // padding: 0.2em 0;
+    color: inherit;
+    // color: @grey;
+    #utilities > .transition(color, cubic-bezier(0.4, 0, 0.2, 1), 0.2s);
+
+    &:hover {
+      color: @primary1;
+    }
+  }
+}
+
+
+#utilities > .screenSmallerThan(800px, {
+  .journal-nav__links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+  }
+});

@@ -30,7 +30,8 @@ html {
 }
 
 body {
-	font: 1.0625em/1.47 "Georgia",serif;
+	// font: 1.0625em/1.47 @serif-fonts;
+	font: 1.0625em/1.47 @serif-fonts;
 	background-color: #fff;
 	padding: 0;
 	margin: 0;
@@ -39,14 +40,20 @@ body {
 	@quarter: 1.25;
 	@golden: 1.6180339887;
 
-	.generateHeaders(@n, @i: 6, @s: 0.8) when (@i >= @n) {
-		@size: @s * @golden;
+	.calculateGolden(@num) {
+		@size: @num * @golden;
 		@height: @size * @golden;
+	}
+
+	.generateHeaders(@n, @i: 6, @s: 0.8) when (@i >= @n) {
+		// @size: @s * @golden;
+		// @height: @size * @golden;
+		.calculateGolden(@s);
 
 		h@{i} {
-			font-family: "Open Sans","Helvetica Neue",sans-serif;
+			font-family: @sans-fonts;
 			font-size: ~"@{size}rem";
-			line-height: ~"@{height}rem";
+			// line-height: ~"@{height}rem";
 			letter-spacing: -0.04em;
 
 			font-weight: 600;
