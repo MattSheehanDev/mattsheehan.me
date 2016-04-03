@@ -36,8 +36,8 @@
 
 
 	.post-nav {
-		display: flex;
-		align-items: stretch;
+		#utilities > .flexbox();
+		#utilities > .flex-align(stretch);
 		width: 100%;
 		margin-top: 3em;
 		font-size: 0.8em;
@@ -58,7 +58,7 @@
 		}
 
 		#utilities > .screenSmallerThan(30rem, {
-			flex-direction: column;
+			#utilities > .flex-direction(column);
 
 			.post-nav__previous, .post-nav__next {
 				padding: 0;

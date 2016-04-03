@@ -15,6 +15,46 @@
 
 #utilities {
 
+	.flexbox() {
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+	}
+	.flex-direction(@dir) {
+		-ms-flex-direction: @dir;
+		-webkit-flex-direction: @dir;
+		flex-direction: @dir;
+	}
+	.flex-justify(@pos) {
+		-webkit-justify-content: @pos;
+		justify-content: @pos;
+	}
+	.flex-align(@pos) {
+		-webkit-align-items: @pos;
+		align-items: @pos;
+	}
+
+	.flex(@grow, @shrink, @basis) {
+		-ms-flex: @arguments;
+		-webkit-flex: @arguments;
+		flex: @arguments;
+	}
+	.flex-grow(@num) {
+		-webkit-flex-grow: @num;
+		flex-grow: @num;
+	}
+	.flex-shrink(@num) {
+		-webkit-flex-shrink: @num;
+		flex-shrink: @num;
+	}
+	.flex-basis(@size) {
+		-webkit-flex-basis: @size;
+		flex-basis: @size;
+	}
+
+
 	.border-radius(@tlbrtrbl) {
 		-webkit-border-radius: @arguments;
 		-moz-border-radius: @arguments;

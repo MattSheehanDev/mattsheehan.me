@@ -4,28 +4,28 @@
  * wrapper around 'main' content
  */
 .site-content {
-	display: flex;
-	flex-direction: column;
+	#utilities > .flexbox();
+	#utilities > .flex-direction(column);
+
 	font-family: @serif-fonts;// "Noto Serif", "Georgia", serif;
 
 
-	margin-left: 0;
-	padding: 1.5em 1em 1em;
+	margin-left: 16em;
+	padding: 6em 5em 4em;
 
-	#utilities > .screenLargerThan(570px, {
+	#utilities > .screenSmallerThan(1000px, {
+		margin-left: 12em;
+		padding: 5em 3em 3em;
+	});
+
+	#utilities > .screenSmallerThan(800px, {
 		margin-left: 0;
 		padding: 2em;
 	});
 
-	#utilities > .screenLargerThan(800px, {
-		margin-left: 12em;
-		// padding: 6em 5em 4em;
-		padding: 5em 3em 3em;
-	});
-
-	#utilities > .screenLargerThan(1000px, {
-		margin-left: 16em;
-		padding: 6em 5em 4em;
+	#utilities > .screenSmallerThan(570px, {
+		margin-left: 0;
+		padding: 1.5em 1em 1em;
 	});
 }
 
@@ -56,8 +56,8 @@
 
 
 	.page-nav {
-		display: flex;
-		justify-content: center;
+		#utilities > .flexbox();
+		#utilities > .flex-justify(center);
 		margin-top: 1rem;
 
 		.prev-page, .next-page {
