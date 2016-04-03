@@ -297,6 +297,7 @@ ul.checklist {
 }
 .site-header .site-header__content .site-header__signature a svg {
   max-width: 10em;
+  max-height: 3em;
   stroke: #666;
   fill: #666;
   -webkit-transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
