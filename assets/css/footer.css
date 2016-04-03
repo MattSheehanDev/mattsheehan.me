@@ -1,0 +1,38 @@
+.journal-nav__links {
+  display: none;
+  width: 100%;
+  font-size: 0.8em;
+  text-align: center;
+  padding: 1.5rem 0;
+  background-color: #F4F2F0;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.025rem;
+  text-transform: uppercase;
+  color: #666;
+  -webkit-box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+}
+.journal-nav__links .link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  -webkit-transition: color cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+  -moz-transition: color cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+  -o-transition: color cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+  transition: color cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+}
+.journal-nav__links .link:hover {
+  color: #28af60;
+}
+@media screen and (max-width: 800px) {
+  .journal-nav__links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+  }
+}

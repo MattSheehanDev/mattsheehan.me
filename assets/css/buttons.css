@@ -22,7 +22,7 @@
   background: #28af60;
 }
 .button.circle {
-  border: 3px solid #61db94;
+  border: 3px solid #28af60;
   height: 3rem;
   width: 3rem;
   line-height: 1.5rem;
@@ -36,7 +36,7 @@
   transition: border-color cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
 }
 .button.circle:hover {
-  border-color: #28af60;
+  border-color: #61db94;
 }
 .right-arrow {
   background: url(../images/arrow-green.svg) no-repeat center center;

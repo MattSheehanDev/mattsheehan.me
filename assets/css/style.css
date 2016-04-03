@@ -20,7 +20,7 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 body {
-  font: 1.0625em/1.47 "Georgia", serif;
+  font: 1.0625em/1.47 "Noto Serif", "Georgia", serif;
   background-color: #fff;
   padding: 0;
   margin: 0;
@@ -28,7 +28,6 @@ body {
 body h6 {
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 1.29442719096rem;
-  line-height: 2.0944271908707455rem;
   letter-spacing: -0.04em;
   font-weight: 600;
   margin: 0;
@@ -37,7 +36,6 @@ body h6 {
 body h5 {
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 1.698935688135rem;
-  line-height: 2.7489356880178533rem;
   letter-spacing: -0.04em;
   font-weight: 600;
   margin: 0;
@@ -46,7 +44,6 @@ body h5 {
 body h4 {
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 2.10344418531rem;
-  line-height: 3.403444185164961rem;
   letter-spacing: -0.04em;
   font-weight: 600;
   margin: 0;
@@ -55,7 +52,6 @@ body h4 {
 body h3 {
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 2.507952682485rem;
-  line-height: 4.057952682312069rem;
   letter-spacing: -0.04em;
   font-weight: 600;
   margin: 0;
@@ -64,7 +60,6 @@ body h3 {
 body h2 {
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 2.9124611796599997rem;
-  line-height: 4.712461179459177rem;
   letter-spacing: -0.04em;
   font-weight: 600;
   margin: 0;
@@ -73,7 +68,6 @@ body h2 {
 body h1 {
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 3.3169696768349994rem;
-  line-height: 5.366969676606284rem;
   letter-spacing: -0.04em;
   font-weight: 600;
   margin: 0;

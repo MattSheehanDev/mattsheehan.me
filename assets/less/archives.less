@@ -10,6 +10,7 @@
 
 	h1 {
 		font-weight: 600;
+		font-size: 2.5em;
 	}
 
 	hr {
@@ -19,13 +20,19 @@
 	}
 
 	ul {
+		list-style-type: none;
+
 		li {
-			padding-bottom: 0.5rem;
+			margin: 0.25rem 0 0.75rem;
 
 			a {
-					font-family: "Noto Serif", "Georgia", serif;
+					font-family: @serif-fonts;
 					display: block;
 					color: black;
+
+					h6 {
+						#utilities > .transition(color, cubic-bezier(0.4, 0, 0.2, 1), 0.2s);
+					}
 
 					&:hover {
 						h6 {
@@ -34,17 +41,12 @@
 					}
 
 					div {
-						font-family: "Noto Serif", "Georgia", serif;
 						color: hsl(0, 0%, 56%);
 						font-size: 0.9rem;
 						font-weight: 400;
 					}
 			}
 		}
-
-		#utilities > .screenSmallerThan(30rem, {
-				list-style-type: none;
-		});
 	}
 
 	.megaman
@@ -57,6 +59,12 @@
 
 		#utilities > .animation(walk, .8s, steps(4), infinite);
 	}
+
+	#utilities > .screenSmallerThan(30rem, {
+		h1 {
+			font-size: 1.75em;
+		}
+	});
 }
 
 

@@ -6,7 +6,7 @@
 .site-content {
 	display: flex;
 	flex-direction: column;
-	font-family: "Noto Serif", "Georgia", serif;
+	font-family: @serif-fonts;// "Noto Serif", "Georgia", serif;
 
 
 	margin-left: 0;
@@ -83,26 +83,6 @@
 		}
 	}
 
-	.journal-nav__links{
-		display: none;
-		width: 100%;
-		font-size: 0.8em;
-		text-align: center;
-		margin: 1em 0;
-
-		.link {
-			display: block;
-			text-decoration: none;
-			padding: 0.2em 0;
-			color: @grey;
-			#utilities > .transition(color, cubic-bezier(0.4, 0, 0.2, 1), 0.2s);
-
-			&:hover {
-				color: @primary1;
-			}
-		}
-	}
-
 
 	#utilities > .screenSmallerThan(800px, {
 		max-width: none;
@@ -112,13 +92,6 @@
 			text-align: center;
 		}
 
-		.journal-nav__links {
-			// display: block;
-			display: flex;
-			justify-content: space-around;
-			align-items: center;
-			flex-direction: row;
-		}
 	});
 }
 
@@ -135,8 +108,12 @@
 
 		.title {
 			font-weight: 600;
+			line-height: 1.1;
+			margin: 0 0 0.333em;
 		}
 		.content {
+			display: block;
+			width: 100%;
 			font-size: 0.9rem;
 
 			a {
@@ -167,10 +144,14 @@
 
 		.title {
 			font-weight: 600;
+			line-height: 1.1;
+			margin: 0.667em 0px 0.333em;
 			#utilities > .transition(color, cubic-bezier(0.4, 0, 0.2, 1), 0.2s);
 		}
 
 		.date {
+			display: block;
+			width: 100%;
 			color: hsl(0, 0%, 56%);
 			font-size: 0.9rem;
 			font-weight: 400;
@@ -179,6 +160,7 @@
 		.content {
 			font-family: "Open Sans","Helvetica Neue",sans-serif;
 			font-size: 0.9rem;
+			line-height: 1.4;
 			color: #AAA;
 			width: 100%;
 		}

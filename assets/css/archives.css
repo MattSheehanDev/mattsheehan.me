@@ -7,33 +7,37 @@
 }
 .archives h1 {
   font-weight: 600;
+  font-size: 2.5em;
 }
 .archives hr {
   margin-top: 1rem;
   margin-bottom: 1rem;
   width: 100%;
 }
+.archives ul {
+  list-style-type: none;
+}
 .archives ul li {
-  padding-bottom: 0.5rem;
+  margin: 0.25rem 0 0.75rem;
 }
 .archives ul li a {
   font-family: "Noto Serif", "Georgia", serif;
   display: block;
   color: black;
 }
+.archives ul li a h6 {
+  -webkit-transition: color cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+  -moz-transition: color cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+  -o-transition: color cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+  transition: color cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+}
 .archives ul li a:hover h6 {
   color: #28af60;
 }
 .archives ul li a div {
-  font-family: "Noto Serif", "Georgia", serif;
   color: #8f8f8f;
   font-size: 0.9rem;
   font-weight: 400;
-}
-@media screen and (max-width: 30rem) {
-  .archives ul {
-    list-style-type: none;
-  }
 }
 .archives .megaman {
   margin: 1rem auto;
@@ -46,6 +50,11 @@
   -ms-animation: walk 0.8s steps(4) infinite;
   -o-animation: walk 0.8s steps(4) infinite;
   animation: walk 0.8s steps(4) infinite;
+}
+@media screen and (max-width: 30rem) {
+  .archives h1 {
+    font-size: 1.75em;
+  }
 }
 @-webkit-keyframes walk {
   from {

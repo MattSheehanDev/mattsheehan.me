@@ -1,10 +1,14 @@
 @import "utilities";
 
+@header-color: #F4F2F0;
+
+
 .site-header {
 	position: fixed;
 	height: 100%;
 	width: 12em;
-	#utilities > .box-shadow(0, 0, 0.5em, rgba(0, 0, 0, 0.2));
+	background-color: @header-color;
+	#utilities > .box-shadow(0, 0, 0.5rem, rgba(0, 0, 0, 0.2));
 
 	.site-header__content {
 		display: flex;
@@ -18,19 +22,43 @@
 
 		.site-header__signature {
 			display: block;
-			width: 10em;
-			margin-bottom: 1.25em;
+			width: 10rem;
+			margin-bottom: 1.25rem;
 
-			img {
-				width: 100%;
-				margin-left: 0;
-				padding: 0;
-				max-width: 10em;
+			a {
+				display: block;
+
+				svg {
+					max-width: 10em;
+
+					// For chrome, you have to set the properties on the parent svg element
+					stroke: #666;
+					fill: #666;
+					#utilities > .transition(all, cubic-bezier(0.4, 0, 0.2, 1), 0.2s);
+
+					// For firefox, you have to set the properties directly on the path
+					path {
+						stroke: #666;
+						fill: #666;
+						#utilities > .transition(all, cubic-bezier(0.4, 0, 0.2, 1), 0.2s);
+					}
+
+					&:hover {
+						stroke: #27ae60;
+						fill: #27ae60;
+						path {
+							stroke: #27ae60;
+							fill: #27ae60;
+						}
+
+					}
+				}
 			}
 			span {
 				color: @grey;
 				display: block;
-				font-size: 0.75em;
+				font-size: 0.85rem;
+				font-family: @sans-fonts;
 				margin: 0px;
 			}
 		}
@@ -40,7 +68,7 @@
 			flex: 0 0 auto;
 			height: 5.5pc;
 			width: 5.5pc;
-			margin: 0px 0px 1.25em;
+			margin: 0px 0px 1.25rem;
 			order: -1;
 
 			border: 1px solid #555;
@@ -65,7 +93,7 @@
 		.site-header__social {
 			display: flex;
 			justify-content: space-between;
-			margin-bottom: 1em;
+			margin-bottom: 1rem;
 
 			.social-nav__icon {
 			  flex: 0 0 auto;
@@ -95,21 +123,34 @@
 			}
 
 			.social-nav__icon-rss {
-				margin-left: 0.4em;
+				margin-left: 0.4rem;
 			}
 		}
 
 		.site-header__links {
 			display: block;
 			width: 100%;
-			font-size: 0.8em;
+
+			font-family: @sans-fonts;
+			font-size: 0.8rem;
+			font-weight: 600;
+			letter-spacing: 0.025rem;
+			text-transform: uppercase;
+			color: @grey-dark;
 
 			.link {
 				display: block;
 				text-decoration: none;
-				padding: 0.2em 0;
-				color: @grey;
+				padding: 0.2rem 0;
+				color: inherit;
+				// color: @grey;
 				#utilities > .transition(color, cubic-bezier(0.4, 0, 0.2, 1), 0.2s);
+
+				// font-family: "Open Sans";
+				// letter-spacing: 0.025rem;
+				// font-weight: 600;
+				// text-transform: uppercase;
+				// font-size: 0.9em;
 
 				&:hover {
 					color: @primary1;
@@ -140,12 +181,16 @@
 				flex: 1 1 50%;
 				margin: 0;
 				text-align: left;
+
+				span {
+					display: none;
+				}
 			}
 			.site-header__portrait {
 				height: 56px;
 				width: 56px;
 				order: 0;
-				margin: 0 0.5em;
+				margin: 0 0.5rem;
 
 				div {
 					background-size: 50px auto;
