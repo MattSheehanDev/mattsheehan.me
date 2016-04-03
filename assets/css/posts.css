@@ -27,7 +27,12 @@
   color: #28af60;
 }
 .post .post-nav {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
+  -webkit-align-items: stretch;
   align-items: stretch;
   width: 100%;
   margin-top: 3em;
@@ -51,6 +56,8 @@
 }
 @media screen and (max-width: 30rem) {
   .post .post-nav {
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
     flex-direction: column;
   }
   .post .post-nav .post-nav__previous,

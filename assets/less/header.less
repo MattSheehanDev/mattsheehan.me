@@ -11,10 +11,10 @@
 	#utilities > .box-shadow(0, 0, 0.5rem, rgba(0, 0, 0, 0.2));
 
 	.site-header__content {
-		display: flex;
-		align-items: center;
-		flex-direction: column;
-		justify-content: center;
+		#utilities > .flexbox();
+		#utilities > .flex-direction(column);
+		#utilities > .flex-justify(center);
+		#utilities > .flex-align(center);
 
 		text-align: center;
 		height: 100%;
@@ -66,7 +66,7 @@
 
 		.site-header__portrait {
 			display: block;
-			flex: 0 0 auto;
+			#utilities > .flex(0, 0, auto);
 			height: 5.5pc;
 			width: 5.5pc;
 			margin: 0px 0px 1.25rem;
@@ -92,12 +92,12 @@
 		}
 
 		.site-header__social {
-			display: flex;
-			justify-content: space-between;
+			#utilities > .flexbox();
+			#utilities > .flex-justify(space-between);
 			margin-bottom: 1rem;
 
 			.social-nav__icon {
-			  flex: 0 0 auto;
+				#utilities > .flex(0,0,auto);
 			  cursor: pointer;
 			  height: 24px;
 			  width: 24px;
@@ -175,11 +175,11 @@
 
 		.site-header__content {
 			width: 100%;
-			flex-direction: row;
 			padding: 1rem;
+			#utilities > .flex-direction(row);
 
 			.site-header__signature {
-				flex: 1 1 50%;
+				#utilities > .flex(1,1,50%);
 				margin: 0;
 				text-align: left;
 
@@ -199,12 +199,11 @@
 			}
 
 			.site-header__social {
-				flex: 1 1 50%;
-				justify-content: flex-end;
-				// display: none;
+				#utilities > .flex(1,1,50%);
+				#utilities > .flex-justify(flex-end);
 			}
 			.site-header__links {
-				flex: 1 1 50%;
+				#utilities > .flex(1,1,50%);
 				display: none;
 			}
 		}

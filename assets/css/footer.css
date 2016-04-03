@@ -1,4 +1,4 @@
-.journal-nav__links {
+.site-footer {
   display: none;
   width: 100%;
   font-size: 0.8em;
@@ -16,7 +16,7 @@
   -o-box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
 }
-.journal-nav__links .link {
+.site-footer .link {
   display: block;
   text-decoration: none;
   color: inherit;
@@ -25,14 +25,22 @@
   -o-transition: color cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
   transition: color cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
 }
-.journal-nav__links .link:hover {
+.site-footer .link:hover {
   color: #28af60;
 }
 @media screen and (max-width: 800px) {
-  .journal-nav__links {
+  .site-footer {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    -ms-flex-direction: row;
+    -webkit-flex-direction: row;
     flex-direction: row;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    -webkit-align-items: center;
+    align-items: center;
   }
 }
