@@ -1,45 +1,43 @@
 ---
-title: About
+title: Colophon
 ---
 
 {::options parse_block_html="true" /}
 
 <div class="about" role="main">
 
-#### Hi ####
 
-My name's Matt. I live in Ohio by a lake and some trees with my laptop and bicycle.
-Sometimes I even update this page when I'm not working on some side project or watching *House* or *Seinfeld*.
+# Colophon #
+---
 
-I started programming after first wanting to learn how to make a website (it was a tribute to Bruce Springsteen btw and it was terrible). I then made a few really bad html games, followed by a few more projects between the years, some of which I have been really proud of at the time and others that make me wonder what I was thinking. Since then my interests have moved into other areas of computer science, such as language design, embedded systems, program architecture, and artificial intelligence. None of these things determine what I write about though. I write infrequently and whatever I'm currently thinking about.
+###### Developer ######
+Matt Sheehan
 
-If you want to get involved in a project, send me a note at sheehamj@outlook.com.
+###### Site Info ######
+Last upated 2016-04-24
 
+Made in Ohio
 
+###### Typography ######
+The header and title fonts are _Open Sans_, _Helvetica Neue_, and the system sans-serif font.
 
-![image]({{ site.url }}/assets/images/hello.PNG)
+The paragraph fonts are _Noto Serif_, _Georgia_, and the system serif font.
 
+The code fonts are _Consolas_, _Liberation Mono_, _Menlo_, _Courier_, and the system monospace font.
 
-#### Wallets ####
+###### Ping ######
+[sheehamj@outlook.com](mailto:sheehamj@outlook.com)
 
-<div class="row coin">
-<span><a href="http://www.dogecoin.com">Dogecoin:</a></span>
-<input value="DCpeJcAnrhJd4993ipzL1bdFP8HLWpeP5V" />
-</div>
-
+###### Support #####
 <div class="row coin">
 <span><a href="https://www.bitcoin.org/"> Bitcoin:</a></span>
 <input value="1LiynWqcqscdr59zzpMiDDypjvoDWvuMwh" />
 </div>
 
-
-#### Elsewhere ####
-
-You might be able to find me somewhere under the username *sheehamj*.
-Here are the places I know for sure.
-
-* [Github](http://github.com/sheehamj13) - Developers! Developers! Developers!
-* [Facebook](http://www.facebook.com/matt.sheehan.31) - Virtual friends.
+<div class="row coin">
+<span><a href="http://www.dogecoin.com">Dogecoin:</a></span>
+<input value="DCpeJcAnrhJd4993ipzL1bdFP8HLWpeP5V" />
+</div>
 
 
 </div>

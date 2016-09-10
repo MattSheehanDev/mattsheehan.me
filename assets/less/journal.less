@@ -131,9 +131,11 @@
 	display: block;
 	border-top: 1px solid #EEE;
 
+  @content-color: hsl(0, 0%, 67%);
+
 	&:hover {
 		.title {
-			color: @primary1;
+			  color: @primary1;
 		}
 	}
 
@@ -152,7 +154,7 @@
 		.date {
 			display: block;
 			width: 100%;
-			color: hsl(0, 0%, 56%);
+			color: @content-color;
 			font-size: 0.9rem;
 			font-weight: 400;
 		}
@@ -161,7 +163,7 @@
 			font-family: "Open Sans","Helvetica Neue",sans-serif;
 			font-size: 0.9rem;
 			line-height: 1.4;
-			color: #AAA;
+			color: @content-color;
 			width: 100%;
 		}
 	}

@@ -2,12 +2,15 @@
 layout: default
 ---
 
+{% capture headliner %}{% assign words = page.title | split: ' ' %}{% if words.size < 2 %}{{ page.title }}{% else %}{% for word in words %}{% if forloop.last %}&nbsp;{{ word }}{% else %} {{ word }}{% endif %}{% endfor %}{% endif %}{% endcapture %}
+
+
 {% if page contains 'processing' %}
 <script type="text/javascript" src="{{ site.url }}/assets/script/processing_min.js"></script>
 {% endif  %}
 
 <main class="post" role="main">
-    <h2 class="title">{{ page.title }}</h2>
+    <h2 class="title">{{ headliner }}</h2>
     <span class="date">{{ page.date | date: "%B %-d, %Y" }}</span>
 
     <div class="content">

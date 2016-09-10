@@ -26,3 +26,4 @@ Over the four years I did make a few observations:
 >There are downsides to everything; there are unintended consequences to everything. The most corrosive piece of technology that I’ve ever seen is called television — but then, again, television, at its best, is magnificent.
 >
 > > -Steve Jobs
+

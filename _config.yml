@@ -38,14 +38,14 @@ rss_author: Matt Sheehan
 rss_description: The spiritual home of Matt Sheehan
 rss_link: http://www.mattsheehan.me
 
-lessc: "nodejs /usr/local/bin/lessc"
+lessc: "node /usr/local/bin/lessc"
 css_dest: assets/css
 
 tsc: "tsc"
 js_dest: assets/script
 
 
-exclude: [Gemfile, README.md, legacy]
+exclude: [Gemfile, README.md, legacy, deploy]
 
 collections:
  pinned:

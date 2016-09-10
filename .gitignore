@@ -1,4 +1,13 @@
-#Directories to ignore
+
+### Emacs ###
+*.*~
+[#]*[#]
+.\#*
+.[#]*
+
+
+### Directories to ignore ###
 _site/**/*
+
 Gemfile.lock
 *.[a-zA-Z]~
