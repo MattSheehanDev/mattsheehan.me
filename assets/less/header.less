@@ -1,14 +1,14 @@
 @import "utilities";
 
 @header-color: white;//hsl(30, 15%, 98%);//#F4F2F0;
-
+@header-shadow: rgba(0, 0, 0, 0.2);
 
 .site-header {
 	position: fixed;
 	height: 100%;
 	width: 12em;
 	background-color: @header-color;
-	#utilities > .box-shadow(0, 0, 0.5rem, rgba(0, 0, 0, 0.2));
+	#utilities > .box-shadow(0, 0, 0.5rem, @header-shadow);
 
 	.site-header__content {
 		#utilities > .flexbox();

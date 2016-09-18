@@ -1,5 +1,8 @@
 @import "utilities";
 
+@footer-color: white;
+@footer-shadow: rgba(0, 0, 0, 0.2);
+
 .site-footer {
   display: none;
   width: 100%;
@@ -7,7 +10,7 @@
   text-align: center;
   // margin: 1em 0;
   padding: 1.5rem 0;
-  background-color: @grey-off;
+  background-color: @footer-color;
 
   font-family: @sans-fonts;
   font-size: 0.8rem;
@@ -16,7 +19,7 @@
   text-transform: uppercase;
   color: @grey-dark;
 
-  #utilities > .box-shadow(0, 0, 0.5rem, rgba(0, 0, 0, 0.2));
+  #utilities > .box-shadow(0, 0, 0.5rem, @footer-shadow);
 
   .link {
     display: block;

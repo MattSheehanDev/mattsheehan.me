@@ -26,7 +26,7 @@ The paragraph fonts are _Noto Serif_, _Georgia_, and the system serif font.
 The code fonts are _Consolas_, _Liberation Mono_, _Menlo_, _Courier_, and the system monospace font.
 
 ###### Ping ######
-[sheehamj@outlook.com](mailto:sheehamj@outlook.com)
+[hello@mattsheehan.me](mailto:hello@mattsheehan.me)
 
 ###### Support #####
 <div class="row coin">
