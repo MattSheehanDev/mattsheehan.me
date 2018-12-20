@@ -5,7 +5,8 @@ markdown: kramdown
 kramdown:
  parse_span_html: true
  coderay_line_numbers: inline
- enable_coderay: true
+ syntax_highlighter: coderay
+#  enable_coderay: true
 highlighter: rouge
 permalink: /archives/:title/
 
@@ -14,7 +15,9 @@ permalink: /archives/:title/
 # pager: 5
 # pager_path: "journal/page"
 # pager_category: "journal"
-gems: [jekyll-paginate]
+plugins: [jekyll-admin, jekyll-paginate]
+# gems: [jekyll-paginate]
+
 paginate: 10
 paginate_path: "journal/page:num"
 
@@ -26,13 +29,6 @@ mailing_address: 1620 Sturbridge Dr. Louisville OH 44641
 phone: 330-614-1599
 email: dev@mattsheehan.me
 
-ie_frequency: 30
-ie_tile_color: "#27AE60"
-ie_tile_small: "/assets/images/microsoft/ms-small-128x128.png"
-ie_tile_medium: "/assets/images/microsoft/ms-medium-270x270.png"
-ie_tile_wide: "/assets/images/microsoft/ms-wide-558x270.png"
-ie_tile_large: "/assets/images/microsoft/ms-large-558x558.png"
-
 rss_title: Matt Sheehan
 rss_author: Matt Sheehan
 rss_description: The spiritual home of Matt Sheehan
@@ -40,7 +36,7 @@ rss_link: http://www.mattsheehan.me
 
 ## Don't use system-wide less installation
 # lessc: "node /usr/local/bin/lessc"
-lessc: "node ./node_modules/less/bin/lessc"
+lessc: "./node_modules/less/bin/lessc"
 css_dest: assets/css
 
 ## Don't use system-wide ts installation
