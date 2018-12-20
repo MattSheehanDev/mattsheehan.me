@@ -2,13 +2,6 @@
 title: Colophon
 ---
 
-{::options parse_block_html="true" /}
-
-<div class="about" role="main">
-
-
-# Colophon #
----
 
 ###### Developer ######
 Matt Sheehan
@@ -28,16 +21,3 @@ The code fonts are _Consolas_, _Liberation Mono_, _Menlo_, _Courier_, and the sy
 ###### Ping ######
 [hello@mattsheehan.me](mailto:hello@mattsheehan.me)
 
-###### Support #####
-<div class="row coin">
-<span><a href="https://www.bitcoin.org/"> Bitcoin:</a></span>
-<input value="1LiynWqcqscdr59zzpMiDDypjvoDWvuMwh" />
-</div>
-
-<div class="row coin">
-<span><a href="http://www.dogecoin.com">Dogecoin:</a></span>
-<input value="DCpeJcAnrhJd4993ipzL1bdFP8HLWpeP5V" />
-</div>
-
-
-</div>

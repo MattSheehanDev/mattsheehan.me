@@ -8,14 +8,18 @@ kramdown:
  syntax_highlighter: coderay
 #  enable_coderay: true
 highlighter: rouge
+
+# Outputting
 permalink: /archives/:title/
+timezone: America/New_York
+paginate_path: "journal/page:num"
+paginate: 10
 
 # url: "mattsheehan.me"
 
 plugins: [jekyll-admin, jekyll-paginate]
+exclude: [Gemfile, README.md, legacy, deploy, node_modules]
 
-paginate: 10
-paginate_path: "journal/page:num"
 # pager: 5
 # pager_path: "journal/page"
 # pager_category: "journal"
@@ -44,8 +48,6 @@ tsc: "./node_modules/typescript/bin/tsc"
 js_dest: assets/script
 
 
-exclude: [Gemfile, README.md, legacy, deploy, node_modules]
-
 collections:
  pinned:
   output: false
@@ -67,7 +69,7 @@ defaults:
     path: "about"
     type: pages
    values:
-    layout: "default"
+    layout: "about"
  - scope:
     path: "archives"
     type: "pages"
