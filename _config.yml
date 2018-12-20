@@ -1,12 +1,10 @@
-name: Matthew Sheehan
-author: "Matt Sheehan"
+# Markdown
 # markdown: redcarpet
 markdown: kramdown
 kramdown:
  parse_span_html: true
  coderay_line_numbers: inline
  syntax_highlighter: coderay
-#  enable_coderay: true
 highlighter: rouge
 
 # Outputting
@@ -17,7 +15,7 @@ paginate: 10
 
 # url: "mattsheehan.me"
 
-plugins: [jekyll-admin, jekyll-paginate]
+plugins: [jekyll-admin, jekyll-feed, jekyll-paginate]
 exclude: [Gemfile, README.md, legacy, deploy, node_modules]
 
 # pager: 5
@@ -31,6 +29,12 @@ contact:
 mailing_address: 1620 Sturbridge Dr. Louisville OH 44641
 phone: 330-614-1599
 email: dev@mattsheehan.me
+
+# Plugin: jekyll-feed
+title: Matthew Sheehan
+author: "Matt Sheehan"
+description: ""
+url: https://mattsheehan.me
 
 # rss_title: Matt Sheehan
 # rss_author: Matt Sheehan
@@ -51,9 +55,6 @@ js_dest: assets/script
 collections:
  pinned:
   output: false
- resume:
-  output: false
-
 
 defaults:
  - scope:
@@ -75,18 +76,3 @@ defaults:
     type: "pages"
    values:
     layout: "default"
- # - scope:
- #    type: resume
- #    path: "resume/education"
- #   values:
- #    categories: "education"
- # - scope:
- #    type: resume
- #    path: "resume/work"
- #   values:
- #    categories: "job"
- # - scope:
- #    type: resume
- #    path: "resume/other"
- #   values:
- #    categories: "other"
