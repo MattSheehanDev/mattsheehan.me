@@ -12,14 +12,13 @@ permalink: /archives/:title/
 
 # url: "mattsheehan.me"
 
-# pager: 5
-# pager_path: "journal/page"
-# pager_category: "journal"
 plugins: [jekyll-admin, jekyll-paginate]
-# gems: [jekyll-paginate]
 
 paginate: 10
 paginate_path: "journal/page:num"
+# pager: 5
+# pager_path: "journal/page"
+# pager_category: "journal"
 
 # domain: mattsheehan.me
 # description: The web hub of all things Matt
@@ -29,10 +28,10 @@ mailing_address: 1620 Sturbridge Dr. Louisville OH 44641
 phone: 330-614-1599
 email: dev@mattsheehan.me
 
-rss_title: Matt Sheehan
-rss_author: Matt Sheehan
-rss_description: The spiritual home of Matt Sheehan
-rss_link: http://www.mattsheehan.me
+# rss_title: Matt Sheehan
+# rss_author: Matt Sheehan
+# rss_description: The spiritual home of Matt Sheehan
+# rss_link: http://www.mattsheehan.me
 
 ## Don't use system-wide less installation
 # lessc: "node /usr/local/bin/lessc"
