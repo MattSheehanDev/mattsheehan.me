@@ -15,4 +15,5 @@ Gemfile.lock
 *.[a-zA-Z]~
 
 node_modules
+.jekyll-metadata
 
