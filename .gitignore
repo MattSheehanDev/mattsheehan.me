@@ -11,3 +11,8 @@ _site/**/*
 
 Gemfile.lock
 *.[a-zA-Z]~
+
+**/.DS_Store
+node_modules
+
+
