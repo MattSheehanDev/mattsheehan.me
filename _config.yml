@@ -24,7 +24,7 @@ paginate_path: "journal/page:num"
 contact:
 mailing_address: 1620 Sturbridge Dr. Louisville OH 44641
 phone: 330-614-1599
-email: sheehamj@mountunion.edu
+email: dev@mattsheehan.me
 
 ie_frequency: 30
 ie_tile_color: "#27AE60"
@@ -38,14 +38,18 @@ rss_author: Matt Sheehan
 rss_description: The spiritual home of Matt Sheehan
 rss_link: http://www.mattsheehan.me
 
-lessc: "node /usr/local/bin/lessc"
+## Don't use system-wide less installation
+# lessc: "node /usr/local/bin/lessc"
+lessc: "node ./node_modules/less/bin/lessc"
 css_dest: assets/css
 
-tsc: "tsc"
+## Don't use system-wide ts installation
+# tsc: "tsc"
+tsc: "./node_modules/typescript/bin/tsc"
 js_dest: assets/script
 
 
-exclude: [Gemfile, README.md, legacy, deploy]
+exclude: [Gemfile, README.md, legacy, deploy, node_modules]
 
 collections:
  pinned:

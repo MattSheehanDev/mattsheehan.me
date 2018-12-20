@@ -1,16 +1,27 @@
+## Setup ##
+
+Install node packages
+```sh
+# npm
+npm install
+# or yarn
+yarn install
+```
+
+Install gems
+```sh
+bundle install
+```
+
+Build and serve the site
+```sh
+# build the site
+bundle exec jekyll build
+# build and serve the site with jekyll's development webserver
+bundle exec jekyll serve
+```
+
 ## Setting up mattsheehan.me ##
-
-#### NodeJS ####
-
-###### Install nodejs ######
-```
-$> sudo apt-get install nodejs
-```
-
-###### Install npm ######
-```
-$> sudo apt-get install npm
-```
 
 ###### Install LESS ######
 ```

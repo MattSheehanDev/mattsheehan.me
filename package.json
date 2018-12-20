@@ -1,0 +1,15 @@
+{
+    "name": "mattsheehan.me",
+    "version": "3.0.0",
+    "description": "Source for mattsheehan.me",
+    "private": true,
+    "author": {
+      "name": "Matt.Sheehan",
+      "email": "matt.sheehan@apteryx.com"
+    },
+    "devDependencies": {
+        "less": "3.9.0",
+        "typescript": "3.2.2"
+    }
+  }
+  
