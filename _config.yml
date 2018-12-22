@@ -16,7 +16,7 @@ paginate: 10
 # url: "mattsheehan.me"
 
 plugins: [jekyll-admin, jekyll-feed, jekyll-paginate]
-exclude: [Gemfile, README.md, legacy, deploy, node_modules]
+exclude: [Gemfile, README.md, legacy, deploy, node_modules, yarn.lock, package.json]
 
 # pager: 5
 # pager_path: "journal/page"
