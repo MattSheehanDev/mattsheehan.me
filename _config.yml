@@ -1,22 +1,25 @@
-name: Matthew Sheehan
-author: "Matt Sheehan"
+# Markdown
 # markdown: redcarpet
 markdown: kramdown
 kramdown:
  parse_span_html: true
  coderay_line_numbers: inline
- enable_coderay: true
+ syntax_highlighter: coderay
 highlighter: rouge
-permalink: /archives/:title/
 
-# url: "mattsheehan.me"
+# Outputting
+permalink: /archives/:title/
+timezone: America/New_York
+paginate_path: "journal/page:num"
+paginate: 10
+
+
+plugins: [jekyll-admin, jekyll-feed, jekyll-paginate]
+exclude: [Gemfile, README.md, legacy, deploy, node_modules, yarn.lock, package.json]
 
 # pager: 5
 # pager_path: "journal/page"
 # pager_category: "journal"
-gems: [jekyll-paginate]
-paginate: 10
-paginate_path: "journal/page:num"
 
 # domain: mattsheehan.me
 # description: The web hub of all things Matt
@@ -24,35 +27,33 @@ paginate_path: "journal/page:num"
 contact:
 mailing_address: 1620 Sturbridge Dr. Louisville OH 44641
 phone: 330-614-1599
-email: sheehamj@mountunion.edu
+email: dev@mattsheehan.me
 
-ie_frequency: 30
-ie_tile_color: "#27AE60"
-ie_tile_small: "/assets/images/microsoft/ms-small-128x128.png"
-ie_tile_medium: "/assets/images/microsoft/ms-medium-270x270.png"
-ie_tile_wide: "/assets/images/microsoft/ms-wide-558x270.png"
-ie_tile_large: "/assets/images/microsoft/ms-large-558x558.png"
+# Plugin: jekyll-feed
+title: Matthew Sheehan
+author: "Matt Sheehan"
+description: ""
+url: https://mattsheehan.me
 
-rss_title: Matt Sheehan
-rss_author: Matt Sheehan
-rss_description: The spiritual home of Matt Sheehan
-rss_link: http://www.mattsheehan.me
+# rss_title: Matt Sheehan
+# rss_author: Matt Sheehan
+# rss_description: The spiritual home of Matt Sheehan
+# rss_link: http://www.mattsheehan.me
 
-lessc: "node /usr/local/bin/lessc"
+## Don't use system-wide less installation
+# lessc: "node /usr/local/bin/lessc"
+lessc: "./node_modules/less/bin/lessc"
 css_dest: assets/css
 
-tsc: "tsc"
+## Don't use system-wide ts installation
+# tsc: "tsc"
+tsc: "./node_modules/typescript/bin/tsc"
 js_dest: assets/script
 
-
-exclude: [Gemfile, README.md, legacy, deploy]
 
 collections:
  pinned:
   output: false
- resume:
-  output: false
-
 
 defaults:
  - scope:
@@ -68,24 +69,9 @@ defaults:
     path: "about"
     type: pages
    values:
-    layout: "default"
+    layout: "about"
  - scope:
     path: "archives"
     type: "pages"
    values:
     layout: "default"
- # - scope:
- #    type: resume
- #    path: "resume/education"
- #   values:
- #    categories: "education"
- # - scope:
- #    type: resume
- #    path: "resume/work"
- #   values:
- #    categories: "job"
- # - scope:
- #    type: resume
- #    path: "resume/other"
- #   values:
- #    categories: "other"

@@ -5,9 +5,15 @@
 .\#*
 .[#]*
 
+### macOS ###
+**/.DS_Store
 
 ### Directories to ignore ###
 _site/**/*
 
 Gemfile.lock
 *.[a-zA-Z]~
+
+node_modules
+.jekyll-metadata
+
