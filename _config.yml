@@ -13,7 +13,6 @@ timezone: America/New_York
 paginate_path: "journal/page:num"
 paginate: 10
 
-# url: "mattsheehan.me"
 
 plugins: [jekyll-admin, jekyll-feed, jekyll-paginate]
 exclude: [Gemfile, README.md, legacy, deploy, node_modules, yarn.lock, package.json]
