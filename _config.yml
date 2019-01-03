@@ -14,7 +14,13 @@ paginate_path: "journal/page:num"
 paginate: 10
 
 
-plugins: [jekyll-admin, jekyll-feed, jekyll-paginate]
+plugins:
+  - jekyll-admin
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-assets
+  - autoprefixer-rails
+
 exclude: [Gemfile, README.md, legacy, deploy, node_modules, yarn.lock, package.json]
 
 # pager: 5
@@ -49,6 +55,11 @@ css_dest: assets/css
 # tsc: "tsc"
 tsc: "./node_modules/typescript/bin/tsc"
 js_dest: assets/script
+
+
+autoprefixer:
+  browsers:
+  - "cover 99.5%"
 
 
 collections:

@@ -8,13 +8,18 @@
 	height: 100%;
 	width: 12em;
 	background-color: @header-color;
-	#utilities > .box-shadow(0, 0, 0.5rem, @header-shadow);
+    // #utilities > .box-shadow(0, 0, 0.5rem, @header-shadow);
+    box-shadow: 0 0 0.5rem @header-shadow;
 
 	.site-header__content {
-		#utilities > .flexbox();
-		#utilities > .flex-direction(column);
-		#utilities > .flex-justify(center);
-		#utilities > .flex-align(center);
+		// #utilities > .flexbox();
+		// #utilities > .flex-direction(column);
+		// #utilities > .flex-justify(center);
+        // #utilities > .flex-align(center);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
 		text-align: center;
 		height: 100%;
@@ -35,13 +40,15 @@
 					// For chrome, you have to set the properties on the parent svg element
 					stroke: #666;
 					fill: #666;
-					#utilities > .transition(all, cubic-bezier(0.4, 0, 0.2, 1), 0.2s);
+                    // #utilities > .transition(all, cubic-bezier(0.4, 0, 0.2, 1), 0.2s);
+                    transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
 
 					// For firefox, you have to set the properties directly on the path
 					path {
 						stroke: #666;
 						fill: #666;
-						#utilities > .transition(all, cubic-bezier(0.4, 0, 0.2, 1), 0.2s);
+                        // #utilities > .transition(all, cubic-bezier(0.4, 0, 0.2, 1), 0.2s);
+                        transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
 					}
 
 					&:hover {
@@ -66,15 +73,18 @@
 
 		.site-header__portrait {
 			display: block;
-			#utilities > .flex(0, 0, auto);
+            // #utilities > .flex(0, 0, auto);
+            flex: 0 0 auto;
 			height: 5.5pc;
 			width: 5.5pc;
 			margin: 0px 0px 1.25rem;
 			order: -1;
 
 			border: 1px solid #555;
-			#utilities > .border-radius(50%);
-			#utilities > .transition(border-color, cubic-bezier(0.4, 0, 0.2, 1), 0.2s);
+			// #utilities > .border-radius(50%);
+            // #utilities > .transition(border-color, cubic-bezier(0.4, 0, 0.2, 1), 0.2s);
+            border-radius: 50%;
+            transition: border-color cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
 
 			&:hover {
 				border-color: @primary1;
@@ -92,19 +102,24 @@
 		}
 
 		.site-header__social {
-			#utilities > .flexbox();
-			#utilities > .flex-justify(space-between);
+			// #utilities > .flexbox();
+            // #utilities > .flex-justify(space-between);
+            display: flex;
+            justify-content: space-between;
+
 			margin-bottom: 1rem;
 
 			.social-nav__icon {
-				#utilities > .flex(0,0,auto);
-			  cursor: pointer;
-			  height: 24px;
-			  width: 24px;
+                // #utilities > .flex(0,0,auto);
+                flex: 0 0 auto;
+			    cursor: pointer;
+			    height: 24px;
+			    width: 24px;
 
 				svg {
 					fill: #CCC;
-					#utilities > .transition(all, cubic-bezier(0.4, 0, 0.2, 1), 0.2s);
+                    // #utilities > .transition(all, cubic-bezier(0.4, 0, 0.2, 1), 0.2s);
+                    transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
 				}
 
 				&:hover {
@@ -145,7 +160,8 @@
 				padding: 0.2rem 0;
 				color: inherit;
 				// color: @grey;
-				#utilities > .transition(color, cubic-bezier(0.4, 0, 0.2, 1), 0.2s);
+                // #utilities > .transition(color, cubic-bezier(0.4, 0, 0.2, 1), 0.2s);
+                transition: color, cubic-bezier(0.4, 0, 0.2, 1), 0.2s;
 
 				// font-family: "Open Sans";
 				// letter-spacing: 0.025rem;
@@ -176,10 +192,13 @@
 		.site-header__content {
 			width: 100%;
 			padding: 1rem;
-			#utilities > .flex-direction(row);
+            // #utilities > .flex-direction(row);
+            flex-direction: row;
 
 			.site-header__signature {
-				#utilities > .flex(1,1,50%);
+                // #utilities > .flex(1,1,50%);
+                flex: 1 1 50%;
+
 				margin: 0;
 				text-align: left;
 
@@ -199,11 +218,14 @@
 			}
 
 			.site-header__social {
-				#utilities > .flex(1,1,50%);
-				#utilities > .flex-justify(flex-end);
+				// #utilities > .flex(1,1,50%);
+                // #utilities > .flex-justify(flex-end);
+                flex: 1 1 50%;
+                justify-content: flex-end;
 			}
 			.site-header__links {
-				#utilities > .flex(1,1,50%);
+                // #utilities > .flex(1,1,50%);
+                flex: 1 1 50%;
 				display: none;
 			}
 		}

@@ -8,16 +8,17 @@
 
 * {
 	&, &:before, &:after {
-		#utilities > .box-size(border-box);
+        // #utilities > .box-size(border-box);
+        box-sizing: border-box;
 	}
 }
 
-@-ms-viewport {
-	width: device-width;
-}
-@-o-viewport {
-	width: device-width;
-}
+// @-ms-viewport {
+// 	width: device-width;
+// }
+// @-o-viewport {
+// 	width: device-width;
+// }
 @viewport {
 	width: device-width;
 }
@@ -212,7 +213,8 @@ pre {
 	code {
 		padding: 0;
 		border: none;
-		#utilities > .border-radius(0);
+        // #utilities > .border-radius(0);
+        border-radius: 0;
 		font-family: @code-font;
 		font-weight: normal;
 		// font-size: 0.9rem;

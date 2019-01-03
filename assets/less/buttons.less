@@ -13,8 +13,10 @@
         white-space: nowrap;
         text-decoration: none;
 
-        #utilities > .border-radius(3px);
-        #utilities > .transition(background, ease, 0.2s);
+        // #utilities > .border-radius(3px);
+        // #utilities > .transition(background, ease, 0.2s);
+        border-radius: 3px;
+        transition: background ease 0.2s;
 
         &:hover {
             background: @primary1;
@@ -29,8 +31,10 @@
         width: 3rem;
         line-height: 1.5rem;
 
-        #utilities > .border-radius(50%);
-        #utilities > .transition(border-color, cubic-bezier(0.4, 0, 0.2, 1), 0.2s);
+        // #utilities > .border-radius(50%);
+        // #utilities > .transition(border-color, cubic-bezier(0.4, 0, 0.2, 1), 0.2s);
+        border-radius: 50%;
+        transition: border-color cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
 
         &:hover {
             border-color: @primary2;
@@ -48,7 +52,8 @@
     width: 2.5rem;
     height: 2.5rem;
     text-indent: -9999px;
-    #utilities > .transform(scale(-1, 1));
+    // #utilities > .transform(scale(-1, 1));
+    transform: scale(-1, 1);
 }
 
 

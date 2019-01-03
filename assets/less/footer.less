@@ -19,7 +19,8 @@
   text-transform: uppercase;
   color: @grey-dark;
 
-  #utilities > .box-shadow(0, 0, 0.5rem, @footer-shadow);
+  // #utilities > .box-shadow(0, 0, 0.5rem, @footer-shadow);
+  box-shadow: 0 0 0.5rem @footer-shadow;
 
   .link {
     display: block;
@@ -27,7 +28,9 @@
     // padding: 0.2em 0;
     color: inherit;
     // color: @grey;
-    #utilities > .transition(color, cubic-bezier(0.4, 0, 0.2, 1), 0.2s);
+    
+    // #utilities > .transition(color, cubic-bezier(0.4, 0, 0.2, 1), 0.2s);
+    transition: color cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
 
     &:hover {
       color: @primary1;
@@ -38,9 +41,13 @@
 
 #utilities > .screenSmallerThan(800px, {
   .site-footer {
-    #utilities > .flexbox();
-    #utilities > .flex-direction(row);
-    #utilities > .flex-justify(space-around);
-    #utilities > .flex-align(center);
+    // #utilities > .flexbox();
+    // #utilities > .flex-direction(row);
+    // #utilities > .flex-justify(space-around);
+    // #utilities > .flex-align(center);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
   }
 });

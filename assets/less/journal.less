@@ -4,8 +4,10 @@
  * wrapper around 'main' content
  */
 .site-content {
-	#utilities > .flexbox();
-	#utilities > .flex-direction(column);
+    display: flex;
+    flex-direction: column;
+	// #utilities > .flexbox();
+	// #utilities > .flex-direction(column);
 
 	font-family: @serif-fonts;// "Noto Serif", "Georgia", serif;
 
@@ -56,8 +58,10 @@
 
 
 	.page-nav {
-		#utilities > .flexbox();
-		#utilities > .flex-justify(center);
+        display: flex;
+        justify-content: center;
+		// #utilities > .flexbox();
+		// #utilities > .flex-justify(center);
 		margin-top: 1rem;
 
 		.prev-page, .next-page {
@@ -75,7 +79,8 @@
 		a {
 			font-weight: bold;
 			text-decoration: underline;
-			#utilities > .transition(color, cubic-bezier(0.4, 0, 0.2, 1), 0.2s);
+            // #utilities > .transition(color, cubic-bezier(0.4, 0, 0.2, 1), 0.2s);
+            transition: color cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
 
 			&:hover {
 				color: @primary1;
@@ -148,7 +153,8 @@
 			font-weight: 600;
 			line-height: 1.1;
 			margin: 0.667em 0px 0.333em;
-			#utilities > .transition(color, cubic-bezier(0.4, 0, 0.2, 1), 0.2s);
+            // #utilities > .transition(color, cubic-bezier(0.4, 0, 0.2, 1), 0.2s);
+            transition: color cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
 		}
 
 		.date {
