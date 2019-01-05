@@ -12,3 +12,7 @@ group :jekyll_plugins do
 	gem "builder", "3.2.2"
 end
 
+group :development do
+    gem "solargraph"
+end
+

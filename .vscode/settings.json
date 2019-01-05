@@ -8,6 +8,7 @@
 
         "Gemfile.lock": true,
         "node_modules": true,
-        ".vscode": true
+        ".vscode": true,
+        ".sass-cache": true
     }
 }

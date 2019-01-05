@@ -1,64 +1,50 @@
-@import "utilities";
+@import "variables";
 
-.button
-{
+.button {
     display: inline-block;
     margin: auto;
     white-space: nowrap;
     text-decoration: none;
 
     &.rectangle {
-        background-color: @primary2;
+        background-color: $primary2;
         padding: 0.7rem 1.5rem;
         white-space: nowrap;
         text-decoration: none;
 
-        // #utilities > .border-radius(3px);
-        // #utilities > .transition(background, ease, 0.2s);
         border-radius: 3px;
         transition: background ease 0.2s;
 
         &:hover {
-            background: @primary1;
+            background: $primary1;
         }
     }
 
-
-    &.circle
-    {
-        border: 3px solid @primary1;
+    &.circle {
+        border: 3px solid $primary1;
         height: 3rem;
         width: 3rem;
         line-height: 1.5rem;
 
-        // #utilities > .border-radius(50%);
-        // #utilities > .transition(border-color, cubic-bezier(0.4, 0, 0.2, 1), 0.2s);
         border-radius: 50%;
         transition: border-color cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
 
         &:hover {
-            border-color: @primary2;
+            border-color: $primary2;
         }
     }
-
 }
 
-
-
-.right-arrow
-{
+.right-arrow {
     background: url(../images/arrow-green.svg) no-repeat center center;
     background-size: contain;
     width: 2.5rem;
     height: 2.5rem;
     text-indent: -9999px;
-    // #utilities > .transform(scale(-1, 1));
     transform: scale(-1, 1);
 }
 
-
-.left-arrow
-{
+.left-arrow {
     background: url(../images/arrow-green.svg) no-repeat center center;
     background-size: contain;
     width: 2.5rem;

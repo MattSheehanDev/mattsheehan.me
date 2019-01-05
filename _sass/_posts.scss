@@ -1,9 +1,12 @@
-@import "utilities";
+@import "variables";
+@import "mixins";
+
 .post {
     display: block;
     margin: 0 auto;
     max-width: 42em;
     width: 100%;
+
     .title {
         font-size: 2.5em;
         text-align: left;
@@ -20,16 +23,15 @@
         padding-top: 1rem;
         text-align: justify;
         sup a {
-            color: @primary1;
+            color: $primary1;
         }
         .reversefootnote {
-            color: @primary1;
+            color: $primary1;
         }
     }
     .post-nav {
         display: flex;
-        align-items: stretch; // #utilities > .flexbox();
-        // #utilities > .flex-align(stretch);
+        align-items: stretch;
         width: 100%;
         margin-top: 3em;
         font-size: 0.8em;
@@ -38,36 +40,37 @@
             min-width: 50%;
             margin-bottom: 0.5em;
             padding-right: 1em;
-            >div {
-                color: #AAA;
+            > div {
+                color: #aaa;
             }
             a {
-                font-family: @sans-fonts;
+                font-family: $sans-fonts;
                 font-weight: 600;
                 font-size: 1rem;
                 letter-spacing: -0.04em;
                 text-decoration: none;
             }
         }
-        #utilities>.screenSmallerThan(30rem, {
-            // #utilities > .flex-direction(column);
+
+        @include screenSmallerThan30 {
             flex-direction: column;
 
-            .post-nav__previous, .post-nav__next {
+            .post-nav__previous,
+            .post-nav__next {
                 padding: 0;
             }
-        });
+        }
     }
     a {
         color: black;
         text-decoration: underline;
-        // #utilities>.transition(color, cubic-bezier(0.4, 0, 0.2, 1), 0.2s);
-        transition: color cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+        transition: color $cubic-bezy 0.2s;
         &:hover {
-            color: @primary1;
+            color: $primary1;
         }
     }
-    #utilities>.screenSmallerThan(50rem, {
+
+    @include screenSmallerThan50 {
         float: none;
         display: block;
         margin: auto;
@@ -76,11 +79,10 @@
             font-size: 1.75em;
         }
     }
-    );
 }
 
 .post-footer {
-    border-top: 1px solid #EEE;
+    border-top: 1px solid #eee;
     margin: auto;
     margin-top: 1rem;
     padding: 1.5em 0;
@@ -93,6 +95,6 @@
     }
     .quip {
         text-align: center;
-        color: #AAA;
+        color: #aaa;
     }
 }

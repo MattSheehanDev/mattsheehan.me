@@ -1,0 +1,33 @@
+@import "variables";
+
+.about {
+    display: block;
+    margin: 0 auto;
+    max-width: 42em;
+    width: 100%;
+
+    h1 {
+        font-weight: 600;
+        font-size: 2.5em;
+    }
+
+    h6 {
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    a {
+        color: $primary1;
+
+        &:hover {
+            color: darken($primary1, 10%);
+        }
+    }
+
+    .coin {
+        span {
+            display: inline-block;
+            width: 5rem;
+        }
+    }
+}

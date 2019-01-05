@@ -48,7 +48,7 @@ url: https://mattsheehan.me
 
 ## Don't use system-wide less installation
 # lessc: "node /usr/local/bin/lessc"
-lessc: "./node_modules/less/bin/lessc"
+# lessc: "./node_modules/less/bin/lessc"
 css_dest: assets/css
 
 ## Don't use system-wide ts installation
