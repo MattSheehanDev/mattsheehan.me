@@ -2,42 +2,41 @@
 layout: default
 ---
 
-{% capture headliner %}{% assign words = page.title | split: ' ' %}{% if words.size < 2 %}{{ page.title }}{% else %}{% for word in words %}{% if forloop.last %}&nbsp;{{ word }}{% else %} {{ word }}{% endif %}{% endfor %}{% endif %}{% endcapture %}
+{% capture headliner %}{% assign words = page.title | split: ' ' %}{% if words.size < 2 %}{{ page.title }}{% else %}{%
+    for word in words %}{% if forloop.last %}&nbsp;{{ word }}{% else %} {{ word }} {% endif %}{% endfor %}{% endif %}{%
+    endcapture %} {% if page contains 'processing' %} <script type="text/javascript" src="{{ site.url }}/assets/script/processing_min.js">
+    </script>
+    {% endif %}
+
+    <main class="post" role="main">
+        <h2 class="title">{{ headliner }}</h2>
+        <span class="date">{{ page.date | date: "%B %-d, %Y" }}</span>
+
+        <div class="content">
+            {{ content }}
+        </div>
+
+        <div class="post-nav">
+            {% if page.previous %}
+            <div class="post-nav__previous">
+                <!-- <div>Previous</div> -->
+                <a href="{{ page.previous.url }}" title="{{ page.previous.title }}">← {{ page.previous.title }}</a>
+            </div>
+            {% endif %}
+            {% if page.next %}
+            <div class="post-nav__next">
+                <!-- <div>Next</div> -->
+                <a href="{{ page.next.url }}" title="{{ page.next.title }}">{{ page.next.title }} →</a>
+            </div>
+            {% endif %}
+        </div>
+    </main>
 
 
-{% if page contains 'processing' %}
-<script type="text/javascript" src="{{ site.url }}/assets/script/processing_min.js"></script>
-{% endif  %}
-
-<main class="post" role="main">
-    <h2 class="title">{{ headliner }}</h2>
-    <span class="date">{{ page.date | date: "%B %-d, %Y" }}</span>
-
-    <div class="content">
-        {{ content }}
+    <div class="post-footer">
+        <h6 class="author">Written and Published by {{ site.author }}</h6>
+        <div class="quip">Fast learner, amateur coffee drinker, good guy, programmer.</div>
+        <div class='quip'>Mostly in that order.</div>
     </div>
 
-    <div class="post-nav">
-      {% if page.previous %}
-        <div class="post-nav__previous">
-          <!-- <div>Previous</div> -->
-          <a href="{{ page.previous.url }}" title="{{ page.previous.title }}">← {{ page.previous.title }}</a>
-        </div>
-      {% endif %}
-      {% if page.next %}
-        <div class="post-nav__next">
-          <!-- <div>Next</div> -->
-          <a href="{{ page.next.url }}" title="{{ page.next.title }}">{{ page.next.title }} →</a>
-        </div>
-      {% endif %}
-    </div>
-</main>
-
-
-<div class="post-footer">
-  <h6 class="author">Written and Published by {{ site.author }}</h6>
-  <div class="quip row">
-      <div>Fast learner, amateur coffee drinker, good guy, programmer.</div>
-      <div>Mostly in that order.</div>
-  </div>
-</div>
+    

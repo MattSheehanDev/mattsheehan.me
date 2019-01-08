@@ -1,71 +1,73 @@
 @import "variables";
 @import "mixins";
 
-
 .archives {
-	margin: 0 auto;
-	max-width: 42rem;
-	width: 100%;
-	text-align: left;
-	overflow-x: visible;
+    margin: 0 auto;
+    max-width: 42rem;
+    width: 100%;
+    text-align: left;
+    overflow-x: visible;
 
-	h1 {
-		font-weight: 600;
+    h1 {
+        // font-weight: 600;
         font-size: 2.5em;
-        
+
         @include screenSmallerThan30 {
             font-size: 1.75rem;
         }
-	}
+    }
 
+    ul {
+        list-style-type: none;
 
-	ul {
-		list-style-type: none;
+        li {
+            margin: 0.25rem 0 0.75rem;
 
-		li {
-			margin: 0.25rem 0 0.75rem;
+            a {
+                display: block;
+                font-family: $serif-fonts;
+                box-shadow: none;
+                // color: black;
 
-			a {
-					font-family: $serif-fonts;
-					display: block;
-					color: black;
+                h6 {
+                    color: $primary1;
+                }
 
-					h6 {
-                        transition: color cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
-					}
+                // h6 {
+                //     transition: color cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+                // }
 
-					&:hover {
-						h6 {
-							color: $primary1;
-						}
-					}
+                // &:hover {
+                //     h6 {
+                //         color: $primary1;
+                //     }
+                // }
 
-					div {
-						color: hsl(0, 0%, 56%);
-						font-size: 0.9rem;
-						font-weight: 400;
-					}
-			}
-		}
-	}
+                div {
+                    color: hsl(0, 0%, 56%);
+                    font-size: 0.9rem;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
 
-	.megaman
-	{
-		margin: 1rem auto;
-		background: url(../images/megamanwalking.png) no-repeat;
-		width: 100px;
-		height: 205px;
+    .megaman {
+        margin: 1rem auto;
+        background: url(../images/megamanwalking.png) no-repeat;
+        width: 100px;
+        height: 205px;
         text-indent: -9999px;
-        
+
         animation: walk 0.8s steps(4) infinite;
-	}
+    }
 }
-
-
-
 
 @keyframes walk {
-    from { background-position: 0px; }
-    to { background-position: -387px; }
+    from {
+        background-position: 0px;
+    }
+    to {
+        background-position: -387px;
+    }
 }
-
