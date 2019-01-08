@@ -1,12 +1,44 @@
 <li class="post-snippet">
-	<a href="{{ post.url }}" title="{{ post.title }}">
-		<time datetime="{{ post.date }}" class="date">{{ post.date | date: "%B %-d, %Y" }}</time>
+    <!-- <a href="{{ post.url }}" title="{{ post.title }}"> -->
+    <!-- <time datetime="{{ post.date }}" class="date">{{ post.date | date: "%B %-d, %Y" }}</time> -->
 
-		<h5 class="title">{{ post.title }}</h5>
+    <a class='title' href="{{ post.url }}" title="{{ post.title }}">
+        <h5>{{ post.title }}</h5>
+    </a>
 
-		<div class="content">
-			{{ post.excerpt | strip_html }}
-			<!-- post.content | strip_html | truncatewords: 30 -->
-		</div>
-	</a>
+    <!-- {% capture words %}
+        {{ page.content || number_of_words }}
+    {% endcapture %} -->
+
+    {% capture words %}
+        {{ post.content | number_of_words | minus: 250 }}
+    {% endcapture %}
+
+    <!-- {% unless words contains "-" %}
+        {{ words | plus: 250 }}
+    {% endunless %} -->
+
+    <div class='time'>
+        <!-- 180 is the avg words per minute -->
+        <time datetime="{{ post.date }}">{{ post.date | date: "%B %-d, %Y" }}</time>
+        <span> • </span>
+        {% assign num = words | plus: 250 | divided_by: 180 %}
+
+        {% if num == 0 %}
+            ☕️
+        {% endif %}
+        
+        {% for i in (1..num) %}
+            ☕️
+        {% endfor %}
+
+        <!-- <span>{{words | plus: 250 | divided_by: 180 | append: " min read" }}</span> -->
+    </div>
+    <!-- <time datetime="{{ post.date }}" class="date">{{ post.date | date: "%B %-d, %Y" }}</time> -->
+
+    <p class="content">
+        {{ post.excerpt | strip_html }}
+        <!-- post.content | strip_html | truncatewords: 30 -->
+    </p>
+    <!-- </a> -->
 </li>

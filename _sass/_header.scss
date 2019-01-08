@@ -1,8 +1,13 @@
 @import "variables";
 @import "mixins";
 
-$header-color: white; //hsl(30, 15%, 98%);//#F4F2F0;
+$header-color: white;
 $header-shadow: rgba(0, 0, 0, 0.2);
+
+$signature-color: $primary-light;
+$rss-color: #f93;
+$github-color: #000;
+
 
 .site-header {
     position: fixed;
@@ -27,35 +32,42 @@ $header-shadow: rgba(0, 0, 0, 0.2);
 
             a {
                 display: block;
+                box-shadow: none;
 
                 svg {
                     max-width: 10em;
                     max-height: 3em;
 
                     // For chrome, you have to set the properties on the parent svg element
-                    stroke: #666;
-                    fill: #666;
-                    transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+
+                    // stroke: #666;
+                    // fill: #666;
+                    stroke: $signature-color;
+                    fill: $signature-color;
+                    // transition: all $cubic-bezy 0.2s;
 
                     // For firefox, you have to set the properties directly on the path
                     path {
-                        stroke: #666;
-                        fill: #666;
-                        transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+                        // stroke: #666;
+                        // fill: #666;
+                        stroke: $signature-color;
+                        fill: $signature-color;
+                        // transition: all $cubic-bezy 0.2s;
                     }
 
-                    &:hover {
-                        stroke: $primary1;
-                        fill: $primary1;
-                        path {
-                            stroke: $primary1;
-                            fill: $primary1;
-                        }
-                    }
+                    // &:hover {
+                    //     stroke: $primary1;
+                    //     fill: $primary1;
+                    //     path {
+                    //         stroke: $primary1;
+                    //         fill: $primary1;
+                    //     }
+                    // }
                 }
             }
+
             span {
-                color: $grey;
+                // color: $grey;
                 display: block;
                 font-size: 0.85rem;
                 font-family: $sans-fonts;
@@ -70,10 +82,11 @@ $header-shadow: rgba(0, 0, 0, 0.2);
             width: 5.5pc;
             margin: 0px 0px 1.25rem;
             order: -1;
+            box-shadow: none;
 
             border: 1px solid #555;
             border-radius: 50%;
-            transition: border-color cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+            // transition: border-color $cubic-bezy 0.2s;
 
             &:hover {
                 border-color: $primary1;
@@ -102,10 +115,11 @@ $header-shadow: rgba(0, 0, 0, 0.2);
                 cursor: pointer;
                 height: 24px;
                 width: 24px;
+                box-shadow: none;
 
                 svg {
                     fill: #ccc;
-                    transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+                    transition: all $cubic-bezy 0.2s;
                 }
 
                 &:hover {
@@ -113,12 +127,12 @@ $header-shadow: rgba(0, 0, 0, 0.2);
 
                     &.social-nav__icon-github {
                         svg {
-                            fill: #000;
+                            fill: $github-color;
                         }
                     }
                     &.social-nav__icon-rss {
                         svg {
-                            fill: #f93;
+                            fill: $rss-color;
                         }
                     }
                 }
@@ -130,27 +144,32 @@ $header-shadow: rgba(0, 0, 0, 0.2);
         }
 
         .site-header__links {
-            display: block;
-            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-content: center;
+            // display: block;
+            // width: 100%;
 
-            font-family: $sans-fonts;
-            font-size: 0.8em;
-            font-weight: 600;
-            letter-spacing: 0.025rem;
-            text-transform: uppercase;
-            color: $grey-dark;
+            // font-family: $sans-fonts;
+            font-family: $serif-fonts;
+            // font-size: 0.8em;
+            // font-weight: 600;
+            // letter-spacing: 0.025rem;
+            // text-transform: uppercase;
+            // color: $grey-dark;
 
-            .link {
-                display: block;
-                text-decoration: none;
-                padding: 0.2rem 0;
-                color: inherit;
-                transition: color cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+            // .link {
+            //     display: block;
+            //     // text-decoration: none;
+            //     // padding: 0.2rem 0;
+            //     // color: inherit;
+            //     // transition: color cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
 
-                &:hover {
-                    color: $primary1;
-                }
-            }
+            //     // &:hover {
+            //     //     color: $primary1;
+            //     // }
+            // }
         }
     }
 

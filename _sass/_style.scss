@@ -14,13 +14,17 @@
 }
 
 html {
-    font-family: sans-serif;
-    text-rendering: optimizeLegibility;
+    // font-family: sans-serif;
+    // text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
 }
 
 body {
-    font: 1.0625em/1.47 $serif-fonts;
+    // font: 1.0625em/1.47 $serif-fonts;
+    font: 100%/1.75 $serif-fonts;
+    font-weight: 400;
+    font-feature-settings: "kern", "liga", "clig", "calt";
+    word-wrap: break-word;
     background-color: #fff;
     padding: 0;
     margin: 0;
@@ -39,10 +43,11 @@ $s: 0.8;
 
     h#{$i} {
         font-family: $sans-fonts;
+        font-weight: 900;
         font-size: #{$size}rem;
         letter-spacing: -0.04em;
+        text-rendering: optimizeLegibility;
 
-        font-weight: 600;
         margin: 0;
         padding: 0;
     }
@@ -73,8 +78,18 @@ section {
 }
 
 a {
+    // text-decoration: underline;
+    // text-decoration: none;
+    // color: black;
+    color: $primary1;
+
     text-decoration: none;
-    color: black;
+    box-shadow: 0 1px 0 0 currentColor;
+
+    &:hover {
+        // text-decoration: none;
+        box-shadow: none;
+    }
 
     &:hover,
     &::selection {
@@ -195,14 +210,6 @@ code {
     border: 1px dashed darken($grey-off, 20%);
 }
 
-.soliloquy {
-    padding: 0.5rem;
-    border: 1px solid $primary2;
-
-    code {
-        font-size: 0.8rem;
-    }
-}
 
 .highlight {
     background: $grey-light;
@@ -225,40 +232,7 @@ small {
     font-size: 0.9rem;
 }
 
-.primtitle {
-    font-size: 1.2rem;
-    font-weight: 700;
-    width: 100%;
-    padding-top: 0.5rem;
-    display: inline-block;
-}
-.subtitle {
-    font-size: 1rem;
-    text-decoration: underline;
-    padding-bottom: 0;
-    font-style: italic;
-    width: 100%;
-    display: inline-block;
-}
-.paragraph {
-    margin-top: 2rem;
-}
 
-.footnotes {
-    border-top: 1px dashed $grey;
-    padding-top: 1rem;
-    font-size: 0.9rem;
-    margin-top: 1rem;
-
-    ol {
-        margin: 0;
-        padding-left: 1rem;
-
-        p {
-            padding: 0;
-        }
-    }
-}
 
 ul.checklist {
     list-style: none;

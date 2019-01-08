@@ -4,7 +4,7 @@ title: Matt Sheehan
 ---
 
 <main class="journal" role="main">
-  <h6 class="journal__recent">Recent Articles</h6>
+  <!-- <h6 class="journal__recent">Recent Articles</h6> -->
 
   <ul class="journal__post-list">
     {% if paginator.page == 1 %}
@@ -21,16 +21,21 @@ title: Matt Sheehan
   </ul>
 
   <div class="page-nav">
+
     {% if paginator.previous_page %}
-    <div class="prev-page">
+        <a href="{{ paginator.previous_page_path }}" title="Previous page">← previous</a>
+    <!-- <div class="prev-page">
       <a href="{{ paginator.previous_page_path }}" class="button circle left-arrow" title="Next page"></a>
-    </div>
+    </div> -->
     {% endif %}
+
     {% if paginator.next_page %}
-    <div class="next-page">
+        <a href="{{ paginator.next_page_path }}" title="Next page">next →</a>
+    <!-- <div class="next-page">
       <a href="{{ paginator.next_page_path }}" class="button circle right-arrow" title="Previous page"></a>
-    </div>
+    </div> -->
     {% endif %}
+    
   </div>
   
 </main>

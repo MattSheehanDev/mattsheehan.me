@@ -7,7 +7,7 @@
 .site-content {
     display: flex;
     flex-direction: column;
-    font-family: $serif-fonts;
+    // font-family: $serif-fonts;
 
     margin-left: 16em;
     padding: 6em 5em 4em;
@@ -36,30 +36,34 @@
     width: 100%;
     margin: 0 auto;
 
-    .journal__recent {
-        color: #aaa;
-        font-size: 0.8em;
-        font-weight: 600;
-        letter-spacing: 0.15em;
-        margin: 0px;
-        text-transform: uppercase;
-        word-spacing: 0.5em;
-        line-height: 1em;
-    }
+    // .journal__recent {
+    //     color: #aaa;
+    //     font-size: 0.8em;
+    //     font-weight: 600;
+    //     letter-spacing: 0.15em;
+    //     margin: 0px;
+    //     text-transform: uppercase;
+    //     word-spacing: 0.5em;
+    //     line-height: 1em;
+    // }
 
-    .journal__post-list {
-        margin-top: 1.5em;
-    }
+    // .journal__post-list {
+    //     margin-top: 1.5em;
+    // }
 
     .page-nav {
         display: flex;
-        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        // justify-content: center;
+        justify-content: space-between;
+        align-items: stretch;
         margin-top: 1rem;
 
-        .prev-page,
-        .next-page {
-            padding: 0 0.5rem;
-        }
+        // .prev-page,
+        // .next-page {
+        //     padding: 0 0.5rem;
+        // }
     }
 
     .archive-page {
@@ -84,9 +88,9 @@
         max-width: none;
         width: 100%;
 
-        .journal__recent {
-            text-align: center;
-        }
+        // .journal__recent {
+        //     text-align: center;
+        // }
     }
 }
 
@@ -95,20 +99,22 @@
  */
 .pinned-snippet {
     display: block;
-    border-top: 1px solid #eee;
+    // border-top: 1px solid #eee;
 
     .pinned__content {
-        padding: 1.5rem 0;
+        // padding: 1.5rem 0;
+        padding-bottom: 1.5rem;
 
         .title {
-            font-weight: 600;
+            font-weight: 900;
             line-height: 1.1;
             margin: 0 0 0.333em;
+            font-family: $serif-fonts;
         }
         .content {
             display: block;
             width: 100%;
-            font-size: 0.9rem;
+            // font-size: 0.9rem;
 
             a {
                 color: $primary1;
@@ -122,42 +128,78 @@
  */
 .post-snippet {
     display: block;
-    border-top: 1px solid #eee;
+    // border-top: 1px solid #eee;
+    padding: 1.5rem 0;
 
-    $content-color: hsl(0, 0%, 67%);
+    // $content-color: hsl(0, 0%, 67%);
 
-    &:hover {
-        .title {
-            color: $primary1;
-        }
-    }
+    // &:hover {
+    //     .title {
+    //         color: $primary1;
+    //     }
+    // }
+    // a {
+    //     text-decoration: none;
+    // }
 
-    a {
-        display: inline-block;
-        padding: 1.5rem 0;
-        color: black;
+    .title {
+        display: block;
+        box-shadow: none;
 
-        .title {
-            font-weight: 600;
+        h5 {
+            // font-weight: 900;
             line-height: 1.1;
             margin: 0.667em 0px 0.333em;
-            transition: color $cubic-bezy 0.2s;
-        }
-
-        .date {
-            display: block;
-            width: 100%;
-            color: $content-color;
-            font-size: 0.9rem;
-            font-weight: 400;
-        }
-
-        .content {
-            font-family: $sans-fonts;
-            font-size: 0.9rem;
-            line-height: 1.4;
-            color: $content-color;
-            width: 100%;
+            color: $primary1;
+            text-rendering: optimizeLegibility;
+            // transition: color $cubic-bezy 0.2s;
         }
     }
+
+    .time {
+        font-size: 0.8rem;
+    }
+    // .date {
+    //     // display: block;
+    //     // width: 100%;
+    //     // color: $content-color;
+    //     // font-size: 0.9rem;
+    //     // font-weight: 400;
+    // }
+
+    .content {
+        // font-family: $serif-fonts;
+        // font-size: 0.9rem;
+        // line-height: 1.4;
+        // color: $content-color;
+        width: 100%;
+    }
+    // a {
+    //     display: inline-block;
+    //     padding: 1.5rem 0;
+    //     color: black;
+
+    //     .title {
+    //         font-weight: 600;
+    //         line-height: 1.1;
+    //         margin: 0.667em 0px 0.333em;
+    //         // transition: color $cubic-bezy 0.2s;
+    //     }
+
+    //     .date {
+    //         display: block;
+    //         width: 100%;
+    //         color: $content-color;
+    //         font-size: 0.9rem;
+    //         font-weight: 400;
+    //     }
+
+    //     .content {
+    //         font-family: $sans-fonts;
+    //         font-size: 0.9rem;
+    //         line-height: 1.4;
+    //         color: $content-color;
+    //         width: 100%;
+    //     }
+    // }
 }

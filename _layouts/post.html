@@ -20,14 +20,14 @@ layout: default
     <div class="post-nav">
       {% if page.previous %}
         <div class="post-nav__previous">
-          <div>Previous</div>
-          <a href="{{ page.previous.url }}" title="{{ page.previous.title }}">{{ page.previous.title }}</a>
+          <!-- <div>Previous</div> -->
+          <a href="{{ page.previous.url }}" title="{{ page.previous.title }}">← {{ page.previous.title }}</a>
         </div>
       {% endif %}
       {% if page.next %}
         <div class="post-nav__next">
-          <div>Next</div>
-          <a href="{{ page.next.url }}" title="{{ page.next.title }}">{{ page.next.title }}</a>
+          <!-- <div>Next</div> -->
+          <a href="{{ page.next.url }}" title="{{ page.next.title }}">{{ page.next.title }} →</a>
         </div>
       {% endif %}
     </div>
