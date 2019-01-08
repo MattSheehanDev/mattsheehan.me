@@ -17,7 +17,7 @@ There are four important things you should know about generators first.
 
 Generator's only have one important function to know which is `generate`{: .highlight }, and is passed one argument `site`{: highlight }.
 
-~~~
+{% highlight ruby %}
 module Jekyll
     class MyGenerator < Generator
         def generate(site)
@@ -25,11 +25,11 @@ module Jekyll
         end
     end
 end
-~~~
+{% endhighlight %}
 
 There's two important properties of `site` that you should learn first, those being the array `static_files` and the hash map `pages`. If you want your generator to create files that need to be converted, therefore have YAML front matter, you should add your page to `site.pages`.
 
-~~~
+{% highlight ruby %}
 module Jekyll
     class MyGenerator < Generator
         def generate(site)
@@ -43,7 +43,7 @@ module Jekyll
         end
     end
 end
-~~~
+{% endhighlight %}
 
 I created a custom page class that inherits from Jekyll's base `Page` class. That's not necessary in this example if you're not doing any custom page work, but that will be important later.
 
@@ -55,33 +55,33 @@ There's actually another secret that Jekyll hides that let us take advantage of 
 
 When write is invoked is when we should actually be writing all of our static files. So our end code would look something like below.
 
-~~~
-    class MyGenerator < Generator
-        def generate(site)
-            # add our pages here to static files array
-            site.static_files << MyPage.new(site, site.source, 'some/directory', 'file.html')
-        end
+{% highlight ruby %}
+class MyGenerator < Generator
+    def generate(site)
+        # add our pages here to static files array
+        site.static_files << MyPage.new(site, site.source, 'some/directory', 'file.html')
+    end
+end
+
+class MyPage < StaticFile
+    def initialize(site, base, dir, name)
+        super(site, base, dir, name)
     end
 
-    class MyPage < StaticFile
-        def initialize(site, base, dir, name)
-            super(site, base, dir, name)
-        end
+    def write(dest)
+        # write is called after _site directory is built
+        # lets write our static files once here
+        path = File.join(dest, base, @dir)
+        FileUtils.mkdir_p(path)
 
-        def write(dest)
-            # write is called after _site directory is built
-            # lets write our static files once here
-            path = File.join(dest, base, @dir)
-            FileUtils.mkdir_p(path)
+        # build up your file...
+        ...
 
-            # build up your file...
-            ...
-
-            # write file
-            File.open(File.join(path, @name), 'w') { |f| f.write(file) }
-        end
+        # write file
+        File.open(File.join(path, @name), 'w') { |f| f.write(file) }
     end
-~~~
+end
+{% endhighlight %}
 
 The secret is overloading the pages write method, which is usually invoked to just copy static files[^2].
 

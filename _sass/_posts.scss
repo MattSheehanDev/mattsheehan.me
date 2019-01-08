@@ -174,8 +174,52 @@ $soliloquy-color: hsla(50, 100%, 70%, 0.2);
     }
 }
 
+.video-wrapper {
+    position: relative;
+    margin: 1.5em 0;
+    width: 100%;
+    padding-top: 56%;
+
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        @include screenSmallerThan50 {
+            padding: 0;
+        }
+    }
+}
 
 
+// Code specific styles
+
+figure {
+    margin: 0;
+    border-radius: 1rem;
+
+    pre {
+        overflow: auto;
+        padding: 1rem;
+        word-wrap: normal;
+        word-break: normal;
+        word-spacing: normal;
+    }
+    code {
+        tab-size: 4;
+        white-space: pre;
+        hyphens: none;
+        font-family: Consolas,Menlo,Monaco,source-code-pro,Courier New,monospace;
+        font-size: 0.7rem;
+    }
+}
+
+// Examples of Rouge/Pygments styles: http://help.farbox.com/pygments.html
+// Source of Rouge/Pygments styles: https://github.com/richleland/pygments-css
+// Supported Rouge languages: http://rouge.jneen.net
+// List of language short names: https://github.com/jneen/rouge/wiki/List-of-supported-languages-and-lexers
 
 .highlight .hll { background-color: #404040 }
 .highlight  { background: #202020; color: #d0d0d0 }
