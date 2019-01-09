@@ -7,6 +7,7 @@ $header-shadow: rgba(0, 0, 0, 0.2);
 $signature-color: $primary-light;
 $rss-color: #f93;
 $github-color: #000;
+$goodreads-color: hsl(20, 27%, 30%);
 
 
 .site-header {
@@ -111,7 +112,7 @@ $github-color: #000;
             margin-bottom: 1rem;
 
             .social-nav__icon {
-                flex: 0 0 auto;
+                // flex: 0 0 auto;
                 cursor: pointer;
                 height: 24px;
                 width: 24px;
@@ -135,10 +136,18 @@ $github-color: #000;
                             fill: $rss-color;
                         }
                     }
+                    &.social-nav__icon-goodreads {
+                        svg {
+                            fill: $goodreads-color;
+                        }
+                    }
                 }
             }
 
             .social-nav__icon-rss {
+                margin-left: 0.4rem;
+            }
+            .social-nav__icon-goodreads {
                 margin-left: 0.4rem;
             }
         }
