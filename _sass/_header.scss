@@ -8,6 +8,7 @@ $signature-color: $primary-light;
 $rss-color: #f93;
 $github-color: #000;
 $goodreads-color: hsl(20, 27%, 30%);
+$linkedin-color: rgb(48, 119, 176);
 
 
 .site-header {
@@ -111,43 +112,44 @@ $goodreads-color: hsl(20, 27%, 30%);
 
             margin-bottom: 1rem;
 
-            .social-nav__icon {
-                // flex: 0 0 auto;
-                cursor: pointer;
+            .social-icon {
                 height: 24px;
                 width: 24px;
                 box-shadow: none;
+                cursor: pointer;
 
                 svg {
                     fill: #ccc;
-                    transition: all $cubic-bezy 0.2s;
+                    transition: fill $cubic-bezy 0.2s;
                 }
 
                 &:hover {
                     outline: 0 none;
 
-                    &.social-nav__icon-github {
+                    &.icon-github {
                         svg {
                             fill: $github-color;
                         }
                     }
-                    &.social-nav__icon-rss {
+                    &.icon-rss {
                         svg {
                             fill: $rss-color;
                         }
                     }
-                    &.social-nav__icon-goodreads {
+                    &.icon-goodreads {
                         svg {
                             fill: $goodreads-color;
+                        }
+                    }
+                    &.icon-linkedin {
+                        svg {
+                            fill: $linkedin-color;
                         }
                     }
                 }
             }
 
-            .social-nav__icon-rss {
-                margin-left: 0.4rem;
-            }
-            .social-nav__icon-goodreads {
+            .icon-linkedin, .icon-rss, .icon-goodreads {
                 margin-left: 0.4rem;
             }
         }
