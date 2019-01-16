@@ -83,7 +83,7 @@ $linkedin-color: rgb(48, 119, 176);
             height: 5.5pc;
             width: 5.5pc;
             margin: 0px 0px 1.25rem;
-            order: -1;
+            // order: -1;
             box-shadow: none;
 
             border: 1px solid #555;
@@ -193,17 +193,19 @@ $linkedin-color: rgb(48, 119, 176);
         position: relative;
         width: 100%;
         height: auto;
+        box-shadow: none;
 
         .site-header__content {
             width: 100%;
             padding: 1rem;
             flex-direction: row;
+            justify-content: space-between;
 
             .site-header__signature {
-                flex: 1 1 50%;
+                // flex: 1 1 50%;
 
                 margin: 0;
-                text-align: left;
+                // text-align: left;
 
                 span {
                     display: none;
@@ -212,7 +214,7 @@ $linkedin-color: rgb(48, 119, 176);
             .site-header__portrait {
                 height: 56px;
                 width: 56px;
-                order: 0;
+                // order: 0;
                 margin: 0 0.5rem;
 
                 div {
@@ -220,14 +222,22 @@ $linkedin-color: rgb(48, 119, 176);
                 }
             }
 
-            .site-header__social {
-                flex: 1 1 50%;
-                justify-content: flex-end;
-            }
+            // .site-header__social {
+            //     flex: 1 1 50%;
+            //     justify-content: flex-end;
+            // }
             .site-header__links {
-                flex: 1 1 50%;
+                // flex: 1 1 50%;
                 display: none;
             }
         }
     }
+
+    // @include screenSmallerThan570px {
+    //     .site-header__content {
+    //         .site-header__signature {
+    //             display: none;
+    //         }
+    //     }
+    // }
 }

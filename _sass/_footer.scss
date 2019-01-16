@@ -18,23 +18,28 @@ $footer-shadow: rgba(0, 0, 0, 0.2);
     // letter-spacing: 0.025rem;
     // text-transform: uppercase;
     // color: $grey-dark;
-    box-shadow: 0 0 0.5rem $footer-shadow;
+    // box-shadow: 0 0 0.5rem $footer-shadow;
 
-    .link {
-        // display: block;
-        // text-decoration: none;
-        // color: inherit;
-        // transition: color cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+    // .link {
+    //     // display: block;
+    //     // text-decoration: none;
+    //     // color: inherit;
+    //     // transition: color cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
 
-        &:hover {
-            color: $primary1;
-        }
-    }
+    //     &:hover {
+    //         color: $primary1;
+    //     }
+    // }
 
     @include screenSmallerThan800px {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
+
+        padding: 2rem;
+    }
+    @include screenSmallerThan570px {
+        padding: 1.5em 1em;
     }
 }
