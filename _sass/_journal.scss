@@ -11,14 +11,51 @@ $goodreads-color: hsl(20, 27%, 30%);
 $linkedin-color: rgb(48, 119, 176);
 
 
+body {
+    max-width: 42em;
+    margin: auto;
+
+    @include screenSmallerThan800px {
+        padding: 0 2em;
+    }
+    @include screenSmallerThan570px {
+        padding: 0 1em;
+    }
+}
+
 .site-header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    max-width: 42em;
-    margin: auto;
+    // max-width: 42em;
+    // margin: auto;
     margin-top: 1em;
+    margin-bottom: 3em;
+
+    // @include screenSmallerThan800px {
+    //     .site-header__intro {
+    //         flex-direction: column;
+    //     }
+    //     .site-header__signature {
+    //         padding-left: 0;
+    //     }
+    // }
+
+    @include screenSmallerThan570px {
+        align-items: center;
+
+        .site-header__portrait {
+            display: none;
+        }
+        .site-header__signature {
+            padding-left: 0;
+
+            span {
+                display: none;
+            }
+        }
+    }
 }
 
 .site-header__intro {
@@ -70,6 +107,7 @@ $linkedin-color: rgb(48, 119, 176);
         svg {
             // max-width: 10em;
             // max-height: 3em;
+            max-width: 14em;
 
             // For chrome, you have to set the properties on the parent svg element
 
@@ -112,7 +150,7 @@ $linkedin-color: rgb(48, 119, 176);
     display: flex;
     justify-content: space-between;
 
-    margin-bottom: 1rem;
+    // margin-bottom: 1rem;
 
     .social-icon {
         height: 24px;
@@ -164,23 +202,25 @@ $linkedin-color: rgb(48, 119, 176);
 .site-content {
     display: flex;
     flex-direction: column;
+
+    margin-bottom: 4em;
     // font-family: $serif-fonts;
 
     // margin-left: 16em;
-    padding: 6em 5em 4em;
+    // padding: 6em 5em 4em;
 
-    @include screenSmallerThan1000px {
-        // margin-left: 12em;
-        padding: 5em 3em 3em;
-    }
-    @include screenSmallerThan800px {
-        margin-left: 0;
-        padding: 2em;
-    }
-    @include screenSmallerThan570px {
-        margin-left: 0;
-        padding: 1.5em 1em 1em;
-    }
+    // @include screenSmallerThan1000px {
+    //     // margin-left: 12em;
+    //     padding: 5em 3em 3em;
+    // }
+    // @include screenSmallerThan800px {
+    //     // margin-left: 0;
+    //     padding: 2em;
+    // }
+    // @include screenSmallerThan570px {
+    //     // margin-left: 0;
+    //     padding: 1.5em 1em 1em;
+    // }
 }
 
 /*
