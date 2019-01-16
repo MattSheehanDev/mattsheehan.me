@@ -14,7 +14,8 @@ $linkedin-color: rgb(48, 119, 176);
 .site-header {
     position: fixed;
     height: 100%;
-    width: 12em;
+    // width: 12em;
+    width: 16rem;
     background-color: $header-color;
     box-shadow: 0 0 0.5rem $header-shadow;
 
@@ -184,9 +185,12 @@ $linkedin-color: rgb(48, 119, 176);
         }
     }
 
-    // for large screens, the header becomes a little wider
-    @include screenLargerThan1000px {
-        width: 16rem;
+    // for smaller screens, the header becomes a little narrower
+    // @include screenLargerThan1000px {
+    //     width: 16rem;
+    // }
+    @include screenSmallerThan1000px {
+        width: 12rem;
     }
 
     @include screenSmallerThan800px {
