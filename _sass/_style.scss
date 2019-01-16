@@ -57,25 +57,25 @@ $s: 0.8;
     $i: $i - 1;
 }
 
-.offset {
-    width: 10rem;
-    height: 5rem;
-    float: left;
+// .offset {
+//     width: 10rem;
+//     height: 5rem;
+//     float: left;
 
-    @include screenSmallerThan50 {
-        display: none;
-    }
-}
+//     @include screenSmallerThan50 {
+//         display: none;
+//     }
+// }
 
-section {
-    display: inline-block;
-    padding: 1em 0;
-    width: 100%;
+// section {
+//     display: inline-block;
+//     padding: 1em 0;
+//     width: 100%;
 
-    @include screenSmallerThan50 {
-        padding: 0.5em 0;
-    }
-}
+//     @include screenSmallerThan50 {
+//         padding: 0.5em 0;
+//     }
+// }
 
 a {
     // text-decoration: underline;
@@ -126,7 +126,7 @@ canvas {
     width: 120%;
     margin-left: -10%;
 
-    @include screenSmallerThan50 {
+    @include screenSmallerThan800px {
         width: 100%;
         margin-left: 0;
     }

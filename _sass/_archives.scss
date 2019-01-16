@@ -12,7 +12,10 @@
         // font-weight: 600;
         font-size: 2.5em;
 
-        @include screenSmallerThan30 {
+        // @include screenSmallerThan30 {
+        //     font-size: 1.75rem;
+        // }
+        @include screenSmallerThan570px {
             font-size: 1.75rem;
         }
     }
