@@ -5,12 +5,17 @@ $footer-color: white;
 $footer-shadow: rgba(0, 0, 0, 0.2);
 
 .site-footer {
-    display: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    // display: none;
     width: 100%;
     // font-size: 0.8em;
     text-align: center;
-    padding: 1.5rem 0;
+    // padding: 1.5rem 0;
     background-color: $footer-color;
+    margin-bottom: 2em;
 
     // font-family: $sans-fonts;
     // font-size: 0.8rem;
@@ -31,15 +36,15 @@ $footer-shadow: rgba(0, 0, 0, 0.2);
     //     }
     // }
 
-    @include screenSmallerThan800px {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+    // @include screenSmallerThan800px {
+    //     display: flex;
+    //     flex-direction: row;
+    //     justify-content: space-between;
+    //     align-items: center;
 
-        padding: 2rem;
-    }
-    @include screenSmallerThan570px {
-        padding: 1.5em 1em;
-    }
+    //     // padding: 2rem;
+    // }
+    // @include screenSmallerThan570px {
+    //     padding: 1.5em 1em;
+    // }
 }
