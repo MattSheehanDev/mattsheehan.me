@@ -1,15 +1,6 @@
 @import "variables";
 @import "mixins";
 
-$header-color: white;
-$header-shadow: rgba(0, 0, 0, 0.2);
-
-$signature-color: $primary-light;
-$rss-color: #f93;
-$github-color: #000;
-$goodreads-color: hsl(20, 27%, 30%);
-$linkedin-color: rgb(48, 119, 176);
-
 
 body {
     max-width: 42em;
@@ -23,178 +14,6 @@ body {
     }
 }
 
-.site-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    // max-width: 42em;
-    // margin: auto;
-    margin-top: 1em;
-    margin-bottom: 3em;
-
-    // @include screenSmallerThan800px {
-    //     .site-header__intro {
-    //         flex-direction: column;
-    //     }
-    //     .site-header__signature {
-    //         padding-left: 0;
-    //     }
-    // }
-
-    @include screenSmallerThan570px {
-        align-items: center;
-
-        .site-header__portrait {
-            display: none;
-        }
-        .site-header__signature {
-            padding-left: 0;
-            padding-right: 1em;
-
-            span {
-                display: none;
-            }
-        }
-    }
-}
-
-.site-header__intro {
-    display: flex;
-    flex-direction: row;
-}
-
-.site-header__portrait {
-    // display: block;
-    // flex: 0 0 auto;
-    height: 5.5pc;
-    width: 5.5pc;
-    // margin: 0px 0px 1.25rem;
-    // order: -1;
-    box-shadow: none;
-
-    border: 1px solid #555;
-    border-radius: 50%;
-    // transition: border-color $cubic-bezy 0.2s;
-
-    // &:hover {
-    //     border-color: $primary1;
-    // }
-
-    div {
-        width: 100%;
-        height: 100%;
-
-        background: url(../images/self_art-circle-compressed.png)
-            no-repeat center center;
-        background-size: 5pc auto;
-
-        text-indent: -9999px;
-    }
-}
-
-.site-header__signature {
-    display: flex;
-    flex-direction: column;
-    padding-left: 1em;
-    line-height: 1;
-    // width: 10rem;
-    // margin-bottom: 1.25rem;
-
-    a {
-        // display: block;
-        box-shadow: none;
-
-        svg {
-            // max-width: 10em;
-            // max-height: 3em;
-            max-width: 14em;
-
-            // For chrome, you have to set the properties on the parent svg element
-
-            // stroke: #666;
-            // fill: #666;
-            stroke: $signature-color;
-            fill: $signature-color;
-            // transition: all $cubic-bezy 0.2s;
-
-            // For firefox, you have to set the properties directly on the path
-            path {
-                // stroke: #666;
-                // fill: #666;
-                stroke: $signature-color;
-                fill: $signature-color;
-                // transition: all $cubic-bezy 0.2s;
-            }
-
-            // &:hover {
-            //     stroke: $primary1;
-            //     fill: $primary1;
-            //     path {
-            //         stroke: $primary1;
-            //         fill: $primary1;
-            //     }
-            // }
-        }
-    }
-
-    span {
-        // color: $grey;
-        display: block;
-        font-size: 0.85rem;
-        font-family: $sans-fonts;
-        margin: 0px;
-    }
-}
-
-.site-header__social {
-    display: flex;
-    justify-content: space-between;
-
-    // margin-bottom: 1rem;
-
-    .social-icon {
-        height: 24px;
-        width: 24px;
-        box-shadow: none;
-        cursor: pointer;
-
-        svg {
-            fill: #ccc;
-            transition: fill $cubic-bezy 0.2s;
-        }
-
-        &:hover {
-            outline: 0 none;
-
-            &.icon-github {
-                svg {
-                    fill: $github-color;
-                }
-            }
-            &.icon-rss {
-                svg {
-                    fill: $rss-color;
-                }
-            }
-            &.icon-goodreads {
-                svg {
-                    fill: $goodreads-color;
-                }
-            }
-            &.icon-linkedin {
-                svg {
-                    fill: $linkedin-color;
-                }
-            }
-        }
-    }
-
-    .icon-linkedin, .icon-rss, .icon-goodreads {
-        margin-left: 0.4rem;
-    }
-}
-
 
 
 /*
@@ -203,65 +22,28 @@ body {
 .site-content {
     display: flex;
     flex-direction: column;
-
     margin-bottom: 2.5em;
-    // font-family: $serif-fonts;
-
-    // margin-left: 16em;
-    // padding: 6em 5em 4em;
-
-    // @include screenSmallerThan1000px {
-    //     // margin-left: 12em;
-    //     padding: 5em 3em 3em;
-    // }
-    // @include screenSmallerThan800px {
-    //     // margin-left: 0;
-    //     padding: 2em;
-    // }
-    // @include screenSmallerThan570px {
-    //     // margin-left: 0;
-    //     padding: 1.5em 1em 1em;
-    // }
 }
 
 /*
  * Journal styles
  */
 .journal {
-    display: block;
-    overflow-x: visible;
-    max-width: 42em;
     width: 100%;
-    margin: 0 auto;
-
-    // .journal__recent {
-    //     color: #aaa;
-    //     font-size: 0.8em;
-    //     font-weight: 600;
-    //     letter-spacing: 0.15em;
-    //     margin: 0px;
-    //     text-transform: uppercase;
-    //     word-spacing: 0.5em;
-    //     line-height: 1em;
-    // }
-
-    // .journal__post-list {
-    //     margin-top: 1.5em;
-    // }
 
     .page-nav {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        // justify-content: center;
-        justify-content: space-between;
         align-items: stretch;
         margin-top: 1rem;
 
-        // .prev-page,
-        // .next-page {
-        //     padding: 0 0.5rem;
-        // }
+        &.space-between {
+            justify-content: space-between;
+        }
+        &.flex-end {
+            justify-content: flex-end;
+        }
     }
 
     .archive-page {
@@ -282,14 +64,6 @@ body {
         }
     }
 
-    @include screenSmallerThan800px {
-        max-width: none;
-        width: 100%;
-
-        // .journal__recent {
-        //     text-align: center;
-        // }
-    }
 }
 
 /*
@@ -297,10 +71,8 @@ body {
  */
 .pinned-snippet {
     display: block;
-    // border-top: 1px solid #eee;
 
     .pinned__content {
-        // padding: 1.5rem 0;
         padding-bottom: 1.5rem;
 
         .title {
@@ -312,7 +84,6 @@ body {
         .content {
             display: block;
             width: 100%;
-            // font-size: 0.9rem;
 
             a {
                 color: $primary1;
@@ -326,79 +97,24 @@ body {
  */
 .post-snippet {
     display: block;
-    // border-top: 1px solid #eee;
-    // padding: 1.5rem 0;
     padding-bottom: 1.5rem;
-
-    // $content-color: hsl(0, 0%, 67%);
-
-    // &:hover {
-    //     .title {
-    //         color: $primary1;
-    //     }
-    // }
-    // a {
-    //     text-decoration: none;
-    // }
 
     .title {
         display: block;
         box-shadow: none;
 
         h5 {
-            // font-weight: 900;
             line-height: 1.1;
             margin: 0.667em 0px 0.333em;
             color: $primary1;
-            // text-rendering: optimizeLegibility;
-            // transition: color $cubic-bezy 0.2s;
         }
     }
 
     .time {
         font-size: 0.8rem;
     }
-    // .date {
-    //     // display: block;
-    //     // width: 100%;
-    //     // color: $content-color;
-    //     // font-size: 0.9rem;
-    //     // font-weight: 400;
-    // }
 
     .content {
-        // font-family: $serif-fonts;
-        // font-size: 0.9rem;
-        // line-height: 1.4;
-        // color: $content-color;
         width: 100%;
     }
-    // a {
-    //     display: inline-block;
-    //     padding: 1.5rem 0;
-    //     color: black;
-
-    //     .title {
-    //         font-weight: 600;
-    //         line-height: 1.1;
-    //         margin: 0.667em 0px 0.333em;
-    //         // transition: color $cubic-bezy 0.2s;
-    //     }
-
-    //     .date {
-    //         display: block;
-    //         width: 100%;
-    //         color: $content-color;
-    //         font-size: 0.9rem;
-    //         font-weight: 400;
-    //     }
-
-    //     .content {
-    //         font-family: $sans-fonts;
-    //         font-size: 0.9rem;
-    //         line-height: 1.4;
-    //         color: $content-color;
-    //         width: 100%;
-    //     }
-    // }
 }

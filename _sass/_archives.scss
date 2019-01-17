@@ -2,19 +2,11 @@
 @import "mixins";
 
 .archives {
-    margin: 0 auto;
-    max-width: 42rem;
     width: 100%;
-    text-align: left;
-    overflow-x: visible;
 
     h1 {
-        // font-weight: 600;
         font-size: 2.5em;
 
-        // @include screenSmallerThan30 {
-        //     font-size: 1.75rem;
-        // }
         @include screenSmallerThan570px {
             font-size: 1.75rem;
         }
@@ -28,28 +20,10 @@
 
             a {
                 display: block;
-                font-family: $serif-fonts;
                 box-shadow: none;
-                // color: black;
 
                 h6 {
                     color: $primary1;
-                }
-
-                // h6 {
-                //     transition: color cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
-                // }
-
-                // &:hover {
-                //     h6 {
-                //         color: $primary1;
-                //     }
-                // }
-
-                div {
-                    color: hsl(0, 0%, 56%);
-                    font-size: 0.9rem;
-                    font-weight: 400;
                 }
             }
         }

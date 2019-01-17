@@ -12,8 +12,8 @@ require 'autoprefixer-rails'
 Jekyll::Hooks.register :site, :post_write do |site|
 
     files = [
-        '_site/assets/css/main.css',
-        '_site/assets/css/fonts.css'
+        '_site/assets/css/main.css'
+        # '_site/assets/css/fonts.css'
     ]
 
     files.each do |file|

@@ -1,16 +1,5 @@
 
 
-// @mixin screenSmallerThan30 {
-//     @media screen and (max-width: 30rem) {
-//         @content;
-//     }
-// }
-// @mixin screenSmallerThan50 {
-//     @media screen and (max-width: 50rem) {
-//         @content;
-//     }
-// }
-
 
 @mixin screenSmallerThan1000px {
     @media screen and (max-width: 1000px) {
@@ -34,3 +23,4 @@
 //         @content;
 //     }
 // }
+

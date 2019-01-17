@@ -1,50 +1,11 @@
-@import "variables";
-@import "mixins";
-
-$footer-color: white;
-$footer-shadow: rgba(0, 0, 0, 0.2);
 
 .site-footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    // display: none;
     width: 100%;
-    // font-size: 0.8em;
     text-align: center;
-    // padding: 1.5rem 0;
-    background-color: $footer-color;
     margin-bottom: 2em;
-
-    // font-family: $sans-fonts;
-    // font-size: 0.8rem;
-    // font-weight: 600;
-    // letter-spacing: 0.025rem;
-    // text-transform: uppercase;
-    // color: $grey-dark;
-    // box-shadow: 0 0 0.5rem $footer-shadow;
-
-    // .link {
-    //     // display: block;
-    //     // text-decoration: none;
-    //     // color: inherit;
-    //     // transition: color cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
-
-    //     &:hover {
-    //         color: $primary1;
-    //     }
-    // }
-
-    // @include screenSmallerThan800px {
-    //     display: flex;
-    //     flex-direction: row;
-    //     justify-content: space-between;
-    //     align-items: center;
-
-    //     // padding: 2rem;
-    // }
-    // @include screenSmallerThan570px {
-    //     padding: 1.5em 1em;
-    // }
 }
+
