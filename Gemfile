@@ -10,6 +10,7 @@ group :jekyll_plugins do
 	gem "builder", "3.2.3"
     gem "jekyll-seo-tag", "2.6.1"
     gem "jekyll-compose", "0.11.0"
+    gem "jekyll-sitemap", "1.4.0"
 end
 
 group :development do
