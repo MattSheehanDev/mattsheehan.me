@@ -130,10 +130,15 @@ $linkedin-color: rgb(48, 119, 176);
                     fill: $linkedin-color;
                 }
             }
+            &.icon-twitter {
+                svg {
+                    fill: rgb(74, 161, 236);
+                }
+            }
         }
     }
 
-    .icon-linkedin, .icon-rss, .icon-goodreads {
+    .icon-linkedin, .icon-rss, .icon-goodreads, .icon-twitter {
         margin-left: 0.4rem;
     }
 }
