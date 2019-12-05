@@ -32,7 +32,7 @@ exclude: [Gemfile, README.md, legacy, deploy, node_modules, yarn.lock, package.j
 # description: The web hub of all things Matt
 
 contact:
-mailing_address: 1620 Sturbridge Dr. Louisville OH 44641
+mailing_address: Cuyahoga Falls, OH
 phone: 330-614-1599
 email: dev@mattsheehan.me
 lang: en_US
