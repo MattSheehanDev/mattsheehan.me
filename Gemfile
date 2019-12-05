@@ -8,6 +8,7 @@ group :jekyll_plugins do
     gem "autoprefixer-rails", "9.7.3"
     gem "jekyll-assets", "3.0.12"
 	gem "builder", "3.2.3"
+    gem "jekyll-seo-tag", "2.6.1"
 end
 
 group :development do

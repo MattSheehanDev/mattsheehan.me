@@ -20,6 +20,7 @@ plugins:
   - jekyll-paginate
   - jekyll-assets
   - autoprefixer-rails
+  - jekyll-seo-tag
 
 exclude: [Gemfile, README.md, legacy, deploy, node_modules, yarn.lock, package.json]
 
@@ -34,12 +35,24 @@ contact:
 mailing_address: 1620 Sturbridge Dr. Louisville OH 44641
 phone: 330-614-1599
 email: dev@mattsheehan.me
+lang: en_US
 
 # Plugin: jekyll-feed
 title: Matthew Sheehan
 author: "Matt Sheehan"
+tagline: "Web home of Matt Sheehan"
 description: ""
 url: https://mattsheehan.me
+twitter:
+  username: MattSheehanDev
+  card: summary
+social:
+  name: Matt Sheehan
+  links:
+    - https://www.github.com/sheehamj13
+    - https://www.linkedin.com/in/matt-sheehan-4b209259/
+    - https://www.goodreads.com/matt_sheehan
+    - https://twitter.com/MattSheehanDev
 
 # rss_title: Matt Sheehan
 # rss_author: Matt Sheehan
