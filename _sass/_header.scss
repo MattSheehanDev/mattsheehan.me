@@ -25,6 +25,7 @@ $linkedin-color: rgb(48, 119, 176);
         .site-header__portrait {
             display: none;
         }
+
         .site-header__signature {
             padding-left: 0;
             padding-right: 1em;
@@ -53,8 +54,7 @@ $linkedin-color: rgb(48, 119, 176);
         width: 100%;
         height: 100%;
 
-        background: url(../images/self-pixel-circle.png)
-            no-repeat center center;
+        background: url(../images/self-pixel-circle.png) no-repeat center center;
         background-size: 5pc auto;
 
         text-indent: -9999px;
@@ -115,31 +115,44 @@ $linkedin-color: rgb(48, 119, 176);
                     fill: $github-color;
                 }
             }
+
             &.icon-rss {
                 svg {
                     fill: $rss-color;
                 }
             }
+
             &.icon-goodreads {
                 svg {
                     fill: $goodreads-color;
                 }
             }
+
             &.icon-linkedin {
                 svg {
                     fill: $linkedin-color;
                 }
             }
+
             &.icon-twitter {
                 svg {
                     fill: rgb(74, 161, 236);
                 }
             }
+
+            &.icon-telegram {
+                svg {
+                    fill: #32afed;
+                }
+            }
         }
     }
 
-    .icon-linkedin, .icon-rss, .icon-goodreads, .icon-twitter {
+    .icon-linkedin,
+    .icon-rss,
+    .icon-goodreads,
+    .icon-twitter,
+    .icon-telegram {
         margin-left: 0.4rem;
     }
 }
-
