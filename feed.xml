@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en_US"><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://mattsheehan.me/feed.xml" rel="self" type="application/atom+xml" /><link href="https://mattsheehan.me/" rel="alternate" type="text/html" hreflang="en_US" /><updated>2020-04-14T20:27:12-04:00</updated><id>https://mattsheehan.me/feed.xml</id><title type="html">Matthew Sheehan</title><subtitle></subtitle><author><name>Matt Sheehan</name></author><entry><title type="html">(Almost) Everything I Know About Choosing Colors</title><link href="https://mattsheehan.me/archives/Everything-I-Know-About-Choosing-Colors/" rel="alternate" type="text/html" title="(Almost) Everything I Know About Choosing Colors" /><published>2016-04-06T00:00:00-04:00</published><updated>2016-04-06T00:00:00-04:00</updated><id>https://mattsheehan.me/archives/Everything-I-Know-About-Choosing-Colors</id><content type="html" xml:base="https://mattsheehan.me/archives/Everything-I-Know-About-Choosing-Colors/">&lt;p&gt;&lt;em&gt;&lt;strong&gt;Disclaimer&lt;/strong&gt;: It’s not a lot.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The reason I’m not writing everything I know about choosing colors, is because I only spend about 2 minutes proofreading, so the shorter an essay is, the more errors I can catch. I’m sure though, that if I would have written everything and was born with more patience, I could have gone on for at least another paragraph or two. :)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Use HSL (Hue, Saturation, Light) Color Represenations&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;A lot of times you’ll see hex representations of colors like #F938AD, using the hexadecimal numbers 0-F or RGB representations like rgb(212,50,185) using the decimal numbers 0-256, but what do those even mean? Sure RGB is the amount of red, green, and blue in a color, but unless you’re a computer pixel or a superb color theorist who mixed a lot of watercolors when she was four years old, the blue-y-ness or the red-y-ness of a color doesn’t mean much to me. Unless your meaning is purple, I understand how purple works. But there are still lots of other colors, precisely, using three decimal values between 0 and 256, there are 256^3 colors, or using six hexadecimal values between 0-F (0-16), there are 16^6 colors, which both reduce to 16,777,216 color representations. So my point stands that red-y-ness, to a middle school art dropout, doesn’t mean much.&lt;/p&gt;
+
+&lt;p&gt;But what about this HSL representation? Turns out HSL is much closer to how humans like me think. HSL means that I can set the approximate hue of the color I want, and then play with the saturation and the light (which from now on we’re going to call brightness) and I still have a variation of the same color that I started with. Try doing something like that with RGB. You can’t. Add too much red-y-ness to a color and you no longer have the same color anymore, it’s like mixing paint, I’m going to end up with poop brown. Want to change the brightness of that green color you have? Go ahead! You’ll just end up with a brighter green. How about the saturation? No problem! You’ll just have a more saturated green. There is no direct path to poop brown, unless you set the hue to a brown.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Never Use Pure Black&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Have you been noticing how blue Facebook is, because you should be. Even look look at the background grey color, it’s not grey, it’s blue-grey. In fact, its this color `hsl(225, 10%, 92%). Which if we look at a color wheel, means that, if we start at the top and go 225 degrees around, we’ll land on the blue square, then we take that rocking blue we found and set it to 10% of complete saturation, followed by 92% of total brightness. As a note you can take any color, crank up the brightness to 100%, and you’ll end up with white. Turn down the brightness to 0%, and you’ll end up with black, regardless of hue or saturation, that’s just how light works.
+So next time instead of using a rocking blue and then proceeding to use rgb(180,180,180) as the dullest grey. Take the rocking blue, tone done the saturation, crank up the brightness and there’s you’re blue grey.&lt;/p&gt;
+
+&lt;p class=&quot;soliloquy&quot;&gt;There are probably dozens of well paid designers at Facebook that put a lot of thought and attention to their color choices, but you’d never be able to tell, which I think is testament to their worth, since their choices are simple and not flashy.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Keep Your Color Scheme To Two Colors&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Really just a guideline, but you should only ever need one primary color and a splash of some complementary color. Now these two colors are not including your greys, or variations on you primary color. How do you pick your complementary color? I don’t know how you pick your complementary color, I pick it by going to &lt;a href=&quot;paletton.com&quot;&gt;paletton&lt;/a&gt;, choosing my primary color and clicking the add complementary button. I know that there is some reason about how two colors complement each other that could enable me to choose with my brain, but I also know that there’s a service that does this for me.&lt;/p&gt;</content><author><name>Matt Sheehan</name></author><summary type="html">Disclaimer: It’s not a lot.</summary></entry><entry><title type="html">Books</title><link href="https://mattsheehan.me/archives/Books/" rel="alternate" type="text/html" title="Books" /><published>2016-01-09T00:00:00-05:00</published><updated>2016-01-09T00:00:00-05:00</updated><id>https://mattsheehan.me/archives/Books</id><content type="html" xml:base="https://mattsheehan.me/archives/Books/">&lt;p&gt;Whenever I think of my favorite books, I always come up with this short list. Then I wonder, are these still my favorite books? I probably haven’t read some of these for years and who knows what I was thinking about when I read some of them. So since I consider these my favorite books, and I generally don’t re-read books (except a few), I think all of these deserve a second reading to see if they still make the cut.&lt;/p&gt;
+
+&lt;ul class=&quot;task-list checklist&quot;&gt;
+  &lt;li&gt;[✓] Never Out of Season – David W. Hunter&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;The Fountainhead – Ayn Rand&lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;The Master and Margarita – Mikhail Bulgakov&lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;Lexicon – Max Barry&lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;The Wolf of Wall Street – Jordan Belfort&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p class=&quot;paragraph&quot;&gt;…As well as some books that I just considered good at the time.&lt;/p&gt;
+
+&lt;ul class=&quot;checklist&quot;&gt;
+  &lt;li&gt;[✓] Hackers and Painters – Paul Graham&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- ✓ --&gt;
+&lt;!-- ✕ --&gt;
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;I read &lt;em&gt;Never Out of Season&lt;/em&gt; right when I was out of college and it has been the essential guiding tool in whenever I think about finances. Three years later, the book is even more meaningful since ideas have larger consequences when implemented with more money. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot;&gt;
+      &lt;p&gt;I don’t know what changed this time through, but I found this book to be much more though provoking than I remember. I would definitely add this one to my list of favorites. &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>Matt Sheehan</name></author><summary type="html">Whenever I think of my favorite books, I always come up with this short list. Then I wonder, are these still my favorite books? I probably haven’t read some of these for years and who knows what I was thinking about when I read some of them. So since I consider these my favorite books, and I generally don’t re-read books (except a few), I think all of these deserve a second reading to see if they still make the cut.</summary></entry><entry><title type="html">Design pt. 1</title><link href="https://mattsheehan.me/archives/Design-Part-1/" rel="alternate" type="text/html" title="Design pt. 1" /><published>2015-12-23T00:00:00-05:00</published><updated>2015-12-23T00:00:00-05:00</updated><id>https://mattsheehan.me/archives/Design-Part-1</id><content type="html" xml:base="https://mattsheehan.me/archives/Design-Part-1/">&lt;p&gt;&lt;strong&gt;TL;DR&lt;/strong&gt;: start from the beginning, then, start from the beginning again.&lt;/p&gt;
+
+&lt;p&gt;After hours of thinking about design, I made my mind up that design has to be &lt;strong&gt;holistic&lt;/strong&gt;. If I was designing a system with some 5 features, I should start from the beginning and incorporate how each one of those features fits into and interacts with the program, then if another feature was added I should start from the beginning again because now each piece of the system has 5 other interactions instead of 6. And although it’s common to just hammer the 6th feature in there, that’s impossible to do without compromising the entire integrity of the program and leaving the feeling that the entire program isn’t as solid as it should be (even though only a few people would be able to put their finger on exactly what was wrong with it).&lt;/p&gt;
+
+&lt;p&gt;One of the most difficult aspects of any design is the giving the final impression that the entire system was created by the hand of one person. Very rarely does one person get the chance (if they even have the desire, or the ability) for end to end control, from the initial feature requests, to the first draft of the design, to the final implementation. It wouldn’t be unusual for a few people to pull the feature requests together, then have a few people architect the design, and then leave the implementation of the program to any number of people who had no hand in what the design should be or if a feature is even worth implementing.&lt;/p&gt;
+
+&lt;p&gt;The end result becomes a compromised program. Too many people had an input and the design wasn’t done &lt;strong&gt;holistically&lt;/strong&gt;. Everything feels disjointed. I think this is the biggest hurdle for most projects and I’m not sure if there is one cure all. Each new project needs to be designed from the beginning (and be wary of letting a program grow &lt;em&gt;organically&lt;/em&gt;, love should grow organically, systems should be by design), and when the requirements change and now there are 6 features instead of 5, don’t be afraid to design &lt;strong&gt;from the beginning&lt;/strong&gt;.&lt;/p&gt;</content><author><name>Matt Sheehan</name></author><summary type="html">TL;DR: start from the beginning, then, start from the beginning again.</summary></entry><entry><title type="html">Why would anyone use Verizon?</title><link href="https://mattsheehan.me/archives/Verizon/" rel="alternate" type="text/html" title="Why would anyone use Verizon?" /><published>2015-12-21T00:00:00-05:00</published><updated>2015-12-21T00:00:00-05:00</updated><id>https://mattsheehan.me/archives/Verizon</id><content type="html" xml:base="https://mattsheehan.me/archives/Verizon/">&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; Don’t use Verizon.&lt;/p&gt;
+
+&lt;p&gt;I seriously don’t understand this. Whenever anyone compares the big carriers (Sprint, Verizon, AT&amp;amp;T), most people would say that Verizon has the best service without argument. But here’s the thing &lt;strong&gt;they’re fucking wrong&lt;/strong&gt;&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;. How can someone fool themselves into thinking they’re getting some deal with Verizon? Verizon does everything wrong. Does Verizon have the most expensive service plans? Check. Does Verizon have a carrier lock in that makes it impossible to transfer carriers with your same phone or roam globally? Check again. But you know what the real kicker is? Verizon is one of the most trusted telecommunications company, ahead of AT&amp;amp;T or Sprint. Apparently, Verizon customers are stupidly loyal.&lt;/p&gt;
+
+&lt;p&gt;What keeps them coming back every two years to renew their contract, or now-a-days every single year (and yes if you are on one of ‘edge’ or whatever they’re called plans, you are still on a contract of sorts because you’re are in &lt;strong&gt;debt&lt;/strong&gt; and can’t really do anything until you pay off your phone and even if you did do that you would still have one of those stupid Verizon only phones that don’t work on any other carrier&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;)? The best I can come up with is they’re either A) complacent or B) don’t want to deal with the hassle of transferring carriers, and trust me it is a hassle. If you’re one of the complacent ones, well there’s nothing anyone can do for you, you’re just going to float through your complacent life with your complacent phone. But if you’re one of the ones that just don’t want to deal with the hassle, well then let me confirm that the freedom to do what you want is always worth the hassle. Sure are there some glitches that make you want to throw your phone off the roof? Yeah those will happen, but here’s the thing, once you switch carriers that’s it, everything will slide along as smoothly as it ever has but you’ll have the ability to jump your’ carriers ship (to another GSM carrier) whenever you want.&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;I’m a little upset. I originally wrote this as &lt;em&gt;Why the fuck would anyone use Verizon?&lt;/em&gt;. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot;&gt;
+      &lt;p&gt;In fact I would argue that this is worse than a contract because if you pay just the required monthly payment, your phone won’t be paid off for 24 months or more depending on if you trade in and upgrade mid-through. Sure you could just finish paying it off all at once, but I doubt someone who buys electronics through a payment plan, which is literally the worst investment you could make with your money (it’s right up there with just lighting your money on fire and burning it), has the cash to pay it off. &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>Matt Sheehan</name></author><summary type="html">TL;DR: Don’t use Verizon.</summary></entry><entry><title type="html">Roy Orbison singing for the lonely</title><link href="https://mattsheehan.me/archives/Bruce-Springsteen-66/" rel="alternate" type="text/html" title="Roy Orbison singing for the lonely" /><published>2015-09-23T00:00:00-04:00</published><updated>2015-09-23T00:00:00-04:00</updated><id>https://mattsheehan.me/archives/Bruce-Springsteen-66</id><content type="html" xml:base="https://mattsheehan.me/archives/Bruce-Springsteen-66/">&lt;p&gt;I’ve been following Bruce Springsteen since I can remember and seen him on tour a couple times, which is amazing considering today he’s 66 years old. The most surprising part is I’m always discovering songs or different live versions of songs that I’ve never heard before.&lt;/p&gt;
+
+&lt;p&gt;Just today I heard what sounded like &lt;em&gt;Thunder Road&lt;/em&gt; on the radio…but as I waited to hear ‘Oh oh oh oh Thunder Road!’, they never came. Everything sounded like Thunder Road, but it wasn’t quite Thunder Road. Definitely a live version, maybe the lyrics were changed during rehearsal for fun? I waited to park and pulled my phone out to Bing some lyrics. Turns out the song was called &lt;em&gt;Wings for Wheels&lt;/em&gt; and was an early version of Thunder Road before it was recorded.&lt;/p&gt;
+
+&lt;p&gt;Sorry Mary, Angelina looks lonely.&lt;/p&gt;
+
+&lt;div class=&quot;video-wrapper&quot;&gt;
+&lt;iframe width=&quot;420&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/dRRQVfQZnZQ&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;small&gt;Wings for Wheels - 1975
+&amp;lt;/div&amp;gt;
+&lt;/small&gt;&lt;/div&gt;</content><author><name>Matt Sheehan</name></author><summary type="html">I’ve been following Bruce Springsteen since I can remember and seen him on tour a couple times, which is amazing considering today he’s 66 years old. The most surprising part is I’m always discovering songs or different live versions of songs that I’ve never heard before.</summary></entry><entry><title type="html">Ellsworth Toohey</title><link href="https://mattsheehan.me/archives/Bernie-Sanders/" rel="alternate" type="text/html" title="Ellsworth Toohey" /><published>2015-09-23T00:00:00-04:00</published><updated>2015-09-23T00:00:00-04:00</updated><id>https://mattsheehan.me/archives/Bernie-Sanders</id><content type="html" xml:base="https://mattsheehan.me/archives/Bernie-Sanders/">&lt;p&gt;Bernie Sanders reminds be of Ellsworth Toohey from &lt;em&gt;The Fountainhead&lt;/em&gt;. And if you’ve never read &lt;em&gt;The Fountainhead&lt;/em&gt;, Mr. Toohey was the villain. The vanguard of equality and love, or so he says. That government should be the great equalizer and that the people who have risked success don’t deserve it.&lt;/p&gt;
+
+&lt;blockquote&gt;
+Such is the nature of sums and quests for the lowest comon denominator. What, then, is the residue of many human minds put together, unaired, unspaced, undifferentiated.
+&lt;/blockquote&gt;
+
+&lt;p&gt;When did we stop celebrating human achievement? How can someone else have any stake in what I earn, in what I make? And when did we start pointing fingers at the rich? If anyone thinks that the more one person has, the less I can have, does not understand microeconomics. Wealth is not a zero sum game. Nobody has to lose for a few people to win, and nobody won by forcing someone else to lose.&lt;/p&gt;
+
+&lt;blockquote&gt;
+	As a matter of fact, the person who loves everybody and feels at home everywhere is the true hater of mankind. He expects nothing of men, so no form of depravity can outrage him.
+&lt;/blockquote&gt;
+
+&lt;p&gt;Let me give an example. If I buy 1 stock at $40, and the next day that stock goes to $50. Did I call the Federal Reserve and tell them to print more money for me? Did I rob someone of $10 and now some poor immigrant is $10 poorer? No. Wealth was created. Wealth was created and nobody had to lose (of course if you were shorting the stock, then you would have lost, but nobody &lt;em&gt;had&lt;/em&gt; to lose). This is how the rich stay rich. Not necessarily stocks, but by &lt;strong&gt;creating wealth&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Bernie Sanders has never created wealth in his life. Nothing is new or better or stronger because of him. He wants things to be stagnant. He wants things to be worse than stagnant, he wants things to &lt;em&gt;be fair and equal&lt;/em&gt;. To hell with your harder work! Someone else needs your money more than you do!&lt;/p&gt;
+
+&lt;p&gt;We should be rewarded by what we create, not by what we don’t create. Some people create art, for some it’s music, and some others create wealth. Those are our choices, nobody forced our hands when we majored in art history.&lt;/p&gt;
+
+&lt;blockquote&gt;
+	Mr. Roark, we're alone here. Why don't you tell me what you think of me? In any words you wish. No one will hear you.
+	But I don't think of you.
+&lt;/blockquote&gt;
+
+&lt;p&gt;How come we give so many people who don’t deserve our attention, our attention? How come we care at all what other people think of us? Don’t shame me because I’m fat! Don’t shame me because I’m skinny! Don’t shame me because I’m neither fat nor skinny! Bernie Sanders would tell you that all these shouts have equal weight in their validity. But that’s impossible, being fat has to be worse than being skinny, and being skinny has to be worse than being healthy. And people should make up for themselves what they want to be.&lt;/p&gt;
+
+&lt;p&gt;People should have self-respect, not necessarily my respect and not necessarily your respect, but their own respect. Noboby can shame that, regardless of what you hear or what is said about you.&lt;/p&gt;
+
+&lt;blockquote&gt;
+	We are all brothers under the skin--and I, for one, would be willing to skin humanity to prove it.
+&lt;/blockquote&gt;
+
+&lt;p&gt;Bernie Sanders thinks that we’re all just here to be fertilizer. Fertilizer for the hopeful success of other people. Fertilizer to help other people reach their enlightenment. But what about our own? I am not fertilizer for anybody else. What is shared, is shared from the charity of my own heart, and because it merits my charity, not because I was told it merits my charity. Or that it merits part of my paycheck.&lt;/p&gt;
+
+&lt;p&gt;Bernie Sanders does not want to bind us together through the triumph of human achievement that we all experience when we see a hundred story skyscraper. He would rather see us seperated through guilt shaming.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&amp;lt;/rant&amp;gt;&lt;/strong&gt;&lt;/p&gt;</content><author><name>Matt Sheehan</name></author><summary type="html">Bernie Sanders reminds be of Ellsworth Toohey from The Fountainhead. And if you’ve never read The Fountainhead, Mr. Toohey was the villain. The vanguard of equality and love, or so he says. That government should be the great equalizer and that the people who have risked success don’t deserve it.</summary></entry><entry><title type="html">Ruby is Object-Oriented Lisp</title><link href="https://mattsheehan.me/archives/ruby-is-oo-lisp/" rel="alternate" type="text/html" title="Ruby is Object-Oriented Lisp" /><published>2015-09-22T00:00:00-04:00</published><updated>2015-09-22T00:00:00-04:00</updated><id>https://mattsheehan.me/archives/ruby-is-oo-lisp</id><content type="html" xml:base="https://mattsheehan.me/archives/ruby-is-oo-lisp/">&lt;p&gt;I’ve fooled around and hankey-pankeyed with lisps for years. I’ve even wrote a toy &lt;a href=&quot;https://github.com/sheehamj13/mslisp&quot;&gt;lisp dialect&lt;/a&gt;. I’ve also gotten dirty with Ruby. This site itself is build using Jekyll&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;, a static site generator written with Ruby, and I’ve wrote a few custom plugins to help my development along.&lt;/p&gt;
+
+&lt;p&gt;But I had a shower thought after using the two. Ruby is really just an object-oriented (OO) dialect of lisp&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;. Sure there are libraries that add OO design principles to lisp, but Ruby takes all of the best parts of lisp and bakes OO constructs directly into it.&lt;/p&gt;
+
+&lt;p class=&quot;soliloquy&quot;&gt;I would lump Ruby, lisp, and Javascript into one language family. They’re the languages I consider the &lt;em&gt;fun&lt;/em&gt; programming languages. Sure they’re not taken seriously by any of the ‘real’ developers, but how many times do you get to use the word ‘fun’ and programming in the same sentence. You might here ‘oh, that’s interesting’ or ‘very clever’&lt;sup id=&quot;fnref:3&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt; said by the real devs, but rarely ‘this is fun’, and I think that deserves remark.&lt;/p&gt;
+
+&lt;p class=&quot;primtitle&quot;&gt;The value of everything&lt;/p&gt;
+
+&lt;p&gt;Both Ruby and most lisp dialects attribute a value to everything (even if that value is NIL, a keyword that is shared). Undefined does not exist and something never goes uninitialized with some randomness.&lt;/p&gt;
+
+&lt;p class=&quot;primtitle&quot;&gt;The truth of everything&lt;/p&gt;
+
+&lt;p&gt;Everything is true, except NIL and FALSE. In boolean conversions, “x” is true, “nil” is true, and NIL is false. If you ever find yourself asking, ‘is 0 equivalent to true or false?’, the answer is ‘is 0 the equivalent of NIL or FALSE? No.’, so theres your answer. This makes using boolean logic less painful, you never have to type &lt;strong&gt;if x == nil&lt;/strong&gt; or any equivalent.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;if x &lt;em&gt;body&lt;/em&gt;&lt;/strong&gt; or the lispy &lt;strong&gt;(if x &lt;em&gt;body&lt;/em&gt;)&lt;/strong&gt; is good enough.&lt;/p&gt;
+
+&lt;p class=&quot;primtitle&quot;&gt;Operators are functions&lt;/p&gt;
+
+&lt;p&gt;Ok, alright already. Operators are basically always functions in every language. But I promise it’s different here, they really feel like functions. In lisp you have &lt;strong&gt;(+ 2 2)&lt;/strong&gt;, which at any point you can &lt;strong&gt;(set! + (lambda (x y) (- x y)))&lt;/strong&gt;, and now addition is subtraction. Since Ruby is just an OO dialect of lisp, this function-ness goes a step further, &lt;strong&gt;2.+(2)&lt;/strong&gt;, is the equivalent of 2 + 2, except in the former the +-operator appears as a method on the &lt;em&gt;Integer Class&lt;/em&gt;&lt;sup id=&quot;fnref:4&quot;&gt;&lt;a href=&quot;#fn:4&quot; class=&quot;footnote&quot;&gt;4&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;p class=&quot;soliloquy&quot;&gt;Everybody should still write 2 + 2 for clarity, but the fact that you can write it alternatively relays my point across.&lt;/p&gt;
+
+&lt;p class=&quot;primtitle&quot;&gt;Everything is a Function-Object&lt;/p&gt;
+
+&lt;p&gt;In lisp everything is a function since there is no OO classes and in Ruby, everything is technically an object, but can be thought of as a function (in the same way as Javascript). Just like in lisp where in the line of code &lt;strong&gt;(defun &lt;em&gt;name&lt;/em&gt; &lt;em&gt;body&lt;/em&gt;)&lt;/strong&gt;, which defines a new function, &lt;strong&gt;defun&lt;/strong&gt; is really just another function that takes a &lt;em&gt;name&lt;/em&gt; parameter and a &lt;em&gt;body&lt;/em&gt; parameter. The same can be said of Ruby. In the line of code &lt;strong&gt;def &lt;em&gt;name&lt;/em&gt; &lt;em&gt;body block&lt;/em&gt;&lt;/strong&gt;, which defines a new class method, &lt;strong&gt;def&lt;/strong&gt; is really just a function that takes two parameters.&lt;/p&gt;
+
+&lt;p class=&quot;soliloquy&quot;&gt;In ruby this also extends to the class access modifiers (public, private, and protected). In the line &lt;strong&gt;private def &lt;em&gt;method name&lt;/em&gt; &lt;em&gt;body block&lt;/em&gt;&lt;/strong&gt;, &lt;strong&gt;private&lt;/strong&gt; is just a function that takes the return of the function &lt;strong&gt;def&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p class=&quot;primtitle&quot;&gt;Conventions&lt;/p&gt;
+
+&lt;p&gt;And finally the naming conventions, which Ruby has taken from lisp. Functions with question marks at the end usually answer boolean questions about something, while functions with exclamation marks the end usually denote that the function modifies its input.&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;Btw, Jekyll v3.0 is leaps and bounds better than v2.x. Unfortunately, v3.0 is still in beta. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot;&gt;
+      &lt;p&gt;I know Ruby looks a lot like Python, I too thought they would be about the same, because of the similar importance attributed to vertical white-space and their bracketless syntax. But those are just syntactical details, and the similarities between the &lt;em&gt;design&lt;/em&gt; of the language ends there. &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:3&quot;&gt;
+      &lt;p&gt;Other things developers might say are ‘Neat!’, ‘Cool!’, and ‘Awesome!’, as well as any conjugations such as ‘Neato!’ and ‘Coolio!’. &lt;a href=&quot;#fnref:3&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:4&quot;&gt;
+      &lt;p&gt;Yeah. Even numbers are objects. &lt;a href=&quot;#fnref:4&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;</content><author><name>Matt Sheehan</name></author><summary type="html">I’ve fooled around and hankey-pankeyed with lisps for years. I’ve even wrote a toy lisp dialect. I’ve also gotten dirty with Ruby. This site itself is build using Jekyll1, a static site generator written with Ruby, and I’ve wrote a few custom plugins to help my development along. Btw, Jekyll v3.0 is leaps and bounds better than v2.x. Unfortunately, v3.0 is still in beta. &amp;#8617;</summary></entry><entry><title type="html">iOS 9 Review</title><link href="https://mattsheehan.me/archives/iOS9-review/" rel="alternate" type="text/html" title="iOS 9 Review" /><published>2015-09-17T00:00:00-04:00</published><updated>2015-09-17T00:00:00-04:00</updated><id>https://mattsheehan.me/archives/iOS9-review</id><content type="html" xml:base="https://mattsheehan.me/archives/iOS9-review/">&lt;p&gt;&lt;em&gt;&lt;strong&gt;TL;DR&lt;/strong&gt;: If you’re running an older device, iOS 9 is iOS 8 is iOS 7.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;These are my thoughts for iOS 9 running on a 4 year old iPad 2 (not the iPad Air 2, just the iPad 2. Yeah.) and an iPhone 4s (back when the ‘s’ was understood to still stand for ‘siri’. We don’t know what it stands for anymore).&lt;/p&gt;
+
+&lt;p&gt;I’m a little surprised iOS 9 was released for the iPad 2 and iPhone 4s. Actually, I was a little surprised iOS 8 was released for iPad 2 and iPhone 4s. These little machines have seen 5 generations of major iOS versions in a little of 4 years.&lt;/p&gt;
+
+&lt;p class=&quot;primtitle&quot;&gt;App Switching&lt;/p&gt;
+
+&lt;p&gt;As far as the feature list goes in iOS 9, well, neither of my devices are seeing a lot of the new features. The first thing I did notice was the new app switcher screen that appears when you double tap the home screen or swipe up on the iPad with four fingers. That’s probably the screen I visit the most since I make sure to always close my last app since the device’s memory is small and the battery has been degrading for awhile now. Your ‘most recent’ contacts aren’t shown there anymore. I guess Apple noticed that the last person who called me (thanks mom), isn’t who I’m trying to find when I’m switching between Flipboard and Safari. The new layout works way better on the larger iPad screen than the tiny iPhone 4s screen, but I’m assuming on the newer iPhone’s it would be less squished.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://mattsheehan.me/assets/images/posts/2015-09-17-iOS9-review/ipad_app_switching.PNG&quot; alt=&quot;iPad app switching&quot; /&gt;
+&lt;small&gt;The app switching screen on the iPad. BTW, this is 2 too many apps open for an iPad 2. Woah, alliteration.&lt;/small&gt;&lt;/p&gt;
+
+&lt;p class=&quot;primtitle&quot;&gt;News&lt;/p&gt;
+
+&lt;p&gt;First I used Pulse, then there was the reign of Flipboard, now iOS 9 has it’s own news app. The news app functions a lot like Flipboard in it’s style but it’s style reminds me A LOT of Windows 8/10’s news app. The only difference is iOS 9 news might be a little cleaner. The best feature for me about Flipboard is the Pocket integration, which iOS 9 news also has (the Windows 8/10 news app was missing this, but you could save articles to the inferior reading list app).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://mattsheehan.me/assets/images/posts/2015-09-17-iOS9-review/ipad_screen_capture.PNG&quot; alt=&quot;iPad screen capture&quot; /&gt;
+&lt;small&gt;This is what my one and only app screen. Watching videos and reading web articles are what the iPad 2 is best at…still.&lt;/small&gt;&lt;/p&gt;
+
+&lt;p class=&quot;primtitle&quot;&gt;Notes&lt;/p&gt;
+
+&lt;p&gt;The Notes app is significantly improved in iOS 9, including the ability to organize notes into folders and inline images into your notes. There are still plenty of better note taking apps in the App Store though.&lt;/p&gt;
+
+&lt;p class=&quot;soliloquy&quot;&gt;Speaking for the iPad 2 and iPhone 4s, I’ve always found note taking inferior to pen and paper. Notes should be handwritten, not typed, and there are no great pen stylus’s for older devices like there are for some of the newer ones.&lt;/p&gt;</content><author><name>Matt Sheehan</name></author><summary type="html">TL;DR: If you’re running an older device, iOS 9 is iOS 8 is iOS 7.</summary></entry><entry><title type="html">Writing</title><link href="https://mattsheehan.me/archives/better-writing/" rel="alternate" type="text/html" title="Writing" /><published>2015-09-17T00:00:00-04:00</published><updated>2015-09-17T00:00:00-04:00</updated><id>https://mattsheehan.me/archives/better-writing</id><content type="html" xml:base="https://mattsheehan.me/archives/better-writing/">&lt;p&gt;&lt;em&gt;&lt;strong&gt;TL;DR&lt;/strong&gt;: I want to be better at writing.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;There are a lot of hard parts to writing though, a lot of road blocks I’ve encountered that have prevented me from writing more. Let’s start with&lt;/p&gt;
+
+&lt;p class=&quot;primtitle&quot;&gt;Finding a style&lt;/p&gt;
+
+&lt;p&gt;Hands down, this is the hardest part. I want to write, but I don’t know what to write about, and when I do know what to write about, I don’t have the energy.&lt;/p&gt;
+
+&lt;p&gt;Because having the energy would mean finding my folder where I keep my ramblings, reviewing how to write in Markdown, and then creating some paragraphs that hopefully fit together in some loose enough way that they don’t seem totally erratic.&lt;/p&gt;
+
+&lt;p&gt;Having a style streamlines all of this. If you scroll past some of my more previous ramblings, you might notice I’ve been trying to find a style that is A) reusable for multiple essays so that I don’t have to remember &lt;em&gt;how&lt;/em&gt; to write, I can just start writing. And B) seems natural and fluid in it’s seperation of thoughts.&lt;/p&gt;
+
+&lt;p&gt;A lot of what I see when reading other essays is this strange staccato style where every sentence seems accented or like someone is trying to tell a joke with no story just a string of punchlines. I’ve tried this style and I’ve learned it’s not me. Most of my ideas don’t have a clear seperation between each other which makes this style difficult and leads me to&lt;/p&gt;
+
+&lt;p class=&quot;primtitle&quot;&gt;Edifying your thoughts&lt;/p&gt;
+
+&lt;p&gt;This is one of the benefits I’m hoping to gain from writing more (and eventually consistently better). A lot of the times when you sit down to start, you immediately hit this brain block of “I have something I want to say, but I’m not sure where to begin or how to say it.”. At which point you become frustrated with everything and either quit or write something that you know is not your best. So I constantly have to remind myself that&lt;/p&gt;
+
+&lt;p class=&quot;primtitle&quot;&gt;I’m not blogging, I’m writing&lt;/p&gt;
+
+&lt;p&gt;Blogging requires someone else, somewhere else, reading what you write online. No one’s reading my shit. I’m writing only to entertain myself and because it’s a skill that will help me, not only communicate better, but &lt;em&gt;think&lt;/em&gt; better as my thoughts clarify when I’m not only thinking them, but also typing them.&lt;/p&gt;
+
+&lt;p&gt;And I can write anywhere. I don’t have to write here either, I can write on my phone, I can write in my notes, I can write in someone else’s notes. It all counts toward writing, which is my goal. Readers are not my goal.&lt;/p&gt;
+
+&lt;p&gt;Writing clarifies your ideas. Blogging amplifies your emotions (think twitter).&lt;/p&gt;
+
+&lt;p class=&quot;primtitle&quot;&gt;Picking a topic&lt;/p&gt;
+
+&lt;p&gt;This might seem the hardest, but once you don’t have to think about your style (how you’re going to write) and your thoughts seem clear (how you’re going to say it), finding something to write about is actually not difficult. Everybody has thoughts everyday that we think or say then throw in the disposal and move on. Instead of forgetting it, just stick one of those thoughts in your back pocket and ruminate on it over some time (that period of time might be minutes, hours, or days). Don’t just lick it and put it back like all your other ideas but dig into it.&lt;/p&gt;</content><author><name>Matt Sheehan</name></author><summary type="html">TL;DR: I want to be better at writing.</summary></entry><entry><title type="html">Signals</title><link href="https://mattsheehan.me/archives/signals/" rel="alternate" type="text/html" title="Signals" /><published>2015-09-16T00:00:00-04:00</published><updated>2015-09-16T00:00:00-04:00</updated><id>https://mattsheehan.me/archives/signals</id><content type="html" xml:base="https://mattsheehan.me/archives/signals/">&lt;p&gt;Here’s some things I read this week.&lt;/p&gt;
+
+&lt;p class=&quot;subtitle&quot;&gt;&lt;a href=&quot;http://www.newyorker.com/magazine/2015/02/23/shape-things-come&quot;&gt;The Shape of Things to Come&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;An article from earlier this year featuring Jony Ive and his influence over Apple’s design over the last decade culminating into the latest product, the Apple Watch.&lt;/p&gt;
+
+&lt;p class=&quot;subtitle&quot;&gt;&lt;a href=&quot;http://www.newyorker.com/magazine/2015/05/18/world-without-end-raffi-khatchadourian&quot;&gt;World Without End&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Another article from earlier this year from the New Yorker featuring the procedurally generated video game, No Man’s Sky.&lt;/p&gt;
+
+&lt;p class=&quot;subtitle&quot;&gt;&lt;a href=&quot;http://www.ccs.neu.edu/home/matthias/Thoughts/Growing_a_Programmer.html&quot;&gt;Growing a Programmer&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;An interesting pragmatic look of CS coursework, focusing more on the design and architecture of complex software.&lt;/p&gt;
+
+&lt;p class=&quot;subtitle&quot;&gt;&lt;a href=&quot;http://www.anandtech.com/show/9605/the-ios-9-review&quot;&gt;The Apple iOS 9 Review&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I just like anandtech for their long reads. I’ll probably do an iOS 9 review after I download it.&lt;/p&gt;
+
+&lt;p class=&quot;subtitle&quot;&gt;&lt;a href=&quot;http://learnxinyminutes.com/&quot;&gt;Learn X in Y Minutes&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I didn’t actually find this this week, but I still wanted to share it because of it’s helpful ‘learn by example’ layout.&lt;/p&gt;</content><author><name>Matt Sheehan</name></author><summary type="html">Here’s some things I read this week.</summary></entry></feed>
