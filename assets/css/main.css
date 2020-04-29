@@ -26,7 +26,7 @@ body {
   margin: 0; }
 
 h6 {
-  font-family: Montserrat, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 900;
   font-size: 1.294427191rem;
   letter-spacing: -0.04em;
@@ -35,7 +35,7 @@ h6 {
   padding: 0; }
 
 h5 {
-  font-family: Montserrat, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 900;
   font-size: 1.6989356881rem;
   letter-spacing: -0.04em;
@@ -44,7 +44,7 @@ h5 {
   padding: 0; }
 
 h4 {
-  font-family: Montserrat, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 900;
   font-size: 2.1034441853rem;
   letter-spacing: -0.04em;
@@ -53,7 +53,7 @@ h4 {
   padding: 0; }
 
 h3 {
-  font-family: Montserrat, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 900;
   font-size: 2.5079526825rem;
   letter-spacing: -0.04em;
@@ -62,7 +62,7 @@ h3 {
   padding: 0; }
 
 h2 {
-  font-family: Montserrat, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 900;
   font-size: 2.9124611797rem;
   letter-spacing: -0.04em;
@@ -71,7 +71,7 @@ h2 {
   padding: 0; }
 
 h1 {
-  font-family: Montserrat, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 900;
   font-size: 3.3169696768rem;
   letter-spacing: -0.04em;
@@ -161,7 +161,7 @@ small {
 
 ul.checklist {
   list-style: none;
-  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace; }
+  font-family: "Consolas", "Liberation Mono", "Menlo", Courier, monospace; }
 
 .clearfix:before,
 .clearfix:after {
@@ -177,7 +177,7 @@ ul.checklist {
 .about {
   width: 100%; }
   .about h1 {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 2.5em; }
   .about h6 {
     margin-top: 1rem;
@@ -203,7 +203,7 @@ ul.checklist {
         display: block;
         width: 100%;
         border: none;
-        font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        font-family: "Consolas", "Liberation Mono", "Menlo", Courier, monospace;
         font-size: inherit;
         line-height: inherit; }
 
@@ -383,7 +383,7 @@ ul.checklist {
         fill: #eaad75; }
   .site-header__signature div {
     font-size: 0.85rem;
-    font-family: Montserrat, sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 900; }
 
 .site-header__social {
@@ -499,7 +499,7 @@ body {
           -ms-flex-pack: end;
               justify-content: flex-end; }
   .journal .archive-page {
-    font-family: Montserrat, sans-serif;
+    font-family: "Montserrat", sans-serif;
     text-align: center;
     font-size: 0.9rem;
     width: 100%;
