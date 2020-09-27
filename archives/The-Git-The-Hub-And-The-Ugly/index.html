@@ -137,7 +137,7 @@
 
     <!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>The Git, The Hub, And The Ugly | Matthew Sheehan</title>
-<meta name="generator" content="Jekyll v3.8.5" />
+<meta name="generator" content="Jekyll v4.1.1" />
 <meta property="og:title" content="The Git, The Hub, And The Ugly" />
 <meta name="author" content="Matt Sheehan" />
 <meta property="og:locale" content="en_US" />
@@ -153,7 +153,7 @@
 <meta name="twitter:site" content="@MattSheehanDev" />
 <meta name="twitter:creator" content="@Matt Sheehan" />
 <script type="application/ld+json">
-{"description":"It’s funny how your opinion’s can change. I didn’t like GitHub when I first signed up for a few good reasons.","author":{"@type":"Person","name":"Matt Sheehan"},"@type":"BlogPosting","url":"https://mattsheehan.me/archives/The-Git-The-Hub-And-The-Ugly/","headline":"The Git, The Hub, And The Ugly","dateModified":"2013-05-17T20:18:15-04:00","datePublished":"2013-05-17T20:18:15-04:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://mattsheehan.me/archives/The-Git-The-Hub-And-The-Ugly/"},"@context":"https://schema.org"}</script>
+{"datePublished":"2013-05-17T20:18:15-04:00","headline":"The Git, The Hub, And The Ugly","mainEntityOfPage":{"@type":"WebPage","@id":"https://mattsheehan.me/archives/The-Git-The-Hub-And-The-Ugly/"},"author":{"@type":"Person","name":"Matt Sheehan"},"url":"https://mattsheehan.me/archives/The-Git-The-Hub-And-The-Ugly/","description":"It’s funny how your opinion’s can change. I didn’t like GitHub when I first signed up for a few good reasons.","@type":"BlogPosting","dateModified":"2013-05-17T20:18:15-04:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -291,18 +291,27 @@ So in order to help all you wary travellers out there who want to become a part 
 
 <p>Before we start make sure you have git installed. If your using a Debian based operating system it might already be installed.. I’m using Mint which you can check out <a href="http://www.linuxmint.com/">here</a>. If not, the easiest way to do this is to type the following into the terminal.</p>
 
-<pre><code>    apt-get install git
-</code></pre>
+<div class="language-plaintext highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span>    apt-get install git
+</pre></div>
+</div>
+</div>
 
 <p>Then to configure it type</p>
 
-<pre><code>    git config --global user.name [usernamehere]
-</code></pre>
+<div class="language-plaintext highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span>    git config --global user.name [usernamehere]
+</pre></div>
+</div>
+</div>
 
 <p>and</p>
 
-<pre><code>    git config --global user.email [emailhere]
-</code></pre>
+<div class="language-plaintext highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span>    git config --global user.email [emailhere]
+</pre></div>
+</div>
+</div>
 
 <p>The first line installs git and the next two just configure the settings to remember your name and email.</p>
 
@@ -310,37 +319,55 @@ So in order to help all you wary travellers out there who want to become a part 
 
 <p>Once a new repository is created, clone that repository onto your computer by entering</p>
 
-<pre><code>    git clone https://repository_address_here
-</code></pre>
+<div class="language-plaintext highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span>    git clone https://repository_address_here
+</pre></div>
+</div>
+</div>
 
 <p>into the terminal.</p>
 
 <p>CD into your new repository</p>
 
-<pre><code>   cd ~/new_repository
-</code></pre>
+<div class="language-plaintext highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span>   cd ~/new_repository
+</pre></div>
+</div>
+</div>
 
 <p>Now you can add things to that directory from your project. Once new files are added to the directory and your ready to upload type</p>
 
-<pre><code>    git add --all
-</code></pre>
+<div class="language-plaintext highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span>    git add --all
+</pre></div>
+</div>
+</div>
 
 <p>which will prepare GitHub for all the new files you’ve just added.</p>
 
 <p>Next you want to commit your updated directory, type</p>
 
-<pre><code>    git commit -m "Commit Message"
-</code></pre>
+<div class="language-plaintext highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span>    git commit -m &quot;Commit Message&quot;
+</pre></div>
+</div>
+</div>
 
 <p>Finally push ( <em>upload</em> ) the directory back to GitHub</p>
 
-<pre><code>    git push origin master
-</code></pre>
+<div class="language-plaintext highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span>    git push origin master
+</pre></div>
+</div>
+</div>
 
 <p>If you’re pushing to a different branch, like <a href="https://help.github.com/categories/20/articles">Github Pages</a>, then just type</p>
 
-<pre><code>    git push origin [branchname]
-</code></pre>
+<div class="language-plaintext highlighter-coderay"><div class="CodeRay">
+  <div class="code"><pre><span class="line-numbers"><a href="#n1" name="n1">1</a></span>    git push origin [branchname]
+</pre></div>
+</div>
+</div>
 
 <p>That’s really all you need to know to get started. So go get coding, you could even fork this blog from my github page (that’s like creating a new repository).</p>
 
