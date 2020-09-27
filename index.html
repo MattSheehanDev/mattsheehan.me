@@ -23,7 +23,9 @@ title: Matt Sheehan
     {% if paginator.previous_page %}
     <div class="page-nav space-between">
         <a href="{{ paginator.previous_page_path }}" title="Previous page">← previous</a>
+        {% if paginator.next_page %}
         <a href="{{ paginator.next_page_path }}" title="Next page">next →</a>
+        {% endif %}
     </div>
     {% else %}
     <div class="page-nav flex-end">
