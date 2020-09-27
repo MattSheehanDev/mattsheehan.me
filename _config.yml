@@ -18,7 +18,6 @@ plugins:
   - jekyll-admin
   - jekyll-feed
   - jekyll-paginate
-  - jekyll-assets
   - autoprefixer-rails
   - jekyll-seo-tag
 

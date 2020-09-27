@@ -1,15 +1,15 @@
 source "https://rubygems.org"
 
 group :jekyll_plugins do
-    gem "jekyll", "3.8.5"
+    gem "jekyll", "4.1.1"
     gem "jekyll-paginate", "1.1.0"
-    gem "jekyll-feed", "0.13.0"
-    gem "jekyll-admin", "0.9.0"
-    gem "autoprefixer-rails", "9.7.3"
-    gem "jekyll-assets", "3.0.12"
-	gem "builder", "3.2.3"
+    gem "jekyll-feed", "0.15.0"
+    gem "jekyll-admin", "0.10.2"
+    gem "autoprefixer-rails", "10.0.0.2"
+	gem "builder", "3.2.4"
+    gem "kramdown-syntax-coderay", "1.0.1"
     gem "jekyll-seo-tag", "2.6.1"
-    gem "jekyll-compose", "0.11.0"
+    gem "jekyll-compose", "0.12.0"
     gem "jekyll-sitemap", "1.4.0"
 end
 

@@ -16,6 +16,7 @@ Gemfile.lock
 
 node_modules
 .jekyll-metadata
+.jekyll-cache
 .sass-cache
 **/*.sh
 
