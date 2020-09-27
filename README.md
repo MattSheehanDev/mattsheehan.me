@@ -1,12 +1,6 @@
 ## Setup ##
 
-Install node packages
-```sh
-# npm
-npm install
-# or yarn
-yarn install
-```
+Ruby Version: 2.7.1
 
 Install gems
 ```sh
