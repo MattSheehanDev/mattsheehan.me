@@ -1,3 +1,5 @@
+@import "variables";
+@import "mixins";
 
 .site-footer {
     display: flex;
@@ -6,6 +8,12 @@
     align-items: center;
     width: 100%;
     text-align: center;
-    margin-bottom: 2em;
-}
+    padding-bottom: 2em;
 
+    @include screenSmallerThan570px {
+        flex-direction: column;
+        border-top: 2px solid $grey-light;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+}
