@@ -153,7 +153,7 @@
 <meta name="twitter:site" content="@MattSheehanDev" />
 <meta name="twitter:creator" content="@Matt Sheehan" />
 <script type="application/ld+json">
-{"headline":"Note on Jekyll Plugins","dateModified":"2015-04-21T00:00:00-04:00","datePublished":"2015-04-21T00:00:00-04:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://mattsheehan.me/archives/Jekyll-Plugins/"},"author":{"@type":"Person","name":"Matt Sheehan"},"url":"https://mattsheehan.me/archives/Jekyll-Plugins/","description":"There’s not a lot of really good documentation on how to roll your own Jekyll plugins, and most of the plugins that currently exist aren’t very good. That includes a few of my first attempts. Through some trial and error, Stackoverflow searching, and source code browsing, I’ve managed to gather a few ‘best practices’. Especially for writing Generators, the most popular and used type.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","description":"There’s not a lot of really good documentation on how to roll your own Jekyll plugins, and most of the plugins that currently exist aren’t very good. That includes a few of my first attempts. Through some trial and error, Stackoverflow searching, and source code browsing, I’ve managed to gather a few ‘best practices’. Especially for writing Generators, the most popular and used type.","headline":"Note on Jekyll Plugins","dateModified":"2015-04-21T00:00:00-04:00","datePublished":"2015-04-21T00:00:00-04:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://mattsheehan.me/archives/Jekyll-Plugins/"},"url":"https://mattsheehan.me/archives/Jekyll-Plugins/","author":{"@type":"Person","name":"Matt Sheehan"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 </head>
@@ -274,7 +274,7 @@
     <div class="content">
         <p>There’s not a lot of really good documentation on how to roll your own <a href="http://jekyllrb.com">Jekyll</a> plugins, and most of the plugins that currently exist aren’t very good. That includes a few of my first attempts. Through some trial and error, <a href="http://stackoverflow.com">Stackoverflow</a> searching, and <a href="https://github.com/jekyll/jekyll">source code</a> browsing, I’ve managed to gather a few ‘best practices’. Especially for writing Generators, the most popular and used type.</p>
 
-<p class="soliloquy">There are four types of <a href="http://jekyllrb.com/docs/plugins/">plugins</a>, Generators, Converters, Commands and Tags. This post is about generators<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote">1</a></sup>.</p>
+<p class="soliloquy">There are four types of <a href="http://jekyllrb.com/docs/plugins/">plugins</a>, Generators, Converters, Commands and Tags. This post is about generators<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>.</p>
 
 <p>There are four important things you should know about generators first.</p>
 
@@ -347,7 +347,7 @@
     <span class="k">end</span>
 <span class="k">end</span></code></pre></figure>
 
-<p>The secret is overloading the pages write method, which is usually invoked to just copy static files<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote">2</a></sup>.</p>
+<p>The secret is overloading the pages write method, which is usually invoked to just copy static files<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup>.</p>
 
 <p class="soliloquy">You should also notice that MyPage is inheriting from StaticFile this time instead of Page. And remember to put your class’s under the Jekyll namespace.</p>
 
